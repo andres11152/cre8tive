@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web - Crea8tive Agency" />
+    <meta name="robots" content="index,follow" />
+    <title>Cre8tive Agency</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/index.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/tablet.css"
+      media="screen and (min-width: 760px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/desktop.css"
+      media="screen and (min-width: 980px)"
+    />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ae0fd6f99f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-8.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+
+        <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" id="open-modal">
+    </div>
+
+    <!-- Ventana modal -->
+    <div id="whatsapp-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Envíanos un mensaje</h1>
+        <h2>Por favor, ingresa tu nombre para que podamos enviarte un mensaje directo.</h2>
+        <input type="text" id="user-name" placeholder="Tu nombre">
+        <button id="send-whatsapp">Enviar</button>
+      </div>
+    </div>
+
+    <div class="container--loader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <img
+        src="./assets/images/logo-sin fondo.png"
+        alt="Logo Portafolio"
+        class="logo_header"
+      />
+
+      <!-- Barra de navegación -->
+      <nav class="nav_menu not-active">
+        <a href="#home" class="active">Home</a>
+
+        <a href="#servicios" data-section="menu" data-value="item1"
+          >Servicios</a
+        >
+        <a href="#quienes-somos" data-section="menu" data-value="item2"
+          >Quienes somos</a
+        >
+        <a href="#proyectos" data-section="menu" data-value="item3"
+          >Proyectos</a
+        >
+
+        <!--<a href="#precios" data-section="menu" data-value="item5">Precios</a>
+        -->
+
+
+        <a href="#contacto" data-section="menu" data-value="item6">Contacto</a>
+
+        <div id="flags" class="flags">
+          <div class="flags__item" data-language="es">
+            <img src="./assets/images/icon-spain.png" alt="Español/Spain" />
+          </div>
+          <div class="flags__item" data-language="en">
+            <img src="./assets/images/icon-en.png" alt="English/Britain" />
+          </div>
+        </div>
+      </nav>
+
+      <div id="button" class="btn not-active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <main>
+      <!-- Home -->
+      <section class="home" id="home">
+        
+        <container class="container_image-home">
+          <div id="image_home"></div>
+        </container>
+
+        <div class="home_info">
+          <div class="container_text-info">
+            <img src="./assets/images/logo-sin fondo.svg" alt="Logo Portafolio" class="logo_principal">
+          </div>
+          
+          <div>
+            <p
+              class="home_text-3 text-type"
+              data-section="home"
+              data-value="home_text-3"
+            >
+              {Diseño & Desarrollo Web}
+            </p>
+          </div>
+
+          <div class="container_parrafo-info">
+            <p data-section="home" data-value="parrafo-info">
+              Cre8tive es una agencia innovadora que se especializa en
+              desarrollo y diseño web. Nos enfocamos en ofrecer soluciones únicas y efectivas
+              que superen las expectativas de nuestros clientes, asegurándonos
+              de que cada detalle refleje la visión de su marca. En Cre8tive,
+              convertimos ideas en experiencias digitales que destacan en el
+              mundo competitivo en línea.
+            </p>
+          </div>
+
+          <div class="container_button">
+           
+            <a href="https://wa.me/573138081081" target="_blank">
+              <button
+                  class="cv_button"
+                  data-section="home"
+                  data-value="cv_button"
+              >
+                  ¡Contáctanos!
+              </button>
+          </a>
+          
+            </a>
+            
+          </div>
+          <div class="container-links">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section class="services" id="services">
+        <h1 data-section="services" data-value="title">Servicios</h1>
+
+        <div class="cards_container--services">
+            <div class="cards--services" data-aos="custom-fade-right" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+              <div class="container_imgCard--services"></div>
+              <div class="container_textCard--services">
+                  <h2 data-section="services" data-value="title-servicio1">Diseño de páginas web personalizadas</h2>
+                  <p data-section="services" data-value="info-servicio1">
+                      Damos vida a tu idea creando una página web profesional, adaptada para cualquier dispositivo y optimizada para ofrecer una experiencia de usuario eficiente y moderna.
+                  </p>
+              </div>
+              <div class="container_btn--services">
+                  <a href="#contact" class="btn-contact">EMPEZAR HOY!</a>
+              </div>
+          </div>
+          
+          <div class="cards--services" data-aos="custom-zoom-rotate" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+              <div class="container_imgCard--services"></div>
+              <div class="container_textCard--services text-portafolio">
+                  <h2 data-section="services" data-value="title-servicio2">SEO (Search Engine Optimization)</h2>
+                  <p data-section="services" data-value="info-servicio2">
+                      Destaca en los motores de búsqueda y aumenta tu clientela con estrategias de posicionamiento SEO efectivas y campañas publicitarias diseñadas para maximizar tu visibilidad online.
+                  </p>
+              </div>
+              <div class="container_btn--services">
+                  <a href="#contact" class="btn-contact">EMPEZAR HOY!</a>
+              </div>
+          </div>
+          
+          <div class="cards--services" data-aos="custom-fade-left" data-aos-anchor-placement="center-bottom" data-aos-duration="1500">
+              <div class="container_imgCard--services"></div>
+              <div class="container_textCard--services">
+                  <h2 data-section="services" data-value="title-servicio3">Optimización y Rediseño de Páginas Web</h2>
+                  <p data-section="services" data-value="info-servicio3">
+                      Ofrecemos optimización y rediseño web para mejorar la funcionalidad, velocidad y SEO, asegurando un sitio atractivo y eficiente que impulse tu negocio.
+                  </p>
+              </div>
+              <div class="container_btn--services">
+                  <a href="#contact" class="btn-contact">EMPEZAR HOY!</a>
+              </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+
+      <!-- Proyectos -->
+      <section class="proyectos" id="proyectos">
+        <h1 data-section="proyectos" data-value="title">Proyectos</h1>
+
+        <div class="cards_container--proyectos">
+          <div
+            class="cards--proyectos card_JuegoAhorcado"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+          <a href="https://orionbienesraices.netlify.app/" target="_blank">
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/img-orion.png"
+                alt="Proyecto: Juego del ahorcado"
+              />
+            </div>
+          </a>
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto1">
+                Orión Bienes Raíces
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto1">
+                Orión Constructora & Bienes Raíces transforma el mercado inmobiliario en Bogotá mediante el uso de tecnología avanzada
+                y estrategias innovadoras, ofreciendo soluciones ágiles y personalizadas para la compra y venta de inmuebles y terrenos.
+              </p>
+            </div>
+
+            <div class="container_btn--proyectos">
+              
+            </div>
+          </div>
+
+          <div
+            class="cards--proyectos card_JuegoAhorcado"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+          <a href="https://glutebuildersclub.com/" target="_blank">
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/img-glute.png"
+                alt="Proyecto: Juego del ahorcado"
+              />
+            </div>
+          </a>
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto1">
+                Glute Builders Club
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto1">
+                Glute Builders Club ofrece programas de entrenamiento online personalizados con un enfoque en el desarrollo de glúteos, guiados por el entrenador Julián Tejada. Además de rutinas especializadas, brindan asesoría profesional y recursos como blogs de salud y bienestar. También cuentan con una tienda de productos fitness.
+              </p>
+            </div>
+
+            <div class="container_btn--proyectos">
+              
+            </div>
+          </div>
+
+          <div
+            class="cards--proyectos card_portafolio"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+          <a href="https://andresbetancourt.netlify.app" target="_blank">
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/portafolio-screenshot.png"
+                alt="Proyecto: Portafolio"
+              />
+            </div>
+          </a>
+            <div class="container_textCard--proyectos text-portafolio">
+              <h2 data-section="proyectos" data-value="title-proyecto2">
+                Portafolio Andres Betancourt
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto2">
+                En su portafolio web personal, se presentan algunos de los proyectos más destacados que ha desarrollado, junto con sus principales habilidades técnicas y una breve descripción de su formación académica y profesional.
+              </p>
+            </div>
+
+            <div class="container_btn--proyectos">
+            
+            </div>
+          </div>
+
+          <div
+            class="cards--proyectos card_encriptador"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+          <a href="https://gadalarquitectura.com/" target="_blank">
+            <div class="container_imgCard--proyectos">
+              <img
+                src="./assets/images/gadal-arquitectura.png"
+                alt="Proyecto: Encriptador"
+              />
+            </div>
+          </a>
+            <div class="container_textCard--proyectos">
+              <h2 data-section="proyectos" data-value="title-proyecto3">
+                Gadal Arquitectura
+              </h2>
+              <p data-section="proyectos" data-value="info-proyecto3">
+                GADAL ofrece soluciones creativas y personalizadas en diseño y construcción, con un equipo de expertos que garantiza
+                precisión técnica y excelencia en cada proyecto, desde la planificación hasta la ejecución.
+              </p>
+            </div>
+
+            
+
+
+            <div class="container_btn--proyectos">
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- Contacto -->
+      <section class="contacto" id="contacto">
+        <h1 data-section="contacto" data-value="title">Contacto</h1>
+
+        <div
+          class="container_box--contacto"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <div class="container--contacto">
+            <form
+              id="form-c"
+              class="form-contact"
+              name="contacto-portafolio"
+              netlify
+            >
+              <input
+                id="nombre"
+                type="text"
+                name="name"
+                placeholder="Nombre | Name"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+              <input
+                id="asunto"
+                type="text"
+                name="subject"
+                placeholder="Asunto | Subject"
+                required
+              />
+              <textarea
+                id="mensaje"
+                cols="20"
+                rows="4"
+                name="message"
+                placeholder="Mensaje | Message"
+                required
+              ></textarea>
+
+              <div class="btn_form--contacto">
+                <button
+                  id="btn-enviar"
+                  type="submit"
+                  data-section="contacto"
+                  data-value="btn-enviar"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container--footer">
+        <div class="container_redes-footer">
+          <div class="container-links">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="container_text--footer">
+          <span>Copyright © | All Rights Reserved </span>
+          <br>
+          <span>Code Made by Cre8tive Agency</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

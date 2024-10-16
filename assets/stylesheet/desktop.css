@@ -1,0 +1,533 @@
+/* Header - Barra de navegación */
+.header {
+    justify-content: space-between;
+    padding: .8rem 3rem;
+    z-index: 2;
+}
+
+nav.nav_menu {
+    display: flex;
+}
+#image_home {
+    justify-content: right;
+    height: 55rem;
+    width: 40rem; 
+    transition:  box-shadow .1s;
+    background: url("../images/img_home-1.png") no-repeat center;
+    background-size: contain;
+}
+#image_home:hover {
+    box-shadow: 0px 0px 100px rgb(255, 255, 255);
+
+}
+
+nav.nav_menu a {
+    font-size: 1.6rem;
+    padding: .5rem;
+    color: var(--white);
+    font-family: 'Pasajero';
+    text-decoration: none;
+    letter-spacing: .2rem;
+    right: 0;
+    margin-right: 2.5rem;
+}
+
+nav.nav_menu a:hover,
+nav.nav_menu a.active {
+    color: #ffffff;
+    padding: .5rem;
+    border-bottom: 1px solid var(--beaver);
+    transition: all .5s;
+}
+
+nav.nav_menu.not-active a {
+    display: flex;
+}
+
+nav.nav_menu.not-active .flags {
+    display: flex;
+    width: 7rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.nav_menu.not-active .flags__item {
+    filter: contrast(65%);
+    cursor: pointer;
+}
+
+nav.nav_menu.not-active .flags__item img {
+    width: 3rem;
+    display: block;
+}
+
+div.btn {
+    display: none;
+}
+
+/* Home *//* Estilo para el botón flotante de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 90px;
+    right: 35px;
+    
+    z-index: 1000;
+  }
+  
+.whatsapp-icon {
+width: 60px;
+height: 60px;
+border-radius: 50%;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+transition: transform 0.3s ease;
+animation: ripple 2s infinite ease-out; /* Añade la animación de agua */
+}
+
+/* Efecto hover para agrandar el icono */
+.whatsapp-icon:hover {
+transform: scale(1.1);
+}
+  
+  /* Efecto de agua */
+  @keyframes ripple {
+    0% {
+      box-shadow: 0 0 0 0 #00daf6;
+    }
+    50% {
+      box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+  }
+  
+  /* Estilo del modal */
+.modal {
+display: none; /* Oculto por defecto */
+position: fixed;
+z-index: 1001;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+background-color: var(--orange);
+margin: 15% auto;
+padding: 20px;
+border-radius: 10px;
+width: 80%;
+max-width: 400px;
+text-align: center;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.close {
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-top: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #25D366;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+
+button:hover {
+background-color: #1EBE5D;
+}
+  
+  
+
+.home {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 4rem;
+    height: 100vh;
+}
+.container_text-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    height: 100vh; /* Ajuste de altura para centrar la imagen */
+  }
+  
+  .logo_principal {
+
+    width: 70rem; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    opacity: 0.9;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+    animation: float 2s ease-in-out infinite;
+    padding-left: 2rem;
+    padding-top: 7rem;
+  }
+  
+  .logo_principal:hover {
+    transform: scale(1.1); /* Ampliar ligeramente cuando se hace hover */
+    opacity: 1; /* Mayor visibilidad al pasar el mouse */
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.4));
+  }
+  
+  /* Animación flotante suave */
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+
+.container_image-home {
+    width: 55%;
+}
+
+.image_home {
+    object-fit: contain;
+}
+
+.home_info {
+    width: 60%;
+    padding-left: 3rem;
+}
+
+.container_text-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    letter-spacing: .4rem;
+    text-align: start;
+    margin-top: 6rem;
+
+}
+
+.home_text-1 {
+    font-size: 3.5rem;
+    margin-left: .4rem;
+    font-weight: bold;
+}
+
+.home_text-2 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.home_text-3 {
+    margin: 0 0 2rem 0;
+    font-size: 1.8rem;
+    width: 70rem;
+    letter-spacing: .2rem;
+    padding-left: 4rem;
+}
+
+.container_parrafo-info {
+    display: inline-block;
+    text-align: start;
+}
+
+.container_parrafo-info p {
+    font-family: 'Pasajero';
+    color: var(--white);
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 2.7rem;
+    padding-left: 4rem;
+}
+
+.container_button {
+    display: flex;
+    padding-left: 4rem;
+    
+}
+
+.cv_button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #F9F900;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation: ripple 5s infinite ease-out;
+}
+
+.cv_button:hover {
+    background:  #ffd700;
+    box-shadow: 0px 2px 10px #141414;
+    transition: 1s transform;
+}
+
+.contact_button {
+    display: inline-block;
+    background-color: var(--beaver);
+    border-radius: 3rem;
+    padding: .7rem 4rem .6rem 4rem;
+    color: var(--jet);
+    font-family: 'Pasajero';
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin: 2rem 0 2rem 1rem;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.contact_button:hover {
+    background-color: #776254;
+    box-shadow: 0px 2px 10px #141414;
+    transition: 1s transform;
+}
+
+.container-links { 
+    display: flex;
+    padding-left: 4rem;
+}
+
+.links a i {
+    font-size: 4rem; /* Ajusta el tamaño del icono */
+    color: #F9F900; /* Color amarillo para los iconos */
+    margin-top: 2rem;;
+    margin-right: 1rem;
+}
+
+.links a:hover i {
+    color: #00daf6; /* Opcional: Cambia el color al pasar el mouse */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 6rem;
+    color: var(--white);
+    font-family: 'Pasajero';
+    margin-bottom: 3rem;
+}
+.logo_header{
+    width: 6rem;
+}
+
+/* Sobre nosotros */
+
+.sobreMi {
+    padding-bottom: 4rem;
+}
+
+.sobreMi h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.container_content-sobreMi {
+    flex-direction: row-reverse;
+}
+
+.container_texto-sobreMi {
+    width: 70%;
+    padding: 0 5% 0 3rem;
+}
+
+.title_sobreMi {
+    text-align: start;
+    font-size: 2.8rem;
+    letter-spacing: .3rem;
+}
+
+.texto_sobreMi {
+    text-align: start;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    line-height: 2.8rem;
+}
+
+
+/* Servicios */
+.services h1 {
+    padding-top: 8rem;
+    font-size: 3rem;
+}
+
+.puntos1-services {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: 20rem 0 0  1%;
+    background-attachment: fixed;
+}
+
+.puntos2-services {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: -3rem 0 0 93%;
+}
+
+.cards_container--services {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards--services {
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    z-index: 1;
+}
+
+.text-portafolio {
+    margin-top: -3rem;
+}
+
+.container_btn--services button {
+    width: auto;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+.btn-contact {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #F9F900; /* Color amarillo */
+    color: #000; /* Color del texto */
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    animation: ripple 5s infinite ease-out; /* Añade la animación de agua */
+}
+
+.btn-contact:hover {
+    background-color: #ffd700; /* Cambia el color al pasar el mouse */
+}
+
+/* Proyectos */
+
+.proyectos h1 {
+    padding-top: 8rem;
+    font-size: 3rem;
+}
+
+.puntos1-proyectos {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: 20rem 0 0  1%;
+    background-attachment: fixed;
+}
+
+.puntos2-proyectos {
+    display: inline;
+    position: absolute;
+    width: 6rem;
+    margin: -3rem 0 0 93%;
+}
+.container_textCard--services{
+    font-size: 2rem;
+}
+.cards_container--proyectos {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards--proyectos {
+    width: 40rem;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    z-index: 1;
+}
+
+.text-portafolio {
+    margin-top: -3rem;
+}
+
+.container_btn--proyectos button {
+    width: auto;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
+/* Contacto */
+
+.contacto h1 {
+    padding: 8rem 0 2.5rem 0;
+    font-size: 3rem;
+}
+
+.container_box--contacto {
+    margin-top: 2rem;
+    display: flex;
+    justify-content:center;
+}
+
+.container_img--contacto {
+    display: inline-block;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container_img--contacto img {
+    width: 50rem;
+    object-fit: contain;
+}
+
+.container--contacto {
+    width: 50%;
+    margin: 0;
+    padding: 4rem 3rem;
+}
+.btn_form--contacto button{
+    color: var(--black);
+
+}
