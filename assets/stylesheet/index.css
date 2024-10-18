@@ -481,6 +481,7 @@ font-family: 'Pasajero';
     line-height: 2.5rem;
     padding-left: 2%;
     padding-right: 2rem;
+    padding-top: 4rem;
 }
 
 .cv_button {
@@ -849,7 +850,7 @@ img.logo-sena {
     font-family: 'Pasajero';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding: 6rem 0 5rem 0;
+    padding: 2rem 0 2rem 0;
 }
 
 
