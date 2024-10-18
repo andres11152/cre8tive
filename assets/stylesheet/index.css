@@ -49,7 +49,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 ::selection {
-    background-color: #e6620b;
+    background-color: var(--orange);
 }
 
 /* Header */
@@ -447,7 +447,7 @@ span+span {
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    width: 32rem;
+    width: 33rem;
     margin: 0 auto;
     text-align: start;
     padding-bottom: 2rem;
@@ -465,7 +465,7 @@ span+span {
     color: var(--black);
     background-color: var(--black);
     width: 100%;
-    animation: typing 5s steps(30) alternate infinite;
+    animation: typing 10s steps(33) alternate infinite;
 }
 
 @keyframes typing {
@@ -574,7 +574,205 @@ font-family: 'Pasajero';
     margin-bottom: 5rem;
     border-bottom: 2px solid var(--jet);
 }
+.plains{
+    background-image: url("../images/bkg.png");
+    width: 100%;
+    height: auto;
+    padding: 0 1rem 1rem 1rem;
+    background-attachment: fixed; /* Hace que el fondo sea fijo */
+    background-size: cover; 
+}
+.cards-plains-container {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.plains h1 {
+    display: block;
+    text-align: center;
+    color: var(--white);
+    font-family: 'Pasajero';
+    font-size: 2.4rem;
+    letter-spacing: .1rem;
+    padding: 6rem 0 5rem 0;
+}
+
+/*Card 1 */
+.card-landing-page {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card-landing-page h2 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.card-landing-page p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-landing-page ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.card-landing-page ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    color: var(--black);
+}
+
+.card-landing-page .cta-button {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.card-landing-page .btn-contact {
+    background-color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-landing-page .btn-contact:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.card-landing-page p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--black);
+}
+ /* card 2 */
+ .card-web-page {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card-web-page h2 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.card-web-page p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-web-page ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.card-web-page ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    color: #000;
+}
+
+.card-web-page .cta-button {
+    margin-top: 20px;
+}
+
+.card-web-page .btn-contact {
+    background-color: #ecf40c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-web-page .btn-contact:hover {
+    background-color: #00daf6;
+    color: white;
+}
+
+.card-web-page p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--black);
+}
+/* Card 3 */
+.card-online-store {
+    background-color: var(--blue);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.card-online-store h2 {
+    font-size: 24px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.card-online-store p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-online-store ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+.card-online-store ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    color: var(--black);
+}
+
+.card-online-store .cta-button {
+    margin-top: 20px;
+    color: var(--black);
+}
+
+.card-online-store .btn-contact {
+    background-color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-online-store .btn-contact:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.card-online-store p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--black);
+}
 
 /* quienes-somos */
 

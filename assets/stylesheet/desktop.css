@@ -77,17 +77,17 @@ div.btn {
   }
   
 .whatsapp-icon {
-width: 60px;
-height: 60px;
-border-radius: 50%;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-transition: transform 0.3s ease;
-animation: ripple 2s infinite ease-out; /* Añade la animación de agua */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    animation: ripple 2s infinite ease-out; /* Añade la animación de agua */
 }
 
 /* Efecto hover para agrandar el icono */
 .whatsapp-icon:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
 }
   
   /* Efecto de agua */
@@ -103,35 +103,43 @@ transform: scale(1.1);
     }
   }
   
+.plains h1 {
+    padding-top: 8rem;
+    font-size: 3rem;
+}
+.cards-plains-container{
+    flex-direction: row;
+    justify-content: center;
+    
+}
   /* Estilo del modal */
 .modal {
-display: none; /* Oculto por defecto */
-position: fixed;
-z-index: 1001;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-background-color: var(--orange);
-margin: 15% auto;
-padding: 20px;
-border-radius: 10px;
-width: 80%;
-max-width: 400px;
-text-align: center;
-box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
-
+    background-color: var(--orange);
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .close {
-color: #aaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
@@ -164,7 +172,6 @@ button:hover {
 background-color: #1EBE5D;
 }
   
-  
 
 .home {
     display: flex;
@@ -183,7 +190,7 @@ background-color: #1EBE5D;
   
   .logo_principal {
 
-    margin-top: 15rem;
+    margin-top: 10rem;
     width: 70rem; /* Ajusta el tamaño según sea necesario */
     height: auto;
     opacity: 0.9;
@@ -352,7 +359,10 @@ background-color: #1EBE5D;
 .logo_header{
     width: 6rem;
 }
-
+.cards-pains-container{
+    flex-direction: row;
+    justify-content: center;
+}
 /* Sobre nosotros */
 
 .sobreMi {
@@ -472,9 +482,11 @@ background-color: #1EBE5D;
     width: 6rem;
     margin: -3rem 0 0 93%;
 }
+
 .container_textCard--services{
     font-size: 2rem;
 }
+
 .cards_container--proyectos {
     flex-direction: row;
     justify-content: center;
@@ -530,7 +542,7 @@ background-color: #1EBE5D;
     margin: 0;
     padding: 4rem 3rem;
 }
+
 .btn_form--contacto button{
     color: var(--black);
-
 }
