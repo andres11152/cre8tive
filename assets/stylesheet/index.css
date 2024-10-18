@@ -601,7 +601,7 @@ font-family: 'Pasajero';
 
 /*Card 1 */
 .card-landing-page {
-    background-color: var(--blue);
+    background-color: var(--white);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -613,7 +613,6 @@ font-family: 'Pasajero';
 .card-landing-page h2 {
     font-size: 24px;
     color: var(--black);
-    margin-bottom: 15px;
 }
 
 .card-landing-page p {
@@ -656,28 +655,17 @@ font-family: 'Pasajero';
 .card-landing-page p {
     margin-top: 10px;
     font-size: 14px;
-    color: var(--black);
-}
- /* card 2 */
- .card-web-page {
-    background-color: var(--blue);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    margin: 20px auto;
-    text-align: center;
+    color: var(--white);
 }
 
 .card-web-page h2 {
     font-size: 24px;
     color: var(--black);
-    margin-bottom: 15px;
 }
 
 .card-web-page p {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .card-web-page ul {
@@ -710,14 +698,9 @@ font-family: 'Pasajero';
     color: white;
 }
 
-.card-web-page p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: var(--black);
-}
 /* Card 3 */
-.card-online-store {
-    background-color: var(--blue);
+.card-online-store,.card-web-page, .card-landing-page {
+    background: linear-gradient(35deg, var(--blue), #0072ff);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -768,11 +751,6 @@ font-family: 'Pasajero';
     color: var(--black);
 }
 
-.card-online-store p {
-    margin-top: 10px;
-    font-size: 14px;
-    color: var(--black);
-}
 
 /* quienes-somos */
 
@@ -891,8 +869,8 @@ img.logo-sena {
 }
 
 .cards--services {
-    width: 40rem;
-    height: 40rem;
+    width: auto;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
