@@ -59,9 +59,11 @@
 
      <!-- Ventana de cookies -->
     <div id="cookieConsent" class="cookie-consent">
-      <p>Usamos cookies para mejorar la experiencia de usuario. ¿Aceptas el uso de cookies?</p>
-      <button id="acceptCookies" class="cookie-btn accept">Aceptar</button>
+      <p>Utilizamos cookies para garantizar que tengas la mejor experiencia en nuestra página. Si 
+        sigues navegando en este sitio, entenderemos que aceptas su uso. Consulta nuestra Política de privacidad.</p>
+      <p>¿Aceptas el uso de cookies?</p>
       <button id="rejectCookies" class="cookie-btn reject">Rechazar</button>
+      <button id="acceptCookies" class="cookie-btn accept">Aceptar</button>
     </div>
   
         <!-- Botón flotante de WhatsApp -->
@@ -94,15 +96,15 @@
       <!-- Barra de navegación -->
       <nav class="nav_menu not-active">
 
-        <a href="#home" class="active">Home</a>
+        <a href="#home" class="active" data-value="item1">Inicio</a>
         
-        <a href="#plains" data-section="menu" data-value="item1">Planes</a>
+        <a href="#plains" data-section="menu" data-value="item2">Planes</a>
 
-        <a href="#services" data-section="menu" data-value="item2">Servicios</a>
+        <a href="#services" data-section="menu" data-value="item3">Servicios</a>
 
-        <a href="#projects" data-section="menu" data-value="item3">Proyectos</a>
+        <a href="#projects" data-section="menu" data-value="item4">Proyectos</a>
         
-        <a href="#about" data-section="menu" data-value="item2">Quienes somos</a>
+        <a href="#about" data-section="menu" data-value="item5">Quienes somos</a>
       
         <a href="#contact" data-section="menu" data-value="item6">Contacto</a>
 
@@ -114,6 +116,9 @@
           </div>
           <div class="flags__item" data-language="en">
             <img src="./assets/images/icon-en.png" alt="English/Britain" />
+          </div>
+          <div class="flags__item" data-language="fr">
+            <img src="./assets/images/icon-fr.png" alt="Frances/France" />
           </div>
         </div>
       </nav>
@@ -162,7 +167,7 @@
                   data-section="home"
                   data-value="cv_button"
               >
-                  ¡Contáctanos!
+                  ¡Cotiza tu Web!
               </button>
             </a>
           
@@ -181,89 +186,93 @@
       </section>
 
       <section class="plains" id="plains">
-        <h1 data-section="services" data-value="title">Planes</h1>
+        <h1 data-section="plains" data-value="title">Planes</h1>
       
         <div class="cards-plains-container">
+          
           <div class="card-landing-page">
             <div class="card-container-text">
-              <h2>LANDING PAGE PROFESIONAL</h2>
-              <p>Optimiza los resultados de tus campañas con una Landing Page diseñada para convertir y atraer más clientes.</p>
+              <h2 data-section="plains" data-value="landing_page_title">LANDING PAGE PROFESIONAL</h2>
+              <p data-section="plains" data-value="landing_page_desc">Optimiza los resultados de tus campañas con una Landing Page diseñada para convertir y atraer más clientes.</p>
             </div>
-              <ul>
-                <li><i class="fa-solid fa-house"></i> Hosting SSD GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-globe"></i> Dominio .com GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-lock"></i> Certificado SSL (Candado verde)</li>
-                <li><i class="fa-brands fa-wordpress"></i> Desarrollo en CMS WordPress</li>
-                <li><i class="fa-solid fa-mobile-screen"></i> Diseño 100% Adaptable a dispositivos móviles</li>
-                <li><i class="fa-solid fa-search"></i> Textos optimizados para SEO </li>
-                <li><i class="fa-solid fa-phone"></i> Formulario de Leads y botón de WhatsApp integrado </li>
-                <li><i class="fa-solid fa-bullseye"></i> Garantía y mantenimiento por 12 meses </li>
-                <li><i class="fa-solid fa-graduation-cap"></i> Curso exclusivo para clientes </li>
-                <li><i class="fa-solid fa-rocket"></i> Desarrollo en solo 6 días </li>
-              </ul>  
-            <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact">Hablar con un asesor</a>
-              <p>¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
-            </div>
-          </div>
-      
-          <div class="card-web-page">
-            <h2>PÁGINA WEB INFORMATIVA !</h2>
-            <p>Diseñamos un sitio web profesional y moderno, ideal para presentar tu empresa con la última tecnología en desarrollo y diseño.</p>
-              <ul>
-                <li><i class="fa-solid fa-house"></i> Hosting SSD GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-globe"></i> Dominio .com GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-lock"></i> Certificado SSL (Candado verde)</li>
-                <li><i class="fa-brands fa-wordpress"></i> Desarrollo en CMS WordPress</li>
-                <li><i class="fa-solid fa-mobile-screen"></i> Diseño adaptable a dispositivos móviles</li>
-                <li><i class="fa-solid fa-chart-line"></i> Capacidad para visitas ilimitadas</li>
-                <li><i class="fa-solid fa-envelope"></i> 5 cuentas de correo corporativo (WebMail)</li>
-                <li><i class="fa-solid fa-images"></i> 4 banners dinámicos</li>
-                <li><i class="fa-solid fa-file-alt"></i> 7 páginas internas personalizadas</li>
-                <li><i class="fa-solid fa-blog"></i> Blog o sección de noticias</li>
-                <li><i class="fa-solid fa-search"></i> Textos persuasivos y optimización SEO básica </li>
-                <li><i class="fa-solid fa-address-card"></i> Formulario de contacto avanzado</li>
-                <li><i class="fa-solid fa-photo-video"></i> Galería de fotos y videos</li>
-                <li><i class="fa-solid fa-comments"></i> Testimonios en carrusel</li>
-                <li><i class="fa-solid fa-phone"></i> Botón de WhatsApp y llamada </li>
-                <li><i class="fa-solid fa-comments"></i> Chat en vivo instalado</li>
-                <li><i class="fa-solid fa-map-marked-alt"></i> Integración con Google Maps y redes sociales</li>
-                <li><i class="fa-solid fa-shield-alt"></i> Seguridad con antivirus Wordfence </li>
-                <li><i class="fa-solid fa-graduation-cap"></i> Curso de gestión para clientes </li>
-                <li><i class="fa-solid fa-bullseye"></i> Garantía y mantenimiento por 12 meses </li>
-                <li><i class="fa-solid fa-rocket"></i> Desarrollo en 10 días </li>
-              </ul>
-            <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact">Hablar con un asesor</a>
-              <p>¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
-            </div>
-          </div>
+            <ul>
+              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="landing_page_item1">Hosting SSD GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="landing_page_item2">Dominio .com GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="landing_page_item3">Certificado SSL (Candado verde)</span></li>
+              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="landing_page_item4">Desarrollo en CMS WordPress</span></li>
+              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="landing_page_item5">Diseño 100% Adaptable a dispositivos móviles</span></li>
+              <li><i class="fa-solid fa-search"></i> <span data-section="plains" data-value="landing_page_item6">Textos optimizados para SEO</span></li>
+              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="landing_page_item7">Formulario de Leads y botón de WhatsApp integrado</span></li>
+              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="landing_page_item8">Garantía y mantenimiento por 12 meses</span></li>
+              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="landing_page_item9">Curso exclusivo para clientes</span></li>
+              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="landing_page_item10">Desarrollo en solo 6 días</span></li>
 
-          <div class="card-online-store">
-            <h2>TIENDA ONLINE 🚀</h2>
-            <p>Vende en internet y atrae nuevos clientes con tu propia tienda online, fácil de administrar y diseñada para vender.</p>
-              <ul>
-                <li><i class="fa-solid fa-house"></i> Hosting SSD GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-globe"></i> Dominio .com GRATIS por 1 Año</li>
-                <li><i class="fa-solid fa-lock"></i> Certificado SSL incluido</li>
-                <li><i class="fa-brands fa-wordpress"></i> Desarrollo en CMS WordPress y WooCommerce</li>
-                <li><i class="fa-solid fa-chart-line"></i> Capacidad para productos y visitas ilimitadas</li>
-                <li><i class="fa-solid fa-envelope"></i> 10 cuentas de correo corporativo</li>
-                <li><i class="fa-solid fa-mobile-screen"></i> Diseño 100% adaptable a dispositivos móviles </li>
-                <li><i class="fa-solid fa-box"></i> 50 productos pre-cargados y 25 categorías</li>
-                <li><i class="fa-solid fa-filter"></i> Filtros de productos y buscador avanzado </li>
-                <li><i class="fa-solid fa-shopping-cart"></i> Carrito de compras, listas de deseos y cupones de descuento</li>
-                <li><i class="fa-solid fa-credit-card"></i> Integración con métodos de pago (PayU, PayPal, Epayco...)</li>
-                <li><i class="fa-solid fa-phone"></i> Formulario de contacto y botón de WhatsApp </li>
-                <li><i class="fa-solid fa-bullseye"></i> Garantía y mantenimiento por 12 meses </li>
-                <li><i class="fa-solid fa-graduation-cap"></i> Curso exclusivo para gestionar tu tienda </li>
-                <li><i class="fa-solid fa-rocket"></i> Desarrollo en solo 15 días </li>
-              </ul>
+            </ul>
             <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact">Hablar con un asesor</a>
-              <p>¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
+              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button">Hablar con un asesor</a>
+              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
             </div>
           </div>
+          
+          <div class="card-web-page">
+            <h2 data-section="plains" data-value="web_page_title">PÁGINA WEB INFORMATIVA</h2>
+            <p data-section="plains" data-value="web_page_desc">Diseñamos un sitio web profesional y moderno, ideal para presentar tu empresa con la última tecnología en desarrollo y diseño.</p>
+            <ul>
+              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="web_page_item1">Hosting SSD GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="web_page_item2">Dominio .com GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="web_page_item3">Certificado SSL (Candado verde)</span></li>
+              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="web_page_item4">Desarrollo en CMS WordPress</span></li>
+              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="web_page_item5">Diseño adaptable a dispositivos móviles</span></li>
+              <li><i class="fa-solid fa-chart-line"></i> <span data-section="plains" data-value="web_page_item6">Capacidad para visitas ilimitadas</span></li>
+              <li><i class="fa-solid fa-envelope"></i> <span data-section="plains" data-value="web_page_item7">5 cuentas de correo corporativo (WebMail)</span></li>
+              <li><i class="fa-solid fa-images"></i> <span data-section="plains" data-value="web_page_item8">4 banners dinámicos</span></li>
+              <li><i class="fa-solid fa-file-alt"></i> <span data-section="plains" data-value="web_page_item9">7 páginas internas personalizadas</span></li>
+              <li><i class="fa-solid fa-blog"></i> <span data-section="plains" data-value="web_page_item10">Blog o sección de noticias</span></li>
+              <li><i class="fa-solid fa-search"></i> <span data-section="plains" data-value="web_page_item11">Textos persuasivos y optimización SEO básica</span></li>
+              <li><i class="fa-solid fa-address-card"></i> <span data-section="plains" data-value="web_page_item12">Formulario de contacto avanzado</span></li>
+              <li><i class="fa-solid fa-photo-video"></i> <span data-section="plains" data-value="web_page_item13">Galería de fotos y videos</span></li>
+              <li><i class="fa-solid fa-comments"></i> <span data-section="plains" data-value="web_page_item14">Testimonios en carrusel</span></li>
+              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="web_page_item15">Botón de WhatsApp y llamada</span></li>
+              <li><i class="fa-solid fa-comments"></i> <span data-section="plains" data-value="web_page_item16">Chat en vivo instalado</span></li>
+              <li><i class="fa-solid fa-map-marked-alt"></i> <span data-section="plains" data-value="web_page_item17">Integración con Google Maps y redes sociales</span></li>
+              <li><i class="fa-solid fa-shield-alt"></i> <span data-section="plains" data-value="web_page_item18">Seguridad con antivirus Wordfence</span></li>
+              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="web_page_item19">Curso de gestión para clientes</span></li>
+              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="web_page_item20">Garantía y mantenimiento por 12 meses</span></li>
+              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="web_page_item21">Desarrollo en 10 días</span></li>
+            </ul>
+            <div class="cta-button">
+              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button" >Hablar con un asesor</a>
+              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
+            </div>
+          </div>
+          
+          <div class="card-online-store">
+            <h2 data-section="plains" data-value="online_store_title">TIENDA ONLINE 🚀</h2>
+            <p data-section="plains" data-value="online_store_desc">Vende en internet y atrae nuevos clientes con tu propia tienda online, fácil de administrar y diseñada para vender.</p>
+            <ul>
+              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="online_store_item1">Hosting SSD GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="online_store_item2">Dominio .com GRATIS por 1 Año</span></li>
+              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="online_store_item3">Certificado SSL incluido</span></li>
+              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="online_store_item4">Desarrollo en CMS WordPress y WooCommerce</span></li>
+              <li><i class="fa-solid fa-chart-line"></i> <span data-section="plains" data-value="online_store_item5">Capacidad para productos y visitas ilimitadas</span></li>
+              <li><i class="fa-solid fa-envelope"></i> <span data-section="plains" data-value="online_store_item6">10 cuentas de correo corporativo</span></li>
+              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="online_store_item7">Diseño 100% adaptable a dispositivos móviles</span></li>
+              <li><i class="fa-solid fa-box"></i> <span data-section="plains" data-value="online_store_item8">50 productos pre-cargados y 25 categorías</span></li>
+              <li><i class="fa-solid fa-filter"></i> <span data-section="plains" data-value="online_store_item9">Filtros de productos y buscador avanzado</span></li>
+              <li><i class="fa-solid fa-shopping-cart"></i> <span data-section="plains" data-value="online_store_item10">Carrito de compras, listas de deseos y cupones de descuento</span></li>
+              <li><i class="fa-solid fa-credit-card"></i> <span data-section="plains" data-value="online_store_item11">Integración con métodos de pago (PayU, PayPal, Epayco...)</span></li>
+              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="online_store_item12">Formulario de contacto y botón de WhatsApp</span></li>
+              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="online_store_item13">Garantía y mantenimiento por 12 meses</span></li>
+              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="online_store_item14">Curso exclusivo para gestionar tu tienda</span></li>
+              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="online_store_item15">Desarrollo en solo 15 días</span></li>
+
+            </ul>
+            <div class="cta-button">
+              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button">Hablar con un asesor</a>
+              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
+            </div>
+          </div>
+          
           
         </div>
       </section>
@@ -284,7 +293,7 @@
                   </p>
               </div>
               <div class="container_btn--services">
-                  <a href="https://wa.me/573138081081" class="btn-contact">EMPEZAR HOY!</a>
+                  <a href="https://wa.me/573138081081" class="btn-contact" data-section="services" data-value="btn-contact-servicios">EMPEZAR HOY!</a>
               </div>
           </div>
     
@@ -298,7 +307,7 @@
                   </p>
               </div>
               <div class="container_btn--services">
-                <a href="https://wa.me/573138081081" class="btn-contact">EMPEZAR HOY!</a>
+                <a href="https://wa.me/573138081081" class="btn-contact" data-section="services" data-value="btn-contact-servicios">EMPEZAR HOY!</a>
             </div>
           </div>
           
@@ -311,7 +320,7 @@
                   </p>
               </div>
               <div class="container_btn--services">
-                <a href="https://wa.me/573138081081" class="btn-contact">EMPEZAR HOY!</a>
+                <a href="https://wa.me/573138081081" class="btn-contact" data-section="services" data-value="btn-contact-servicios">EMPEZAR HOY!</a>
             </div>
           </div>
           
@@ -321,125 +330,125 @@
 
 
       <!-- Proyectos -->
-      <section class="proyectos" id="projects">
+      <section class="proyects" id="projects">
         <h1 data-section="projects" data-value="title">Proyectos</h1>
 
-        <div class="cards_container--proyectos">
+        <div class="cards_container--projects">
           <div
-            class="cards--proyectos card_JuegoAhorcado"
+            class="cards--projects"
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
           >
           <a href="https://orionbienesraices.netlify.app/" target="_blank">
-            <div class="container_imgCard--proyectos">
+            <div class="container_imgCard--projects">
               <img
                 src="./assets/images/img-orion.png"
                 alt="Proyecto: Juego del ahorcado"
               />
             </div>
           </a>
-            <div class="container_textCard--proyectos">
-              <h2 data-section="proyectos" data-value="title-proyecto1">
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project1">
                 <i class="fas fa-eye"></i>
                 Orión Bienes Raíces
               </h2>
-              <p data-section="proyectos" data-value="info-proyecto1">
+              <p data-section="projects" data-value="info-project1">
                 Orión Constructora & Bienes Raíces transforma el mercado inmobiliario en Bogotá mediante el uso de tecnología avanzada
                 y estrategias innovadoras, ofreciendo soluciones ágiles y personalizadas para la compra y venta de inmuebles y terrenos.
               </p>
             </div>
           
 
-            <div class="container_btn--proyectos">
+            <div class="container_btn--projects">
               
             </div>
           </div>
 
           <div
-            class="cards--proyectos card_JuegoAhorcado"
+            class="cards--projects card_JuegoAhorcado"
             data-aos="fade-right"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
           >
           <a href="https://glutebuildersclub.com/" target="_blank">
-            <div class="container_imgCard--proyectos">
+            <div class="container_imgCard--projects">
               <img
                 src="./assets/images/img-glute.png"
                 alt="Proyecto: Juego del ahorcado"
               />
             </div>
           </a>
-            <div class="container_textCard--proyectos">
-              <h2 data-section="proyectos" data-value="title-proyecto1">
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project2">
                 <i class="fas fa-eye"></i>
                 Glute Builders Club
               </h2>
-              <p data-section="proyectos" data-value="info-proyecto1">
+              <p data-section="projects" data-value="info-project2">
                 Glute Builders Club ofrece programas de entrenamiento online personalizados con un enfoque en el desarrollo de glúteos, guiados por el entrenador Julián Tejada. Además de rutinas especializadas, brindan asesoría profesional y recursos como blogs de salud y bienestar. También cuentan con una tienda de productos fitness.
               </p>
             </div>
 
-            <div class="container_btn--proyectos">
+            <div class="container_btn--projects">
               
             </div>
           </div>
 
           <div
-            class="cards--proyectos card_portafolio"
+            class="cards--projects card_portafolio"
             data-aos="zoom-in-up"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
           >
           <a href="https://andresbetancourt.netlify.app" target="_blank">
-            <div class="container_imgCard--proyectos">
+            <div class="container_imgCard--projects">
               <img
                 src="./assets/images/portafolio-screenshot.png"
                 alt="Proyecto: Portafolio"
               />
             </div>
           </a>
-            <div class="container_textCard--proyectos text-portafolio">
-              <h2 data-section="proyectos" data-value="title-proyecto2">
+            <div class="container_textCard--projects text-portafolio">
+              <h2 data-section="projects" data-value="title-project3">
                 <i class="fas fa-eye"></i>
                 Portafolio Andres Betancourt
               </h2>
-              <p data-section="proyectos" data-value="info-proyecto2">
+              <p data-section="projects" data-value="info-project3">
                 En su portafolio web personal, se presentan algunos de los proyectos más destacados que ha desarrollado, junto con sus principales habilidades técnicas y una breve descripción de su formación académica y profesional.
               </p>
             </div>
 
-            <div class="container_btn--proyectos">
+            <div class="container_btn--projects">
             
             </div>
           </div>
 
           <div
-            class="cards--proyectos card_encriptador"
+            class="cards--projects card_encriptador"
             data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
           >
           <a href="https://gadalarquitectura.com/" target="_blank">
-            <div class="container_imgCard--proyectos">
+            <div class="container_imgCard--projects">
               <img
                 src="./assets/images/gadal-arquitectura.png"
                 alt="Proyecto: Encriptador"
               />
             </div>
           </a>
-            <div class="container_textCard--proyectos">
-              <h2 data-section="proyectos" data-value="title-proyecto3">
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project4">
                 <i class="fas fa-eye"></i>
                 Gadal Arquitectura
                 <a href="https://gadalarquitectura.com/" target="_blank"></a>
               </h2>
-              <p data-section="proyectos" data-value="info-proyecto3">
+              <p data-section="projects" data-value="info-project4">
                 GADAL ofrece soluciones creativas y personalizadas en diseño y construcción, con un equipo de expertos que garantiza
                 precisión técnica y excelencia en cada proyecto, desde la planificación hasta la ejecución.
               </p>
             </div>
-            <div class="container_btn--proyectos">
+            <div class="container_btn--projects">
              
             </div>
           </div>
@@ -448,15 +457,15 @@
 
 
       <!-- Contacto -->
-      <section class="contacto" id="contact">
+      <section class="contact" id="contact">
         <h1 data-section="contact" data-value="title">Contacto</h1>
 
         <div
-          class="container_box--contacto"
+          class="container_box--contact"
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
         >
-          <div class="container--contacto">
+          <div class="container--contact">
             <form
               id="form-c"
               class="form-contact"
@@ -493,7 +502,7 @@
                 required
               ></textarea>
 
-              <div class="btn_form--contacto">
+              <div class="btn_form--contact">
                 <button
                   id="btn-enviar"
                   type="submit"

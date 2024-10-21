@@ -168,5 +168,35 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// script para hacer volver a la persona con msje en la pestaña
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+      document.title = "¡Vuelve con Nosotros!";
+  } else {
+      document.title = "Gracias por volver"; // O el título original de tu página
+  }
+});
+
+// Solicitar permiso para mostrar notificaciones
+if (Notification.permission === "default") {
+  Notification.requestPermission();
+}
+
+document.addEventListener('visibilitychange', function() {
+  if (document.hidden) {
+      // Mostrar notificación cuando el usuario se va de la pestaña
+      if (Notification.permission === "granted") {
+          new Notification("¡Vuelve con Cre8tive Agency!", {
+              body: "Te estamos esperando 😊",
+              icon: "/assets/images/logo-8.png" // Reemplaza con tu icono
+          });
+      }
+      document.title = "¡Vuelve a la pestaña!";
+  } else {
+      document.title = "Gracias por volver";
+  }
+});
+
+
 
 

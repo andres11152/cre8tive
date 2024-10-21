@@ -70,7 +70,7 @@ html::-webkit-scrollbar-thumb {
 .cookie-consent p {
     margin: 0;
     padding: 0.5rem;
-    font-size: 1rem; /* Ajuste de texto */
+    font-size: 1.5rem; /* Ajuste de texto */
     line-height: 1.5; /* Espaciado entre líneas */
 }
 
@@ -80,7 +80,7 @@ html::-webkit-scrollbar-thumb {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     width: 90%; /* Botones más anchos para facilitar el toque */
     max-width: 300px;
@@ -369,8 +369,6 @@ span+span {
     position: fixed;
     bottom: 90px;
     right: 35px;
-    
-    z-index: 1000;
   }
   
   .whatsapp-icon {
@@ -422,6 +420,9 @@ span+span {
     text-align: center;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
   }
+  .modal-content h1, .modal-content h2{
+    color: var(--black);
+  }
   
   .close {
     color: var(--black);
@@ -457,7 +458,7 @@ span+span {
   }
   
   button:hover {
-    background-color: #1EBE5D;
+    background-color: var(--blue);
   }
   
 
@@ -951,7 +952,6 @@ img.logo-sena {
     flex-direction: column;
     justify-content: space-between;
     margin: 0 1.5rem;
-    z-index: 1;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -978,7 +978,7 @@ img.logo-sena {
     padding-right: 3.5rem;
 }
 
-.proyectos {
+.proyects {
     background-image: url("../images/bkg.png");
     width: 100%;
     height: auto;
@@ -987,7 +987,7 @@ img.logo-sena {
     background-size: cover; 
 }
 
-.proyectos h1 {
+.proyects h1 {
     display: block;
     text-align: center;
     color: var(--white);
@@ -997,19 +997,19 @@ img.logo-sena {
     padding: 6rem 0 5rem 0;
 }
 
-.puntos1-proyectos,
-.puntos2-proyectos {
+.puntos1-proyects,
+.puntos2-proyects {
     display: none;
 }
 
-.cards_container--proyectos {
+.cards_container--projects {
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.cards--proyectos {
+.cards--projects {
     border-radius: 20px;
     padding-bottom: 2rem;
     background-color: var(--eerie-black);
@@ -1029,23 +1029,23 @@ img.logo-sena {
     border: 1px solid var(--eerie-black);
 }
 
-.container_imgCard--proyectos {
+.container_imgCard--projects {
     margin-bottom: 1rem;
     border-radius: 20px 20px 0 0;
 }
 
-.container_imgCard--proyectos img {
+.container_imgCard--projects img {
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
 
-.container_textCard--proyectos {
+.container_textCard--projects {
     
     margin-bottom: 2rem;
     border-color: var(--orange);
 }
 
-.container_textCard--proyectos h2 {
+.container_textCard--projects h2 {
     font-family: 'Pasajero';
     letter-spacing: .1rem;
     font-size: 3rem;
@@ -1054,7 +1054,7 @@ img.logo-sena {
     display: inline;
 }
 
-.container_textCard--proyectos p {
+.container_textCard--projects p {
     color: var(--white);
     font-family: 'Pasajero';
     letter-spacing: .1rem;
@@ -1065,18 +1065,18 @@ img.logo-sena {
     font-size: 2rem;
 }
 
-.container_btn--proyectos {
+.container_btn--projects {
     display: flex;
     justify-content: center;
 }
 
-.container_btn--proyectos a{
+.container_btn--projects a{
     text-decoration: none;
     display: inline-block;
     margin: 0 1.5rem;
 }
 
-.container_btn--proyectos button {
+.container_btn--projects button {
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -1106,7 +1106,7 @@ img.logo-sena {
     margin-right: .8rem;
 }
 
-.container_btn--proyectos .btn_demo:hover {
+.container_btn--projects .btn_demo:hover {
     background: #776254;
     box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
     transition: all .4s ease;
@@ -1117,7 +1117,7 @@ img.logo-sena {
     margin-right: .8rem;
 }
 
-.container_btn--proyectos .btn_repo:hover {
+.container_btn--projects .btn_repo:hover {
     background: var(--black);
     box-shadow: 0px 13px 33px -14px rgba(0,0,0,0.75);
     transition: all .4s ease;
@@ -1125,7 +1125,7 @@ img.logo-sena {
 
 /* Contacto */
 
-.contacto {
+.contact {
     background-image: url("../images/bkg.png");
     width: 100%;
     height: auto;
@@ -1134,7 +1134,7 @@ img.logo-sena {
     background-size: cover; 
 }
 
-.contacto h1 {
+.contact h1 {
     display: block;
     text-align: center;
     color: var(--white);
@@ -1144,13 +1144,13 @@ img.logo-sena {
     padding: 6rem 0 4rem 0;
 }
 
-.container_img--contacto {
+.container_img--contact {
     height: 80%;
     width: 70%;
     display: none;
 }
 
-.container--contacto {
+.container--contact {
     width: 100%;
     
     border-radius: 24px;
@@ -1216,12 +1216,12 @@ img.logo-sena {
 }
 
 
-.btn_form--contacto {
+.btn_form--contact {
     display: flex;
     justify-content: center;
 }
 
-.btn_form--contacto button {
+.btn_form--contact button {
     background: var(--orange);
     border: none;
     font-family: 'Pasajero';
@@ -1233,10 +1233,11 @@ img.logo-sena {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 1s all;
+    color: var(--black);
 }
 
-.btn_form--contacto button:hover {
-    background: var(--black);
+.btn_form--contact button:hover {
+    background: var(--blue);
     color: var(--orange);
     font-weight: bold;
     transform: scale(1.1);
@@ -1244,7 +1245,7 @@ img.logo-sena {
     transition: all .4s ease;
 }
 
-.btn_form--contacto button:active {
+.btn_form--contact button:active {
     background: #574438;
 }
 
