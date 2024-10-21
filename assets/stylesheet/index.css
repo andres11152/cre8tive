@@ -132,7 +132,7 @@ html::-webkit-scrollbar-thumb {
 
 .header {
     background-color: #000000;
-    padding: .8rem 3rem;
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
     position:fixed;
@@ -181,7 +181,7 @@ nav.nav_menu.active {
     flex-direction: column;
     position: absolute;
     left: 0;
-    top: 4rem;
+    top: 6rem;
     width: 100%;
     height: auto;
     background-color: var(--orange);
@@ -1274,7 +1274,6 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .container_redes-footer a {
@@ -1294,7 +1293,9 @@ footer {
 .container_text--footer {
     padding-top: 2rem;
     padding-bottom: 1rem;
+    text-align: center; /* Centrará el texto u otros elementos en línea */
 }
+
 
 .container_text--footer span {
     font-family: 'Pasajero';
@@ -1318,7 +1319,7 @@ footer {
 .container_text--footer span:nth-child(4) {
     color: var(--beaver);
     letter-spacing: .1rem;
-    margin-left: .2rem;
+    margin-left: 1.2rem;
 }
 
 /* Botón ir arriba */
@@ -1348,7 +1349,7 @@ footer {
     margin-bottom: 3rem;
 }
 .logo_header{
-    width: 5rem;
+    width: 8rem;
 }
 
 
