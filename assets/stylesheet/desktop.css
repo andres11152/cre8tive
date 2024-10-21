@@ -26,10 +26,9 @@ nav.nav_menu {
 nav.nav_menu a {
     font-size: 1.8rem;
     padding: .5rem;
-    color: var(--white);
     font-family: 'Pasajero';
     text-decoration: none;
-    letter-spacing: .2rem;
+    letter-spacing: .1rem;
     right: 0;
     margin-right: 2.5rem;
 }
@@ -66,6 +65,23 @@ nav.nav_menu.not-active .flags__item img {
 div.btn {
     display: none;
 }
+.whatsapp-button-nav {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #F9F900;
+    color: var(--black);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation: ripple 5s infinite ease-out;
+}
+
+.whatsapp-button-nav:hover {
+    background-color: #e0e000; /* Cambia el color al hacer hover si deseas */
+}
+
 
 /* Home *//* Estilo para el botón flotante de WhatsApp */
 .whatsapp-button {
@@ -298,8 +314,7 @@ background-color: #1EBE5D;
 }
 
 .cv_button:hover {
-    background:  #ffd700;
-    box-shadow: 0px 2px 10px #141414;
+    background: var(--blue);    box-shadow: 0px 2px 10px #141414;
     transition: 1s transform;
 }
 
@@ -399,7 +414,7 @@ background-color: #1EBE5D;
 
 /* Servicios */
 .services h1 {
-    padding-top: 8rem;
+    padding-top: 3rem;
     font-size: 3rem;
 }
 
@@ -425,12 +440,13 @@ background-color: #1EBE5D;
 
 .cards--services {
     width: 40rem;
-    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 1.5rem;
     z-index: 1;
+   
+    border-radius: 1.5rem;
 }
 
 .text-portafolio {
@@ -458,7 +474,7 @@ background-color: #1EBE5D;
 }
 
 .btn-contact:hover {
-    background-color: #ffd700; /* Cambia el color al pasar el mouse */
+    background-color: var(--blue); /* Cambia el color al pasar el mouse */
 }
 
 /* Proyectos */

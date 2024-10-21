@@ -73,7 +73,6 @@ html::-webkit-scrollbar-thumb {
     background: rgba(41,41,41,.3);
 }
 #image_home {
-   
     justify-content: right;
     height: 30rem;
     width: 30rem; 
@@ -582,6 +581,7 @@ font-family: 'Pasajero';
     padding: 0 1rem 1rem 1rem;
     background-attachment: fixed; /* Hace que el fondo sea fijo */
     background-size: cover; 
+    padding-top: 5rem;
 }
 .cards-plains-container {
     margin-bottom: 5rem;
@@ -665,6 +665,7 @@ font-family: 'Pasajero';
 }
 
 .card-web-page p {
+    margin-top: 10px;
     font-size: 16px;
     margin-bottom: 10px;
 }
@@ -717,6 +718,7 @@ font-family: 'Pasajero';
 }
 
 .card-online-store p {
+    margin-top: 10px;
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -850,7 +852,7 @@ img.logo-sena {
     font-family: 'Pasajero';
     font-size: 2.4rem;
     letter-spacing: .1rem;
-    padding: 2rem 0 2rem 0;
+    padding: 0rem 0 2rem 0;
 }
 .puntos1-services {
     display: inline;
@@ -963,7 +965,7 @@ img.logo-sena {
 }
 
 .container_textCard--proyectos {
-    padding: 0 2rem;
+    
     margin-bottom: 2rem;
     border-color: var(--orange);
 }
