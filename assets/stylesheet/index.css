@@ -161,7 +161,6 @@ html::-webkit-scrollbar-thumb {
     width: 7.5rem;
 }
 .logo_principal{
-    margin-top: 3rem;
     margin-bottom: 3rem;
     width: 35rem; /* Ajusta el tamaño según sea necesario */
     height: auto;
@@ -370,35 +369,36 @@ span+span {
     position: fixed;
     bottom: 90px;
     right: 35px;
-  }
-  
-  .whatsapp-icon {
+    z-index: 9999; /* Asegura que esté sobre todos los elementos */
+}
+
+.whatsapp-icon {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
     animation: ripple 2s infinite ease-out; /* Añade la animación de agua */
-  }
-  
-  /* Efecto hover para agrandar el icono */
-  .whatsapp-icon:hover {
+}
+
+/* Efecto hover para agrandar el icono */
+.whatsapp-icon:hover {
     transform: scale(1.1);
-  }
-  
-  /* Efecto de agua */
-  @keyframes ripple {
+}
+
+/* Efecto de agua */
+@keyframes ripple {
     0% {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
     }
     50% {
-      box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
     }
     100% {
-      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
-  }
-  
+}
+
   /* Estilo del modal */
   .modal {
     display: none; /* Oculto por defecto */
@@ -516,39 +516,49 @@ span+span {
     font-size: 7.2rem;
     margin-bottom: 1.5rem;
 }
-
 .home_text-3 {
     font-family: 'Pasajero';
     color: var(--orange);
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: .2rem;
     width: 33rem;
     margin: 0 auto;
-    text-align: start;
-    padding-bottom: 2rem;
+    text-align: -webkit-center;
+    position: relative;
+    overflow: hidden; /* Oculta el texto que se está animando */
 }
 
 .text-type {
     position: relative;
+    display: inline-block;
 }
 
 .text-type::after {
-    content: '};';
+    content: '';
     font-weight: bold;
     position: absolute;
     right: 0;
-    color: var(--black);
-    background-color: var(--black);
+    color: var(--orange); /* Color del texto animado */
+    background-color: var(--black); /* Eliminado el fondo negro */
     width: 100%;
-    animation: typing 10s steps(33) alternate infinite;
+    height: 100%;
+    animation: typing 15s steps(30) infinite; /* Animación más fluida */
+    overflow: hidden;
 }
 
 @keyframes typing {
-    to{
+    0% {
+        width: 100%;
+    }
+    50% {
         width: 0%;
     }
+    100% {
+        width: 100%;
+    }
 }
+
+
 .container_parrafo-info p{
 font-family: 'Pasajero';
     color: var(--white);
