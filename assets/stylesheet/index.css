@@ -52,6 +52,7 @@ html::-webkit-scrollbar-thumb {
     background-color: var(--orange);
 }
 
+
 /* Estilos para la ventana de cookies */
 .cookie-consent {
     position: fixed;
@@ -1409,6 +1410,7 @@ footer {
     transform: translate(-50%, -50%) scale(1);
 }
 
+
 @keyframes popup {
     0% {
         width: 0;
@@ -1423,3 +1425,4 @@ footer {
         height: 6rem;
     }
 }
+

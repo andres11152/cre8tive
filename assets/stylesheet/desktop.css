@@ -662,6 +662,114 @@ background-color: #1EBE5D;
     padding: 4rem 3rem;
 }
 
-.btn_form--contact   button{
+.btn_form--contact button{
     color: var(--black);
+}
+
+/* Sección de Tratamiento de Datos */
+#politica-de-privacidad {
+    padding: 8rem 3rem; /* Espaciado interno */
+    background-color: var(--black); /* Fondo oscuro */
+    color: var(--white); /* Texto blanco */
+    line-height: 2.5rem; /* Espaciado entre líneas */
+    letter-spacing: 0.1rem;
+    font-family: 'Montserrat', sans-serif; /* Fuente utilizada */
+}
+
+#politica-de-privacidad h2 {
+    font-size: 4rem; /* Tamaño de la fuente del título principal */
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+#politica-de-privacidad h3 {
+    font-size: 2.5rem; /* Tamaño de la fuente de subtítulos */
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--blue); /* Color de los subtítulos */
+}
+
+#politica-de-privacidad ul {
+    margin-left: 2rem;
+    list-style-type: disc; /* Lista con viñetas */
+}
+
+#politica-de-privacidad li {
+    font-size: 1.8rem; /* Tamaño de la fuente de los elementos de la lista */
+    margin-bottom: 1rem;
+}
+
+#politica-de-privacidad p {
+    font-size: 1.8rem;
+    color: var(--white); /* Color del texto principal */
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+/* Botones de la sección de tratamiento de datos */
+.cookie-btn {
+    font-size: 1.6rem; /* Tamaño de los botones */
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.cookie-btn.accept {
+    background-color: #28a745; /* Botón aceptar */
+}
+
+.cookie-btn.reject {
+    background-color: #dc3545; /* Botón rechazar */
+}
+
+/* Diseño de las tablas de la sección, en caso de que existan */
+#politica-de-privacidad table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+}
+
+#politica-de-privacidad th, #politica-de-privacidad td {
+    border: 1px solid #ccc; /* Bordes ligeros */
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.6rem; /* Tamaño de la fuente en tablas */
+}
+
+#politica-de-privacidad th {
+    background-color: var(--blue); /* Fondo para el encabezado de la tabla */
+    color: var(--white);
+    font-weight: bold;
+}
+
+#politica-de-privacidad td {
+    background-color: var(--beaver); /* Fondo de las celdas */
+    color: var(--black); /* Color del texto */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #politica-de-privacidad {
+        padding: 5rem 2rem;
+    }
+
+    #politica-de-privacidad h2 {
+        font-size: 3rem; /* Ajuste para pantallas más pequeñas */
+    }
+
+    #politica-de-privacidad h3 {
+        font-size: 2rem;
+    }
+
+    #politica-de-privacidad p, #politica-de-privacidad li {
+        font-size: 1.6rem;
+    }
+
+    #politica-de-privacidad table, #politica-de-privacidad th, #politica-de-privacidad td {
+        font-size: 1.4rem;
+    }
 }

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web - Cre8tive Agency" />
+    <meta name="robots" content="index,follow" />
+    <title>Cre8tive Agency</title>
+
+    <!-- Librerías -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css" />
+    <link rel="stylesheet" href="./assets/stylesheet/index.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/tablet.css"
+      media="screen and (min-width: 760px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/stylesheet/desktop.css"
+      media="screen and (min-width: 980px)"
+    />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/ae0fd6f99f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo-8.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+
+    <!-- Ventana de cookies -->
+    <div id="cookieConsent" class="cookie-consent">
+      <p>
+        Utilizamos cookies para garantizar que tengas la mejor experiencia en
+        nuestra página. Si sigues navegando en este sitio, entenderemos que
+        aceptas su uso. Consulta nuestra
+        <a href="#politica-de-privacidad">Política de privacidad</a>.
+      </p>
+      <p>¿Aceptas el uso de cookies?</p>
+      <button id="rejectCookies" class="cookie-btn reject">Rechazar</button>
+      <button id="acceptCookies" class="cookie-btn accept">Aceptar</button>
+    </div>
+
+    <!-- Botón flotante de WhatsApp -->
+    <div class="whatsapp-button">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+        class="whatsapp-icon"
+        id="open-modal"
+      />
+    </div>
+
+    <!-- Ventana modal -->
+    <div id="whatsapp-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>Envíanos un mensaje</h1>
+        <h2>
+          Por favor, ingresa tu nombre para que podamos enviarte un mensaje
+          directo.
+        </h2>
+        <input type="text" id="user-name" placeholder="Tu nombre" />
+        <button id="send-whatsapp">Enviar</button>
+      </div>
+    </div>
+
+    <div class="container--loader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <img
+        src="./assets/images/logo-sin fondo.png"
+        alt="Logo Portafolio"
+        class="logo_header"
+      />
+
+      <!-- Barra de navegación -->
+      <nav class="nav_menu not-active">
+        <a href="#home" class="active" data-value="item1">Inicio</a>
+        <a href="#plains" data-section="menu" data-value="item2">Planes</a>
+        <a href="#services" data-section="menu" data-value="item3">Servicios</a>
+        <a href="#projects" data-section="menu" data-value="item4">Proyectos</a>
+        <a href="#about" data-section="menu" data-value="item5"
+          >Quienes somos</a
+        >
+        <a href="#contact" data-section="menu" data-value="item6">Contacto</a>
+        <a
+          href="https://wa.me/573138081081"
+          class="whatsapp-button-nav"
+          data-section="menu"
+          data-value="item7"
+          >¡Cotiza aquí!</a
+        >
+
+        <div id="flags" class="flags">
+          <div class="flags__item" data-language="es">
+            <img src="./assets/images/icon-spain.png" alt="Español/Spain" />
+          </div>
+          <div class="flags__item" data-language="en">
+            <img src="./assets/images/icon-en.png" alt="English/Britain" />
+          </div>
+          <div class="flags__item" data-language="fr">
+            <img src="./assets/images/icon-fr.png" alt="Frances/France" />
+          </div>
+        </div>
+      </nav>
+
+      <div id="button" class="btn not-active">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Política de Tratamiento de Datos Personales -->
+    <section id="politica-de-privacidad">
+      <h2>Política de Tratamiento de Datos Personales</h2>
+      <p>
+        La presente Política de Tratamiento de Datos Personales (la “Política”)
+        regula la recolección, almacenamiento, uso, circulación y supresión de
+        datos personales que realiza Cre8tive Agency S.A.S (el “responsable”),
+        de acuerdo con las disposiciones contenidas en la Ley Estatutaria 1581
+        de 2012 y el Decreto 1074 de 2015.
+      </p>
+
+      <h3>Información del responsable</h3>
+      <ul>
+        <li>Razón social: Cre8tive Agency S.A.S</li>
+        <li>Teléfono: +57 313 8081081</li>
+      </ul>
+
+      <h3>Tratamiento al cual serán sometidos los datos personales</h3>
+      <p>
+        Los datos personales son recolectados, almacenados, organizados, usados,
+        circulados, transmitidos, transferidos, actualizados, rectificados,
+        suprimidos, eliminados y gestionados de acuerdo con las finalidades
+        establecidas en esta Política.
+      </p>
+
+      <h3>Finalidades para el tratamiento de datos de usuarios</h3>
+      <ul>
+        <li>Envío de información comercial de Cre8tive Agency S.A.S.</li>
+        <li>
+          Comunicaciones relacionadas con los servicios prestados por Cre8tive
+          Agency S.A.S.
+        </li>
+      </ul>
+
+      <h3>Finalidades para el tratamiento de datos de candidatos</h3>
+      <ul>
+        <li>
+          Análisis de la información de candidatos para iniciar procesos de
+          vinculación laboral.
+        </li>
+        <li>
+          Contactar al candidato para manifestar interés en iniciar un proceso
+          de vinculación.
+        </li>
+        <li>Verificación de la información suministrada.</li>
+        <li>
+          Enviar datos a aliados y clientes interesados en contratar personas
+          con su perfil.
+        </li>
+      </ul>
+
+      <h3>Finalidades para el tratamiento de datos de clientes</h3>
+      <ul>
+        <li>Cumplimiento de obligaciones comerciales.</li>
+        <li>
+          Procesamiento de órdenes y entrega de productos y/o servicios
+          adquiridos.
+        </li>
+        <li>Envío de publicidad sobre productos y servicios.</li>
+        <li>
+          Realización de investigaciones de mercado y hábitos de consumo.
+        </li>
+        <li>
+          Envío de encuestas de satisfacción para evaluar la calidad de los
+          productos y servicios.
+        </li>
+      </ul>
+
+      <h3>Tratamiento de datos sensibles</h3>
+      <p>
+        Cre8tive Agency S.A.S podrá acceder y usar datos sensibles, como huellas
+        dactilares y videos, de sus empleados, cumpliendo con las disposiciones
+        legales que rigen el tratamiento de estos datos, incluyendo la
+        autorización explícita del titular.
+      </p>
+
+      <h3>Video vigilancia</h3>
+      <p>
+        Cre8tive Agency S.A.S utiliza sistemas de video vigilancia en sus
+        instalaciones para garantizar la seguridad de las personas, bienes e
+        infraestructura. La información recolectada podrá ser utilizada como
+        prueba en procesos legales.
+      </p>
+
+      <h3>Transferencias y transmisiones de datos personales</h3>
+      <p>
+        Cre8tive Agency S.A.S podrá transferir datos personales a sus aliados
+        internacionales y clientes, cumpliendo con los contratos y
+        autorizaciones necesarias para garantizar la protección de los datos
+        transferidos.
+      </p>
+
+      <h3>Derechos del titular de los datos</h3>
+      <ul>
+        <li>Conocer, actualizar y rectificar sus datos personales.</li>
+        <li>
+          Solicitar prueba de la autorización otorgada para el tratamiento de
+          sus datos.
+        </li>
+        <li>
+          Revocar la autorización y/o solicitar la supresión de sus datos cuando
+          no se respeten los principios legales.
+        </li>
+      </ul>
+
+      <h3>Supresión de Datos</h3>
+      <p>
+        El titular podrá solicitar la supresión de sus datos cuando considere
+        que estos no están siendo tratados conforme a las disposiciones legales
+        o hayan dejado de ser necesarios para los fines para los que fueron
+        recolectados.
+      </p>
+
+      <h3>Seguridad de la información</h3>
+      <p>
+        Cre8tive Agency S.A.S adopta medidas técnicas, administrativas y humanas
+        para proteger la información de los titulares, evitando su adulteración,
+        pérdida, consulta o uso no autorizado.
+      </p>
+
+      <h3>Vigencia de la Política</h3>
+      <p>
+        Esta Política de Tratamiento de Datos Personales está vigente desde
+        2018. Cualquier cambio sustancial en esta política será comunicado en la
+        página web de Cre8tive Agency S.A.S.
+      </p>
+    </section>
+
+    <footer>
+      <div class="container--footer">
+        <div class="container_redes-footer">
+          <div class="container-links">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="container_text--footer">
+          <span>
+            Copyright © 2024 | Cre8tive Agency | Todos los derechos reservados |
+            <a href="#politica-de-privacidad"
+              >Política de protección de datos personales</a
+            >
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="go-top-container">
+      <div class="go-top-button">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Librería de animaciones -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
