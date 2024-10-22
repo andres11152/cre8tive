@@ -59,14 +59,7 @@ window.addEventListener('load', function() {
   document.body.classList.add('loaded');
 });
 
-// script para hacer volver a la persona con msje en la pestaña
-document.addEventListener('visibilitychange', function() {
-  if (document.hidden) {
-      document.title = "¡Vuelve con Nosotros!";
-  } else {
-      document.title = "Gracias por volver"; // O el título original de tu página
-  }
-});
+  
 
 // Solicitar permiso para mostrar notificaciones
 if (Notification.permission === "default") {

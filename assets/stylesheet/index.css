@@ -673,7 +673,7 @@ font-family: 'Pasajero';
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .plains h1 {
@@ -957,7 +957,7 @@ img.logo-sena {
 
 .cards--services {
     width: auto;
-    height: 35rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
