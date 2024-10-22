@@ -9,7 +9,7 @@ html {
 }
 
 .container--loader {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     position: fixed;
     width: 100vw;
     height: 100vh;

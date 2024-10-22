@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("/assets/images/bkg.png") no-repeat center;
+    background: url("/assets/images/bkg.webp") no-repeat center; /* Imagen de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -379,7 +379,6 @@ background-color: #1EBE5D;
     font-size: 1.8rem;
     width: 70rem;
     letter-spacing: .2rem;
-    padding-left: 4rem;
 }
 
 .container_parrafo-info {

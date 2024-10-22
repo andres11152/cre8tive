@@ -467,7 +467,7 @@ span+span {
 /* Home */
 
 .home {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     height: 100%;
     background-attachment: fixed; /* Hace que el fondo sea fijo */
     background-size: cover; 
@@ -497,7 +497,6 @@ span+span {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     
 }
 
@@ -605,7 +604,7 @@ font-family: 'Pasajero';
 /* Sobre mí */
 
 .sobreMi {
-    background-image: url("../images/bkg.png");;
+    background-image: url("../images/bkg.webp");;
     width: 100%;
     height: auto;
     background-attachment: fixed; /* Hace que el fondo sea fijo */
@@ -662,7 +661,7 @@ font-family: 'Pasajero';
     border-bottom: 2px solid var(--jet);
 }
 .plains{
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     width: 100%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
@@ -845,7 +844,7 @@ font-family: 'Pasajero';
 /* quienes-somos */
 
 .quienes-somos {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     width: 100%;
     height: auto;
     background-attachment: fixed; /* Hace que el fondo sea fijo */
@@ -925,7 +924,7 @@ img.logo-sena {
 /* Proyectos */
 
 .services{
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     width: 100%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
@@ -990,7 +989,7 @@ img.logo-sena {
 }
 
 .proyects {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     width: 100%;
     height: auto;
     padding: 0 1rem 1rem 1rem;
@@ -1137,7 +1136,7 @@ img.logo-sena {
 /* Contacto */
 
 .contact {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkg.webp");
     width: 100%;
     height: auto;
     padding: 0 2rem 5rem 2rem;
