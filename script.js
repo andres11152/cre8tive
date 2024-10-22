@@ -26,18 +26,6 @@ btn.addEventListener('click', function() {
     navMenu.classList.toggle('not-active');
 });
 
-/*===== Cambio de idioma =====*/
-const changeLanguage = async language => {
-    const texts = await fetch(`./languages/${language}.json`).then(res => res.json());
-    textsToChange.forEach(textToChange => {
-        const { section, value } = textToChange.dataset;
-        textToChange.innerHTML = texts[section][value];
-    });
-};
-
-flagsElement.addEventListener('click', e => changeLanguage(e.target.parentElement.dataset.language));
-
-
 
 /*===== Boton y función ir arriba =====*/
 window.addEventListener('scroll', () => {
@@ -65,107 +53,10 @@ el.addEventListener('mousemove', ({layerX, layerY}) => {
 el.addEventListener('mouseout', () => {
     el.style.transform = `${transformString} rotateX(0) rotateY(0)`;
 });
-/*=======Formulario de contacto========*/
-(function() {
-    // Inicializar EmailJS con la API KEY (public key)
-    emailjs.init('rCES-z4W5dUOKLzNB');
-
-    // Agregar un evento de escucha al formulario cuando se envía (submit)
-    const form = document.querySelector('#form-c');
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      
-      // Recopilar los datos del formulario
-      const formData = new FormData(form);
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const subject = formData.get('subject');
-      const message = formData.get('message');
-
-      // Enviar los datos a través de EmailJS
-      // poner el id del servicio y la platilla
-      emailjs.send('service_62bdlbb', 'template_7t44p9h', {
-        from_name: name,
-        from_email: email,
-        subject: subject,
-        message_html: message
-      })
-      .then((response) => {
-        console.log('Correo electrónico enviado', response);
-        alert('¡Tu mensaje ha sido enviado con éxito!');
-        form.reset();
-      }, (error) => {
-        console.log('Error al enviar correo electrónico', error);
-        alert('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
-      });
-    });
-  })();
-
-
-// Obtener elementos del DOM
-const modal = document.getElementById("whatsapp-modal");
-const bton = document.getElementById("open-modal");
-const span = document.getElementsByClassName("close")[0];
-const sendBtn = document.getElementById("send-whatsapp");
-const userNameInput = document.getElementById("user-name");
-
-// Abrir el modal al hacer clic en el botón de WhatsApp
-bton.onclick = function() {
-  modal.style.display = "block";
-}
-
-// Cerrar el modal cuando el usuario hace clic en la "x"
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// Cerrar el modal si el usuario hace clic fuera de él
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-// Enviar el mensaje a WhatsApp cuando se hace clic en el botón "Enviar"
-sendBtn.onclick = function() {
-  const userName = userNameInput.value.trim();
-  if (userName) {
-    const encodedMessage = encodeURIComponent(`¡Hola! Soy ${userName} y estoy interesado en sus servicios.`);
-    const whatsappUrl = `https://wa.me/573138081081?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank'); // Abrir WhatsApp en una nueva ventana
-    modal.style.display = "none"; // Cerrar el modal
-  } else {
-    alert("Por favor, ingresa tu nombre.");
-  }
-}
 
 window.addEventListener('load', function() {
   // Cuando la página termine de cargar, añade la clase "loaded" al body
   document.body.classList.add('loaded');
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  const cookieConsent = document.getElementById('cookieConsent');
-  const acceptButton = document.getElementById('acceptCookies');
-  const rejectButton = document.getElementById('rejectCookies');
-
-  // Verificar si el usuario ya aceptó o rechazó las cookies
-  if (!localStorage.getItem('cookiesAccepted')) {
-      // Mostrar el aviso de cookies si no se ha tomado ninguna decisión
-      cookieConsent.classList.add('fade-in');
-  }
-
-  // Al hacer clic en "Aceptar"
-  acceptButton.addEventListener('click', function() {
-      localStorage.setItem('cookiesAccepted', 'true'); // Guardar preferencia en localStorage
-      cookieConsent.style.display = 'none'; // Ocultar la ventana de cookies
-  });
-
-  // Al hacer clic en "Rechazar"
-  rejectButton.addEventListener('click', function() {
-      localStorage.setItem('cookiesAccepted', 'false'); // Guardar rechazo en localStorage
-      cookieConsent.style.display = 'none'; // Ocultar la ventana de cookies
-  });
 });
 
 // script para hacer volver a la persona con msje en la pestaña
