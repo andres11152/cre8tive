@@ -117,7 +117,7 @@ nav.nav_menu {
     height: 55rem;
     width: 40rem; 
     transition:  box-shadow .1s;
-    background: url("../images/img_home-1.png") no-repeat center;
+    background: url("../images/img_home-1.webp") no-repeat center;
     background-size: contain;
     border-radius: 5rem;
 }
