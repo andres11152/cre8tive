@@ -398,6 +398,7 @@ background-color: #1EBE5D;
 .container_button {
     display: flex;
     padding-left: 4rem;
+    justify-content: flex-start;
     
 }
 
@@ -445,6 +446,7 @@ background-color: #1EBE5D;
 .container-links { 
     display: flex;
     padding-left: 4rem;
+    justify-content: flex-start;
 }
 
 .links a i {

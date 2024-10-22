@@ -98,3 +98,16 @@ nav.nav_menu.active {
     width: 80%;
    
 }
+.container_button {
+    display: flex;
+    justify-content: center; /* Centrará el botón horizontalmente */
+    align-items: center; /* Alineará el botón verticalmente, si es necesario */
+}
+.home_text-3{
+    width: 100%;
+}
+.container-links  {
+    display: flex;
+    justify-content: center; /* Centrará el botón horizontalmente */
+    align-items: center; /* Alineará el botón verticalmente, si es necesario */
+}
