@@ -116,15 +116,16 @@ nav.nav_menu {
     justify-content: right;
     height: 55rem;
     width: 40rem; 
-    transition:  box-shadow .1s;
+    transition: filter 0.3s ease; /* Ajustamos la transición para la sombra */
     background: url("../images/img_home-1.webp") no-repeat center;
     background-size: contain;
-    border-radius: 5rem;
+    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
 }
 #image_home:hover {
-    box-shadow: 0px 0px 100px var(--blue);
-
+    filter: drop-shadow(0px 0px 30px var(--blue)); /* Sombra más intensa */
+    transform: scale(1.3) rotate(10deg); /* Aumenta el tamaño y aplica una rotación ligera */
 }
+
 
 nav.nav_menu a {
     font-size: 1.8rem;

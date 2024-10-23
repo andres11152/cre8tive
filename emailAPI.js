@@ -1,5 +1,15 @@
 /*=======Formulario de contacto========*/
-(function() {
+
+const select = (selector) => document.querySelector(selector);
+const selectAll = (selector) => document.querySelectorAll(selector);
+
+const btn = select('#button');
+const inputName = select('#nombre');
+const inputEmail = select('#email');
+const flagsElement = select('#flags');
+const textsToChange = selectAll('[data-section]');
+
+  (function() {
     // Inicializar EmailJS con la API KEY (public key)
     emailjs.init('rCES-z4W5dUOKLzNB');
 

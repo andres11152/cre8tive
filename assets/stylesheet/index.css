@@ -149,16 +149,20 @@ html::-webkit-scrollbar-thumb {
     background: rgba(41,41,41,.3);
 }
 #image_home {
-    justify-content: right;
+    margin-top: 2rem;
     height: 30rem;
     width: 30rem; 
-    transition:  box-shadow .1s;
     background: url("../images/img_home-2.webp") no-repeat center;
     background-size: contain;
+  
 }
+
 #image_home:hover {
-    box-shadow: 0px 0px 100px var(--blue);
+    filter: drop-shadow(0px 0px 30px var(--blue)); /* Sombra más intensa */
+    transform: scale(1.1) rotate(10deg); /* Aumenta el tamaño y aplica una rotación ligera */
 }
+
+
 
 .header .logo__header {
     width: 7.5rem;
@@ -487,12 +491,6 @@ span+span {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-}
-
-
-#image_home:hover {
-    box-shadow: 0px 0px 50px rgb(255, 255, 255);
 
 }
 
