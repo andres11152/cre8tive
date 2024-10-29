@@ -773,3 +773,60 @@ background-color: #1EBE5D;
         font-size: 1.4rem;
     }
 }
+.container--footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--black); 
+    color: #fff;
+    flex-direction: row;;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    padding-bottom: 1rem;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #00bcd4;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-links a {
+    color: #ccc;
+    font-size: 20px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #bbb;
+    font-size: 14px;
+  }
+  
