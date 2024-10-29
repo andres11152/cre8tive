@@ -1271,7 +1271,7 @@ img.logo-sena {
     flex-direction: column;
     padding: 20px;
     background-color: var(--black);
-    color: var(--orange);
+    color: var(--white);
   }
   
   .footer-section {

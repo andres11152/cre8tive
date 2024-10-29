@@ -1,6 +1,6 @@
   (function() {
     // Inicializar EmailJS con la API KEY (public key)
-    emailjs.init('rCES-z4W5dUOKLzNB');
+    emailjs.init('yrfOKRShHFjzgD9_n');
 
     // Agregar un evento de escucha al formulario cuando se envía (submit)
     const form = document.querySelector('#form-c');
@@ -16,7 +16,7 @@
 
       // Enviar los datos a través de EmailJS
       // poner el id del servicio y la platilla
-      emailjs.send('service_62bdlbb', 'template_7t44p9h', {
+      emailjs.send('service_ci9a4if', 'template_qmyo4ox', {
         from_name: name,
         from_email: email,
         subject: subject,
