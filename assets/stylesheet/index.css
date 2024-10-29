@@ -1172,11 +1172,8 @@ img.logo-sena {
     display: flex;
     justify-content: center;
 }
-
-
 .form-contact input {
     font-family: 'Pasajero';
-    background: transparent;
     border: 1px solid var(--orange);
     width: 100%;
     padding: 1rem;
@@ -1189,7 +1186,7 @@ img.logo-sena {
 }
 
 .form-contact input::placeholder {
-    color: var(--orange);
+    color: var(--blue);
 }
 
 .form-contact .input-invalid {
@@ -1198,8 +1195,7 @@ img.logo-sena {
 }
 
 .form-contact textarea {
-    background: transparent;
-    border: 1px solid var(--orange);
+    border: 1px solid var(--black);
     font-family: 'Pasajero';
     width: 100%;
     padding: 1rem;
@@ -1213,7 +1209,7 @@ img.logo-sena {
 }
 
 .form-contact textarea::placeholder {
-    color: var(--orange);
+    color: var(--blue);
 }
 
 .form-contact textarea::-webkit-scrollbar {

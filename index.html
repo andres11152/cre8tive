@@ -38,10 +38,11 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"></noscript>
 
     <!-- Fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/ae0fd6f99f.js"
-      defer
-    ></script>
+    <script src="https://kit.fontawesome.com/ae0fd6f99f.js" defer ></script>
+
+    <!-- EmailJS -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
+
 
     <!-- Favicon -->
     <link
@@ -447,20 +448,11 @@
       <section class="contact" id="contact">
         <h1 data-section="contact" data-value="title">Contacto</h1>
 
-        <div
-          class="container_box--contact"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
-        >
+        <div class="container_box--contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="container--contact">
-            <form
-              id="form-c"
-              class="form-contact"
-              name="contacto-portafolio"
-              netlify
-            >
+            <form id="form-c" class="form-contact" name="contacto-cre8tive">
               <input
-                id="nombre"
+                id="name"
                 type="text"
                 name="name"
                 placeholder="Nombre | Name"
@@ -474,14 +466,14 @@
                 required
               />
               <input
-                id="asunto"
+                id="subject"
                 type="text"
                 name="subject"
                 placeholder="Asunto | Subject"
                 required
               />
               <textarea
-                id="mensaje"
+                id="message"
                 cols="20"
                 rows="4"
                 name="message"
@@ -503,6 +495,7 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer>
@@ -522,8 +515,6 @@
           <ul>
             <li><a href="#">Preguntas</a></li>
             <li><a href="#">Compras</a></li>
-            <li><a href="#">Envíos</a></li>
-            <li><a href="#">Estatus de Orden</a></li>
             <li><a href="#">Pago</a></li>
           </ul>
         </div>
@@ -575,11 +566,11 @@
     </noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- Mi script -->
-    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script src="./scriptNuevo.js"></script>
+  
+    <!-- scripts -->
+    
+    <script src="./script.js"></script>
     <script src="./whatsappModal.js"></script>
-    <script src="./emailAPI.js"></script>
     <script src="./cookies.js"></script>  
 
   </body>
