@@ -229,7 +229,7 @@ div.btn {
 .cards-plains-container{
     flex-direction: row;
     justify-content: center;
-    
+    align-items: center;    
 }
   /* Estilo del modal */
 .modal {
