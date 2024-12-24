@@ -1,109 +1,7 @@
-/* Estilos del Preloader */
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("/assets/images/bkg.webp") no-repeat center; /* Imagen de fondo */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-/* Spinner animado */
-.spinner {
-    width: 60px;
-    height: 60px;
-    position: relative;
-}
-
-.double-bounce1, .double-bounce2 {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #F9F900; /* Color del círculo animado */
-    opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: bounce 2s infinite ease-in-out;
-}
-
-.double-bounce2 {
-    animation-delay: -1s;
-}
-
-/* Animación de los círculos */
-@keyframes bounce {
-    0%, 100% {
-        transform: scale(0);
-    } 
-    50% {
-        transform: scale(1);
-    }
-}
-
-/* Cuando la página termine de cargar, oculta el preloader */
-body.loaded #preloader {
-    display: none;
-}
-/* Estilos para la ventana de cookies */
-.cookie-consent {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    z-index: 1000;
-    display: none; /* Oculto por defecto */
-}
-
-.cookie-consent p {
-    margin: 0;
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.cookie-btn {
-    margin: 0 0.5rem;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.accept {
-    background-color: #28a745; /* Botón verde */
-    color: white;
-}
-
-.reject {
-    background-color: #dc3545; /* Botón rojo */
-    color: white;
-}
-
-/* Animación para la ventana emergente */
-.cookie-consent.fade-in {
-    display: block;
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-
 
 /* Header - Barra de navegación */
 .header {
-    justify-content: space-between;
+    justify-content: center;
     padding: 1.8rem 3rem;
     z-index: 2;
 }
@@ -112,7 +10,7 @@ nav.nav_menu {
     display: flex;
 }
 #image_home {
-    margin-top: 10rem;
+    margin-top: 2rem;
     justify-content: right;
     height: 55rem;
     width: 40rem; 
@@ -143,10 +41,6 @@ nav.nav_menu a.active {
     padding: .5rem;
     border-bottom: 1px solid var(--beaver);
     transition: all .5s;
-}
-
-nav.nav_menu.not-active a {
-    display: flex;
 }
 
 nav.nav_menu.not-active .flags {
@@ -180,6 +74,7 @@ div.btn {
     text-decoration: none;
     transition: background-color 0.3s ease;
     animation: ripple 5s infinite ease-out;
+    display: none;
 }
 
 .whatsapp-button-nav:hover {
@@ -270,8 +165,6 @@ cursor: pointer;
 
 input[type="text"] {
 width: 100%;
-padding: 10px;
-margin-top: 15px;
 border: 1px solid #ccc;
 border-radius: 5px;
 }
@@ -294,10 +187,12 @@ background-color: #1EBE5D;
 
 .home {
     display: flex;
-    flex-direction: row-reverse;
-    padding-bottom: 4rem;
-    height: 100vh;
+    flex-direction: row; /* Cambiar a row si no necesitas row-reverse */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Asegura que los elementos se ajusten */
 }
+
 .container_text-info {
     position: relative;
     display: flex;
@@ -341,7 +236,7 @@ background-color: #1EBE5D;
   
 
 .container_image-home {
-    width: 55%;
+    width: 35%;
 }
 
 .image_home {
@@ -350,7 +245,8 @@ background-color: #1EBE5D;
 
 .home_info {
     width: 60%;
-    padding-left: 3rem;
+    padding: 10rem 3rem 0 0;
+   
 }
 
 .container_text-info {
@@ -393,13 +289,15 @@ background-color: #1EBE5D;
     letter-spacing: 2px;
     line-height: 2.7rem;
     padding-left: 4rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_button {
     display: flex;
     padding-left: 4rem;
-    justify-content: flex-start;
-    
+    justify-content: center;
+    align-items: center;
 }
 
 .cv_button {
@@ -474,9 +372,32 @@ background-color: #1EBE5D;
     font-family: 'Pasajero';
     margin-bottom: 3rem;
 }
-.logo_header{
-    width: 6rem;
-}
+.logo_header {
+    width: 25rem; /* Tamaño del logo */
+    margin: 0 auto; /* Centrar el logo */
+    display: block;
+    animation: logo-fade-in 2s ease-in-out; /* Animación de entrada */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Efecto al pasar el mouse */
+  }
+  
+  .logo_header:hover {
+    transform: scale(1.2); /* Aumenta el tamaño ligeramente */
+    filter: drop-shadow(0 0 10px var(--blue)); /* Sombra luminosa */
+    cursor: pointer; /* Indica interactividad */
+  }
+  
+  /* Animación de entrada */
+  @keyframes logo-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Aparece desde arriba */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Llega a su posición normal */
+    }
+  }
+  
 .cards-pains-container{
     flex-direction: row;
     justify-content: center;
@@ -607,13 +528,16 @@ background-color: #1EBE5D;
 }
 
 .cards_container--projects {
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Ajusta automáticamente las columnas */
+    justify-items: center; /* Centra las tarjetas en su columna */
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+   
 }
 
 .cards--projects {
-    width: 40rem;
-    height: 40rem;
+    width: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -630,18 +554,23 @@ background-color: #1EBE5D;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
 }
+.technologies_title{
+    justify-content: center;
+}
 
 /* Contacto */
 
 .contact h1 {
     padding: 8rem 0 2.5rem 0;
     font-size: 3rem;
+    
 }
 
 .container_box--contact {
     margin-top: 2rem;
     display: flex;
     justify-content:center;
+   
 }
 
 .container_img--contact {
@@ -649,34 +578,41 @@ background-color: #1EBE5D;
     width: 60rem;
     display: flex;
     justify-content: center;
+    
 }
 
 .container_img--contact img {
     width: 50rem;
     object-fit: contain;
+    
 }
 
 .container--contact {
     width: 50%;
     margin: 0;
     padding: 4rem 3rem;
+    
 }
 
 .btn_form--contact button{
     color: var(--black);
+   
 }
 
 /* Sección de Tratamiento de Datos */
 #politica-de-privacidad {
-    padding: 8rem 3rem; /* Espaciado interno */
-    background-color: var(--black); /* Fondo oscuro */
-    color: var(--white); /* Texto blanco */
-    line-height: 2.5rem; /* Espaciado entre líneas */
-    letter-spacing: 0.1rem;
-    font-family: 'Montserrat', sans-serif; /* Fuente utilizada */
+    background-image: url("../images/bkg.webp");
+        height: 100%;
+        background-attachment: fixed; /* Hace que el fondo sea fijo */
+        background-size: cover; 
+        overflow: hidden;
+        z-index: 1; /* Fuente utilizada */
+        padding: 0 5rem 0 5rem;
+        
 }
 
 #politica-de-privacidad h2 {
+    padding: 10rem 0 0 0;
     font-size: 4rem; /* Tamaño de la fuente del título principal */
     margin-bottom: 2rem;
     text-align: center;
@@ -779,7 +715,8 @@ background-color: #1EBE5D;
     padding: 20px;
     background-color: var(--black); 
     color: #fff;
-    flex-direction: row;;
+    flex-direction: row;
+   
   }
   
   .footer-section {
@@ -830,3 +767,115 @@ background-color: #1EBE5D;
     font-size: 14px;
   }
   
+  .technologies_list li img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Estilos del Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/assets/images/bkg.webp") no-repeat center; /* Imagen de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+/* Spinner animado */
+.spinner {
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F9F900; /* Color del círculo animado */
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    animation-delay: -1s;
+}
+
+/* Animación de los círculos */
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(0);
+    } 
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* Cuando la página termine de cargar, oculta el preloader */
+body.loaded #preloader {
+    display: none;
+}
+/* Estilos para la ventana de cookies */
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Oculto por defecto */
+}
+
+.cookie-consent p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.cookie-btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.accept {
+    background-color: #28a745; /* Botón verde */
+    color: white;
+}
+
+.reject {
+    background-color: #dc3545; /* Botón rojo */
+    color: white;
+}
+
+/* Animación para la ventana emergente */
+.cookie-consent.fade-in {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section-planes {
+    position: relative; /* Asegura que z-index funcione */
+    z-index: 1; /* Coloca la sección detrás de otros elementos con z-index más alto */
+  }

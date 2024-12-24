@@ -72,17 +72,8 @@ document.addEventListener('visibilitychange', function() {
 });
 
 
-/*===== Cambio de idioma =====*/
-const changeLanguage = async language => {
-    const texts = await fetch(`./languages/${language}.json`).then(res => res.json());
-    textsToChange.forEach(textToChange => {
-        const { section, value } = textToChange.dataset;
-        textToChange.innerHTML = texts[section][value];
-    });
-};
 
-flagsElement.addEventListener('click', e => changeLanguage(e.target.parentElement.dataset.language));
-
+// email js
 document.addEventListener('DOMContentLoaded', function() {
     if (typeof emailjs !== 'undefined') {
         // Inicializar EmailJS con la API KEY (public key)
@@ -117,3 +108,109 @@ document.querySelector('#form-c').addEventListener('submit', function(event) {
     });
 });
 })
+
+
+//script particles
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 50, // Número reducido de partículas
+      density: {
+        enable: true,
+        value_area: 800, // Área más amplia para dispersión
+      },
+    },
+    color: {
+      value: "#ffffff", // Color blanco para las partículas
+    },
+    shape: {
+      type: "circle", // Forma circular de las partículas
+      stroke: {
+        width: 0,
+        color: "#000000",
+      },
+    },
+    opacity: {
+      value: 0.5, // Opacidad más baja para sutilidad
+      random: false,
+      anim: {
+        enable: false,
+      },
+    },
+    size: {
+      value: 1.5, // Tamaño pequeño
+      random: true,
+      anim: {
+        enable: false,
+      },
+    },
+    line_linked: {
+      enable: true, // Conexiones entre partículas activadas
+      distance: 200, // Distancia más corta entre partículas conectadas
+      color: "#ffffff",
+      opacity: 0.1, // Opacidad baja para líneas
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 0.8, // Velocidad lenta y suave
+      direction: "none",
+      random: true, // Movimiento aleatorio
+      straight: false,
+      out_mode: "out", // Las partículas desaparecen al salir del canvas
+      bounce: false,
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse", // Reacción al pasar el mouse
+      },
+      onclick: {
+        enable: false, // Sin reacción al hacer clic (opcional)
+        mode: "push",
+      },
+      resize: true,
+    },
+    modes: {
+      repulse: {
+        distance: 80, // Distancia de repulsión reducida
+        duration: 0.2,
+      },
+      push: {
+        particles_nb: 2, // Menos partículas generadas al hacer clic
+      },
+    },
+  },
+  retina_detect: true, // Optimización para pantallas Retina
+});
+
+// Seleccionar todas las pestañas y paneles
+const tabs = document.querySelectorAll('.faq_tab');
+const panels = document.querySelectorAll('.faq_panel');
+
+// Seleccionar la primera pestaña y panel por defecto
+tabs[0].classList.add('active'); // Primera pestaña activa
+panels[0].classList.add('active'); // Primer panel activo
+
+// Agregar evento de clic a cada pestaña
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Desactivar todas las pestañas y paneles
+    tabs.forEach(t => t.classList.remove('active'));
+    panels.forEach(panel => panel.classList.remove('active'));
+
+    // Activar la pestaña y panel seleccionados
+    tab.classList.add('active');
+    const targetPanel = document.getElementById(tab.dataset.tab);
+    targetPanel.classList.add('active');
+  });
+});
+
+
+
+
+
+

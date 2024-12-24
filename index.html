@@ -40,8 +40,19 @@
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ae0fd6f99f.js" defer ></script>
 
+    <!--tsparticles-->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+
+
+
     <!-- EmailJS -->
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js'></script>
+    <!-- Paticles effect-->
+   
+
 
 
     <!-- Favicon -->
@@ -53,8 +64,8 @@
   </head>
 
   <body>
-
-    
+    <div id="particles-container">
+      <div id="particles-js"></div>
 
      <!-- Ventana de cookies -->
     <div id="cookieConsent" class="cookie-consent">
@@ -67,9 +78,11 @@
   
         <!-- Botón flotante de WhatsApp -->
     <div class="whatsapp-button">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon" id="open-modal">
+      <a href="https://wa.me/573138081081" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+      </a>
     </div>
-
+        
     <!-- Ventana modal -->
     <div id="whatsapp-modal" class="modal">
       <div class="modal-content">
@@ -87,39 +100,15 @@
 
     <header class="header">
       <img
-        src="./assets/images/logo-sin fondo.svg"
+        src="./assets/images/logo-blanco-sin-fondo.png"
         alt="Logo Portafolio"
         class="logo_header"
       />
 
       <!-- Barra de navegación -->
       <nav class="nav_menu not-active">
-
-        <a href="#home" class="active" data-value="item1">Inicio</a>
-        
-        <a href="#plains" data-section="menu" data-value="item2">Planes</a>
-
-        <a href="#services" data-section="menu" data-value="item3">Servicios</a>
-
-        <a href="#projects" data-section="menu" data-value="item4">Proyectos</a>
-        
-        <a href="#about" data-section="menu" data-value="item5">Quienes somos</a>
-      
-        <a href="#contact" data-section="menu" data-value="item6">Contacto</a>
-
         <a href="https://wa.me/573138081081" class="whatsapp-button-nav" data-section="menu" data-value="item7">¡Cotiza aquí!</a>
 
-        <div id="flags" class="flags">
-          <div class="flags__item" data-language="es">
-            <img src="./assets/images/icon-spain.png" alt="Español/Spain" />
-          </div>
-          <div class="flags__item" data-language="en">
-            <img src="./assets/images/icon-en.png" alt="English/Britain" />
-          </div>
-          <div class="flags__item" data-language="fr">
-            <img src="./assets/images/icon-fr.png" alt="Frances/France" />
-          </div>
-        </div>
       </nav>
 
       <div id="button" class="btn not-active">
@@ -130,140 +119,370 @@
     </header>
 
     <main>
-      <!-- Home -->
+     <!-- Home -->
+      
       <section class="home" id="home">
-        
+        <div id="particles-js"></div>
+
+        <!-- Imagen destacada -->
         <container class="container_image-home">
           <div id="image_home"></div>
         </container>
 
+        <!-- Información principal -->
         <div class="home_info">
-          <div class="container_text-info">
-            <img src="./assets/images/logo-sin fondo.svg" alt="Logo Portafolio" class="logo_principal">
+          <!-- Tecnologías destacadas -->
+          <div class="technologies">
+            <h3 class="technologies_title">Tecnologías que utilizamos:</h3>
+            <ul class="technologies_list">
+              <div class="logo-slider">
+                <div class="slider-track">
+                  <div class="logo">
+                    <img src="./assets/images/react-svgrepo-com.svg" alt="Logo 1">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/node2-svgrepo-com.svg" alt="Logo 2">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/postgresql-svgrepo-com.svg" alt="Logo 3">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/wordpress-color-svgrepo-com.svg" alt="Logo 4">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/brand-elementor-svgrepo-com.svg" alt="Logo 5">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/woocommerce-icon-svgrepo-com.svg" alt="Logo 6">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/react-svgrepo-com.svg" alt="Logo 1">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/node2-svgrepo-com.svg" alt="Logo 2">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/postgresql-svgrepo-com.svg" alt="Logo 3">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/wordpress-color-svgrepo-com.svg" alt="Logo 4">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/brand-elementor-svgrepo-com.svg" alt="Logo 5">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/woocommerce-icon-svgrepo-com.svg" alt="Logo 6">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/react-svgrepo-com.svg" alt="Logo 1">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/node2-svgrepo-com.svg" alt="Logo 2">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/postgresql-svgrepo-com.svg" alt="Logo 3">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/wordpress-color-svgrepo-com.svg" alt="Logo 4">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/brand-elementor-svgrepo-com.svg" alt="Logo 5">
+                  </div>
+                  <div class="logo">
+                    <img src="./assets/images/woocommerce-icon-svgrepo-com.svg" alt="Logo 6">
+                  </div>
+                 
+                 
+                </div>
+            </ul>
           </div>
-          
+         
+
+          <!-- Título principal -->
           <div>
+          
             <p
               class="home_text-3 text-type"
               data-section="home"
               data-value="home_text-3"
             >
-              {¡Haz despegar tu negocio con un sitio web ganador!}  
+              ¡Haz despegar tu negocio con un sitio web ganador!
             </p>
           </div>
 
+          <!-- Subtítulo / Propuesta de valor -->
           <div class="container_parrafo-info">
             <p data-section="home" data-value="parrafo-info">
-              CAPTURA, CONECTA Y CONVIERTE VISITANTES EN COMPRADORES. 💥
+              DISEÑAMOS Y DESARROLLAMOS SITIOS WEB CON TECNOLOGÍAS CODE Y NO-CODE PARA HACER CRECER TU NEGOCIO EN LÍNEA. 💥
             </p>
           </div>
 
+          <!-- Botón de acción -->
           <div class="container_button">
-           
             <a href="https://wa.me/573138081081" target="_blank">
               <button
-                  class="cv_button"
-                  data-section="home"
-                  data-value="cv_button"
+                class="cv_button"
+                data-section="home"
+                data-value="cv_button"
               >
-                  ¡Cotiza tu Web!
+                ¡Cotiza tu Web!
               </button>
             </a>
-            </a>
+          </div>
         </div>
-      </section>
+        
+        
+        <section class="why-us" id="why-us">
+          <div class="container-why-us">
+            <h1 class="section-title-why-us">¿Por qué elegirnos?</h1>
+        
+            <!-- Pestañas -->
+            <div class="faq_tabs">
+              <button class="faq_tab active" data-tab="satisfaction">Satisfacción garantizada</button>
+              <button class="faq_tab" data-tab="personalized">Atención personalizada</button>
+              <button class="faq_tab" data-tab="wordpress">Gestiona tu web</button>
+            </div>
+        
+            <!-- Contenido de las pestañas -->
+            <div class="faq_content">
+              <!-- Pestaña 1: Satisfacción garantizada -->
+              <div id="satisfaction" class="faq_panel active">
+                <div class="card-why-us">
+                  <i class="icon-satisfaction"></i>
+                  <h3>Tu satisfacción es garantizada</h3>
+                  <p>
+                    Nuestro equipo profesional desarrolla y diseña sitios web y tiendas con la máxima calidad para asegurar que tu negocio alcance sus objetivos.En Cre8tive Agency te ayudamos a conectar con nuevos clientes a través del desarrollo de tu próxima página web o la creación de tu Web App, impulsando así el crecimiento de tu negocio.
+                  </p>
+                </div>
+              </div>
+        
+              <!-- Pestaña 2: Atención personalizada -->
+              <div id="personalized" class="faq_panel">
+                <div class="card-why-us">
+                  <i class="icon-personalized"></i>
+                  <h3>Atención personalizada</h3>
+                  <p>
+                    Desde el primer contacto, contarás con un asesor comercial y un líder de desarrollo para resolver tus dudas y ofrecer soporte cuando lo necesites.
+                  </p>
+                </div>
+              </div>
+        
+              <!-- Pestaña 3: Aprende a gestionar tu web -->
+              <div id="wordpress" class="faq_panel">
+                <div class="card-why-us">
+                  <i class="icon-wordpress"></i>
+                  <h3>¡Edita tu tienda fácilmente!</h3>
+                  <p> Usamos WordPress, una tecnología intuitiva para personalizar hasta el más mínimo detalle, confiada por marcas como Disney y MTV. También desarrollamos con React, Node.js y PostgreSQL, garantizando robustez y escalabilidad para proyectos más avanzados. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="testimonials">
+          <h2 class="testimonials-title">Esto es lo que nos define, según nuestra comunidad</h2>
+          <div class=".slider-container-test">
+            <div class="slider">
+              <!-- Reseña 1 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Increíble servicio. Mi sitio web quedó espectacular, superó todas mis expectativas. ¡100% recomendados!"
+                </p>
+                <h3 class="testimonial-author">- Juan Pérez</h3>
+              </div>
+              <!-- Reseña 2 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "El equipo entendió perfectamente lo que necesitaba. La tienda online funciona de maravilla y mis ventas han aumentado considerablemente."
+                </p>
+                <h3 class="testimonial-author">- María López</h3>
+              </div>
+              <!-- Reseña 3 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Trabajo profesional y rápido. Gracias a su experiencia, logramos una excelente presencia digital."
+                </p>
+                <h3 class="testimonial-author">- Andrés García</h3>
+              </div>
+              <!-- Reseña 4 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "¡Un equipo increíble! No solo diseñaron mi página, sino que también me guiaron en cómo optimizarla para atraer más clientes."
+                </p>
+                <h3 class="testimonial-author">- Laura Fernández</h3>
+              </div>
+              <!-- Reseña 5 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Su dedicación y profesionalismo son inigualables. Mi negocio ahora tiene una imagen moderna y profesional."
+                </p>
+                <h3 class="testimonial-author">- Carlos Ramírez</h3>
+              </div>
+              <!-- Reseña 6 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "El diseño de mi app es excelente. Recibí muchos comentarios positivos de mis clientes. ¡Gran trabajo!"
+                </p>
+                <h3 class="testimonial-author">- Sofía Castillo</h3>
+              </div>
+              <!-- Reseña 1 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Increíble servicio. Mi sitio web quedó espectacular, superó todas mis expectativas. ¡100% recomendados!"
+                </p>
+                <h3 class="testimonial-author">- Juan Pérez</h3>
+              </div>
+              <!-- Reseña 2 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "El equipo entendió perfectamente lo que necesitaba. La tienda online funciona de maravilla y mis ventas han aumentado considerablemente."
+                </p>
+                <h3 class="testimonial-author">- María López</h3>
+              </div>
+              <!-- Reseña 3 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Trabajo profesional y rápido. Gracias a su experiencia, logramos una excelente presencia digital."
+                </p>
+                <h3 class="testimonial-author">- Andrés García</h3>
+              </div>
+              <!-- Reseña 4 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "¡Un equipo increíble! No solo diseñaron mi página, sino que también me guiaron en cómo optimizarla para atraer más clientes."
+                </p>
+                <h3 class="testimonial-author">- Laura Fernández</h3>
+              </div>
+              <!-- Reseña 5 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "Su dedicación y profesionalismo son inigualables. Mi negocio ahora tiene una imagen moderna y profesional."
+                </p>
+                <h3 class="testimonial-author">- Carlos Ramírez</h3>
+              </div>
+              <!-- Reseña 6 -->
+              <div class="testimonial-card">
+                <p class="testimonial-text">
+                  "El diseño de mi app es excelente. Recibí muchos comentarios positivos de mis clientes. ¡Gran trabajo!"
+                </p>
+                <h3 class="testimonial-author">- Sofía Castillo</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        
       <section class="plains" id="plains">
-        <h1 data-section="plains" data-value="title">Planes</h1>
+        <h1 class="section-planes">Planes</h1>
+        <div class="slider-container">
+          <div class="cards-plains-container">
+
+            <!-- Card 1: Página Web Corporativa -->
+            <div class="card-web-page">
+              <h2>🏢 PÁGINA WEB CORPORATIVA O INFORMATIVA</h2>
+              <p>Diseñamos un sitio web profesional y moderno, ideal para presentar tu empresa con la última tecnología en desarrollo y diseño.</p>
+              <ul>
+                <li><i class="fa-solid fa-server"></i> Hosting SSD NVMe GRATIS por 1 Año</li>
+                <li><i class="fa-solid fa-globe"></i> Dominio .com GRATIS por 1 Año</li>
+                <li><i class="fa-solid fa-lock"></i> Certificado SSL incluido (Candado verde)</li>
+                <li><i class="fa-brands fa-wordpress"></i> Desarrollo en CMS WordPress & Elementor Pro</li>
+                <li><i class="fa-solid fa-mobile-screen"></i> Diseño adaptable a dispositivos móviles</li>
+                <li><i class="fa-solid fa-chart-line"></i> Capacidad para visitas ilimitadas</li>
+                <li><i class="fa-solid fa-file"></i> 5 páginas internas personalizadas</li>
+                <li><i class="fa-solid fa-search"></i> Textos persuasivos y optimización SEO básica</li>
+                <li><i class="fa-solid fa-envelope"></i> Formulario de contacto</li>
+                <li><i class="fa-solid fa-photo-video"></i> Galería de fotos y videos</li>
+                <li><i class="fa-brands fa-whatsapp"></i> Botón de WhatsApp</li>
+                <li><i class="fa-brands fa-facebook"></i> Enlace a redes sociales integrado</li>
+                <li><i class="fa-solid fa-map-location-dot"></i> Integración con Google Maps</li>
+                <li><i class="fa-solid fa-shield-alt"></i> Seguridad con antivirus Wordfence</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Curso de gestión para administrar tu Web</li>
+                <li><i class="fa-solid fa-calendar-check"></i> Garantía y mantenimiento por 12 meses</li>
+                <li><i class="fa-solid fa-clock"></i> Desarrollo en solo 7 días</li>
+              </ul>
+              <div class="cta-button">
+                <a href="https://wa.me/573138081081" class="btn-contact">Hablar con un asesor</a>
+                <p>💰 ¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
+              </div>
+            </div>
+            
+
+            <!-- Card 2: Desarrollos Personalizados -->
+            <div class="card-custom-dev">
+              <h2>💻 DESARROLLOS PERSONALIZADOS</h2>
+              <p>Construimos soluciones a la medida para transformar tu negocio, adaptándonos a tus necesidades con tecnología avanzada.</p>
+              <ul>
+                <li>
+                  <i class="fa-solid fa-code"></i> 
+                  <strong>Desarrollo con React, Node.js y PostgreSQL:</strong> Tecnologías modernas para garantizar rendimiento, escalabilidad y robustez.
+                </li>
+                <li>
+                  <i class="fa-solid fa-chart-bar"></i> 
+                  <strong>Implementación de e-commerce y sistemas escalables:</strong> Desde tiendas online hasta plataformas empresariales, adaptadas para soportar alto tráfico y crecimiento.
+                </li>
+                <li>
+                  <i class="fa-solid fa-user-check"></i> 
+                  <strong>Interfaces modernas y responsivas:</strong> Diseños atractivos y funcionales que garantizan una experiencia óptima en cualquier dispositivo.
+                </li>
+                <li>
+                  <i class="fa-solid fa-lock"></i> 
+                  <strong>Protocolos de seguridad avanzada:</strong> Protección de datos sensibles con cifrado, autenticación y monitoreo constante.
+                </li>
+                <li>
+                  <i class="fa-solid fa-network-wired"></i> 
+                  <strong>Integraciones personalizadas:</strong> Conecta APIs, CRMs, ERPs y más para optimizar procesos empresariales.
+                </li>
+                <li>
+                  <i class="fa-solid fa-graduation-cap"></i> 
+                  <strong>Capacitación y soporte por 12 meses:</strong> Entrenamos a tu equipo para administrar y sacar el máximo provecho de tu solución.
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock"></i> 
+                  <strong>Metodologías ágiles y entregas rápidas:</strong> Iteraciones frecuentes para garantizar calidad y tiempos de entrega ajustados.
+                </li>
+              </ul>
+              <div class="cta-button">
+                <a href="https://wa.me/573138081081" class="btn-contact">Solicitar cotización</a>
+                <p>¡No pierdas la oportunidad de llevar tu negocio al siguiente nivel con soluciones personalizadas! 🔒</p>
+              </div>
+            </div>
+            
+            <!-- Card 3: Tienda Online -->
+            <div class="card-online-store">
+              <h2>🚀 TIENDA ONLINE</h2>
+              <p>Impulsa tu negocio digital con una tienda online moderna, funcional y fácil de administrar.</p>
+              <ul>
+                <li><i class="fa-solid fa-server"></i> Hosting SSD GRATIS por 1 Año</li>
+                <li><i class="fa-solid fa-globe"></i> Dominio .com GRATIS por 1 Año</li>
+                <li><i class="fa-solid fa-lock"></i> Certificado SSL incluido (candado verde)</li>
+                <li><i class="fa-brands fa-wordpress"></i> Desarrollo en CMS WordPress & Elementor Pro</li>
+                <li><i class="fa-brands fa-wordpress"></i> Desarrollo WooCommerce pro para gestionar tu tienda</li>
+                <li><i class="fa-solid fa-mobile-screen"></i> Diseño 100% adaptable a dispositivos móviles</li>
+                <li><i class="fa-solid fa-box"></i> Hasta 50 productos y 25 categorías precargadas</li>
+                <li><i class="fa-solid fa-filter"></i> Filtros de productos y buscador avanzado</li>
+                <li><i class="fa-solid fa-search"></i> Textos persuasivos y optimización SEO básica</li>
+                <li><i class="fa-solid fa-cart-shopping"></i> Carrito de compras, listas de deseos y cupones de descuento</li>
+                <li><i class="fa-solid fa-credit-card"></i> Métodos de pago seguros ( Bold, PayU, PayPal, Epayco etc.)</li>
+                <li><i class="fa-solid fa-mail-bulk"></i> 1 cuenta de correo corporativo personalizada</li>
+                <li><i class="fa-solid fa-map"></i> Integración con Google Maps y redes sociales</li>
+                <li><i class="fa-solid fa-user-shield"></i> Seguridad avanzada con antivirus Wordfence</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Curso de gestión para administrar tu tienda</li>
+                <li><i class="fa-solid fa-shield-alt"></i> Garantía y mantenimiento por 12 meses</li>
+                <li><i class="fa-solid fa-clock"></i> Desarrollo en solo 15 días</li>
+              </ul>
+              <div class="cta-button">
+                <a href="https://wa.me/573138081081" class="btn-contact">Hablar con un asesor</a>
+                <p>💰 ¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
+              </div>
+            </div>
+            
       
-        <div class="cards-plains-container">
-          
-          <div class="card-landing-page">
-            <div class="card-container-text">
-              <h2 data-section="plains" data-value="landing_page_title">LANDING PAGE PROFESIONAL</h2>
-              <p data-section="plains" data-value="landing_page_desc">Optimiza los resultados de tus campañas con una Landing Page diseñada para convertir y atraer más clientes.</p>
-            </div>
-            <ul>
-              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="landing_page_item1">Hosting SSD GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="landing_page_item2">Dominio .com GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="landing_page_item3">Certificado SSL (Candado verde)</span></li>
-              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="landing_page_item4">Desarrollo en CMS WordPress</span></li>
-              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="landing_page_item5">Diseño 100% Adaptable a dispositivos móviles</span></li>
-              <li><i class="fa-solid fa-search"></i> <span data-section="plains" data-value="landing_page_item6">Textos optimizados para SEO</span></li>
-              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="landing_page_item7">Formulario de Leads y botón de WhatsApp integrado</span></li>
-              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="landing_page_item8">Garantía y mantenimiento por 12 meses</span></li>
-              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="landing_page_item9">Curso exclusivo para clientes</span></li>
-              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="landing_page_item10">Desarrollo en solo 6 días</span></li>
-
-            </ul>
-            <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button">Hablar con un asesor</a>
-              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
-            </div>
           </div>
-          
-          <div class="card-web-page">
-            <h2 data-section="plains" data-value="web_page_title">PÁGINA WEB INFORMATIVA</h2>
-            <p data-section="plains" data-value="web_page_desc">Diseñamos un sitio web profesional y moderno, ideal para presentar tu empresa con la última tecnología en desarrollo y diseño.</p>
-            <ul>
-              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="web_page_item1">Hosting SSD GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="web_page_item2">Dominio .com GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="web_page_item3">Certificado SSL (Candado verde)</span></li>
-              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="web_page_item4">Desarrollo en CMS WordPress</span></li>
-              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="web_page_item5">Diseño adaptable a dispositivos móviles</span></li>
-              <li><i class="fa-solid fa-chart-line"></i> <span data-section="plains" data-value="web_page_item6">Capacidad para visitas ilimitadas</span></li>
-              <li><i class="fa-solid fa-envelope"></i> <span data-section="plains" data-value="web_page_item7">5 cuentas de correo corporativo (WebMail)</span></li>
-              <li><i class="fa-solid fa-images"></i> <span data-section="plains" data-value="web_page_item8">4 banners dinámicos</span></li>
-              <li><i class="fa-solid fa-file-alt"></i> <span data-section="plains" data-value="web_page_item9">7 páginas internas personalizadas</span></li>
-              <li><i class="fa-solid fa-blog"></i> <span data-section="plains" data-value="web_page_item10">Blog o sección de noticias</span></li>
-              <li><i class="fa-solid fa-search"></i> <span data-section="plains" data-value="web_page_item11">Textos persuasivos y optimización SEO básica</span></li>
-              <li><i class="fa-solid fa-address-card"></i> <span data-section="plains" data-value="web_page_item12">Formulario de contacto avanzado</span></li>
-              <li><i class="fa-solid fa-photo-video"></i> <span data-section="plains" data-value="web_page_item13">Galería de fotos y videos</span></li>
-              <li><i class="fa-solid fa-comments"></i> <span data-section="plains" data-value="web_page_item14">Testimonios en carrusel</span></li>
-              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="web_page_item15">Botón de WhatsApp y llamada</span></li>
-              <li><i class="fa-solid fa-comments"></i> <span data-section="plains" data-value="web_page_item16">Chat en vivo instalado</span></li>
-              <li><i class="fa-solid fa-map-marked-alt"></i> <span data-section="plains" data-value="web_page_item17">Integración con Google Maps y redes sociales</span></li>
-              <li><i class="fa-solid fa-shield-alt"></i> <span data-section="plains" data-value="web_page_item18">Seguridad con antivirus Wordfence</span></li>
-              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="web_page_item19">Curso de gestión para clientes</span></li>
-              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="web_page_item20">Garantía y mantenimiento por 12 meses</span></li>
-              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="web_page_item21">Desarrollo en 10 días</span></li>
-            </ul>
-            <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button" >Hablar con un asesor</a>
-              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
-            </div>
-          </div>
-          
-          <div class="card-online-store">
-            <h2 data-section="plains" data-value="online_store_title">TIENDA ONLINE 🚀</h2>
-            <p data-section="plains" data-value="online_store_desc">Vende en internet y atrae nuevos clientes con tu propia tienda online, fácil de administrar y diseñada para vender.</p>
-            <ul>
-              <li><i class="fa-solid fa-house"></i> <span data-section="plains" data-value="online_store_item1">Hosting SSD GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-globe"></i> <span data-section="plains" data-value="online_store_item2">Dominio .com GRATIS por 1 Año</span></li>
-              <li><i class="fa-solid fa-lock"></i> <span data-section="plains" data-value="online_store_item3">Certificado SSL incluido</span></li>
-              <li><i class="fa-brands fa-wordpress"></i> <span data-section="plains" data-value="online_store_item4">Desarrollo en CMS WordPress y WooCommerce</span></li>
-              <li><i class="fa-solid fa-chart-line"></i> <span data-section="plains" data-value="online_store_item5">Capacidad para productos y visitas ilimitadas</span></li>
-              <li><i class="fa-solid fa-envelope"></i> <span data-section="plains" data-value="online_store_item6">10 cuentas de correo corporativo</span></li>
-              <li><i class="fa-solid fa-mobile-screen"></i> <span data-section="plains" data-value="online_store_item7">Diseño 100% adaptable a dispositivos móviles</span></li>
-              <li><i class="fa-solid fa-box"></i> <span data-section="plains" data-value="online_store_item8">50 productos pre-cargados y 25 categorías</span></li>
-              <li><i class="fa-solid fa-filter"></i> <span data-section="plains" data-value="online_store_item9">Filtros de productos y buscador avanzado</span></li>
-              <li><i class="fa-solid fa-shopping-cart"></i> <span data-section="plains" data-value="online_store_item10">Carrito de compras, listas de deseos y cupones de descuento</span></li>
-              <li><i class="fa-solid fa-credit-card"></i> <span data-section="plains" data-value="online_store_item11">Integración con métodos de pago (PayU, PayPal, Epayco...)</span></li>
-              <li><i class="fa-solid fa-phone"></i> <span data-section="plains" data-value="online_store_item12">Formulario de contacto y botón de WhatsApp</span></li>
-              <li><i class="fa-solid fa-bullseye"></i> <span data-section="plains" data-value="online_store_item13">Garantía y mantenimiento por 12 meses</span></li>
-              <li><i class="fa-solid fa-graduation-cap"></i> <span data-section="plains" data-value="online_store_item14">Curso exclusivo para gestionar tu tienda</span></li>
-              <li><i class="fa-solid fa-rocket"></i> <span data-section="plains" data-value="online_store_item15">Desarrollo en solo 15 días</span></li>
-
-            </ul>
-            <div class="cta-button">
-              <a href="https://wa.me/573138081081" class="btn-contact" data-section="plains" data-value="plains-button">Hablar con un asesor</a>
-              <p data-section="plains" data-value="plains-textcard-checkout">¡Paga el 50% ahora y el resto al finalizar! 🔒</p>
-            </div>
-          </div>
-          
-          
         </div>
       </section>
+      
+      
       
       <!-- Servicios -->
        
@@ -315,143 +534,355 @@
         </div>
       </section>
 
-
-
       <!-- Proyectos -->
       <section class="proyects" id="projects">
         <h1 data-section="projects" data-value="title">Proyectos</h1>
-
+      
         <div class="cards_container--projects">
+  
           <div
             class="cards--projects"
-            data-aos="fade-up"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="2000"
-          >
-          <a href="https://orionbienesraices.com" target="_blank">
-            <div class="container_imgCard--projects">
-              <img
-                src="./assets/images/orionbienesraices.webp"
-                alt="Proyecto: Orión Bienes Raíces" 
-              />
-            </div>
-          </a>
-            <div class="container_textCard--projects">
-              <h2 data-section="projects" data-value="title-project1">
-                <i class="fas fa-eye"></i>
-                Orión Bienes Raíces
-              </h2>
-              <p data-section="projects" data-value="info-project1">
-                Orión Constructora & Bienes Raíces transforma el mercado inmobiliario en Bogotá mediante el uso de tecnología avanzada
-                y estrategias innovadoras, ofreciendo soluciones ágiles y personalizadas para la compra y venta de inmuebles y terrenos.
-              </p>
-            </div>
-          
-
-            <div class="container_btn--projects">
-              
-            </div>
-          </div>
-
-          <div
-            class="cards--projects card_JuegoAhorcado"
-            data-aos="fade-right"
-            data-aos-anchor-placement="center-bottom"
-            data-aos-duration="2000"
-          >
-          <a href="https://glutebuildersclub.com/" target="_blank">
-            <div class="container_imgCard--projects">
-              <img
-                src="./assets/images/img-glute.webp"
-                alt="glutebuildersclub" loading="lazy"
-              />
-            </div>
-          </a>
-            <div class="container_textCard--projects">
-              <h2 data-section="projects" data-value="title-project2">
-                <i class="fas fa-eye"></i>
-                Glute Builders Club
-              </h2>
-              <p data-section="projects" data-value="info-project2">
-                Glute Builders Club ofrece programas de entrenamiento online personalizados con un enfoque en el desarrollo de glúteos, guiados por el entrenador Julián Tejada. Además de rutinas especializadas, brindan asesoría profesional y recursos como blogs de salud y bienestar. También cuentan con una tienda de productos fitness.
-              </p>
-            </div>
-
-            <div class="container_btn--projects">
-              
-            </div>
-          </div>
-
-          <div
-            class="cards--projects card_encriptador"
             data-aos="fade-left"
             data-aos-anchor-placement="center-bottom"
             data-aos-duration="2000"
           >
-          <a href="https://gadalarquitectura.com/" target="_blank">
-            <div class="container_imgCard--projects">
-              <img
-                src="./assets/images/img-gadal-arquitectura.webp"
-                alt="Proyecto: Gadal" loading="lazy"
-              />
-            </div>
-          </a>
+            <a href="https://donkampo.com" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/donkampo.jpg"
+                  alt="Proyecto: Don Kampo"
+                  loading="lazy"
+                />
+              </div>
+            </a>
             <div class="container_textCard--projects">
               <h2 data-section="projects" data-value="title-project4">
-                <i class="fas fa-eye"></i>
-                Gadal Arquitectura
-                <a href="https://gadalarquitectura.com/" target="_blank"></a>
+                <i class="fas fa-eye"></i> Don Kampo
               </h2>
               <p data-section="projects" data-value="info-project4">
-                GADAL ofrece soluciones creativas y personalizadas en diseño y construcción, con un equipo de expertos que garantiza
-                precisión técnica y excelencia en cada proyecto, desde la planificación hasta la ejecución.
+                Aplicación web de plataforma de e-commerce donde clientes compran frutas y verduras, y empresas acceden a precios de mayoreo. Desarrollada con Node.js, Express y PostgreSQL.
               </p>
             </div>
-            <div class="container_btn--projects">
-             
+          </div>
+      
+          <!-- Proyecto 5: Tarjeta repetida -->
+          <div
+            class="cards--projects"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+            <a href="https://personalixados.com/" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/personalixados.jpg"
+                  alt="Personlixados"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project5">
+                <i class="fas fa-eye"></i> Personalixados
+              </h2>
+              <p data-section="projects" data-value="info-project5">
+                Personalixados es una tienda online hecha con WordPress y WooCommerce, especializada en productos personalizados como camisetas, tazas y más, ideales para regalos únicos y promociones.
+              </p>
             </div>
+          </div>
+      
+          <!-- Proyecto 6: Tarjeta repetida -->
+          <div
+            class="cards--projects"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"s
+            data-aos-duration="2000"
+          >
+            <a href="https://sharkpeople.com.co/" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/sharkpeople.jpg"
+                  alt="Proyecto: Gadal Arquitectura"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project6">
+                <i class="fas fa-eye"></i> Shark People
+              </h2>
+              <p data-section="projects" data-value="info-project6">
+                **Shark People** es un sitio web creado con WordPress y WooCommerce, especializado en la venta de ropa y accesorios con diseños únicos y modernos, ideales para destacar con estilo.
+              </p>
+            </div>
+          </div>
+          <div
+            class="cards--projects"
+            data-aos="fade-right"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+            <a href="https://orionbienesraices.com" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/orionbienesraices.webp"
+                  alt="Proyecto: Orión Bienes Raíces"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project1">
+                <i class="fas fa-eye"></i> Orión Bienes Raíces
+              </h2>
+              <p data-section="projects" data-value="info-project1">
+                Orión Constructora & Bienes Raíces transforma el mercado inmobiliario
+                en Bogotá mediante el uso de tecnología avanzada y estrategias
+                innovadoras, ofreciendo soluciones ágiles y personalizadas para la
+                compra y venta de inmuebles y terrenos.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Proyecto 2: Glute Builders Club -->
+          <div
+            class="cards--projects"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+            <a href="https://glutebuildersclub.com/" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/img-glute.webp"
+                  alt="Proyecto: Glute Builders Club"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project2">
+                <i class="fas fa-eye"></i> Glute Builders Club
+              </h2>
+              <p data-section="projects" data-value="info-project2">
+                Glute Builders Club ofrece programas de entrenamiento online
+                personalizados con un enfoque en el desarrollo de glúteos, guiados
+                por el entrenador Julián Tejada. Además, brindan asesoría profesional,
+                blogs de salud y una tienda de productos fitness.
+              </p>
+            </div>
+          </div>
+      
+          <!-- Proyecto 3: Gadal Arquitectura (Tarjeta 1) -->
+          <div
+            class="cards--projects"
+            data-aos="fade-left"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000"
+          >
+            <a href="https://gadalarquitectura.com/" target="_blank">
+              <div class="container_imgCard--projects">
+                <img
+                  src="./assets/images/img-gadal-arquitectura.webp"
+                  alt="Proyecto: Gadal Arquitectura"
+                  loading="lazy"
+                />
+              </div>
+            </a>
+            <div class="container_textCard--projects">
+              <h2 data-section="projects" data-value="title-project3">
+                <i class="fas fa-eye"></i> Gadal Arquitectura
+              </h2>
+              <p data-section="projects" data-value="info-project3">
+                GADAL ofrece soluciones creativas y personalizadas en diseño y
+                construcción, con un equipo de expertos que garantiza precisión
+                técnica y excelencia en cada proyecto, desde la planificación hasta
+                la ejecución.
+              </p>
+            </div>
+          </div>
+      
+          
           </div>
         </div>
       </section>
 
-
+      <section class="faq_section">
+        <h1 data-section="faq" data-value="title" class="faq_heading">Preguntas Frecuentes</h1>
+      
+        <!-- Contenedor de pestañas -->
+        <div class="faq_tabs">
+          <button class="faq_tab active" data-tab="design-process">¿Cómo es el proceso de diseño web?</button>
+          <button class="faq_tab" data-tab="seo-importance">¿Por qué es importante el SEO para mi sitio web?</button>
+          <button class="faq_tab" data-tab="maintenance-services">¿Ofrecen servicios de mantenimiento web?</button>
+          <button class="faq_tab" data-tab="payment-methods">¿Medios de pago?</button>
+        </div>
+      
+        <!-- Contenedor del contenido de las pestañas -->
+        <div class="faq_content">
+          <!-- Primera pestaña activa -->
+          <div id="design-process" class="faq_panel active">
+            <h2 class="faq_title">¿Cómo es el proceso de diseño web?</h2>
+            <p>
+              Nuestro proceso de diseño web se compone de varias etapas clave:
+            </p>
+            <ul>
+              <li><strong>Reunión inicial:</strong> Analizamos tus necesidades y objetivos para el sitio web.</li>
+              <li><strong>Planificación:</strong> Definimos la estructura y funcionalidades del sitio.</li>
+              <li><strong>Diseño:</strong> Creamos prototipos visuales y los ajustamos según tus comentarios.</li>
+              <li><strong>Desarrollo:</strong> Convertimos el diseño en un sitio web funcional.</li>
+              <li><strong>Pruebas:</strong> Verificamos que todo funcione correctamente en diferentes dispositivos y navegadores.</li>
+              <li><strong>Lanzamiento:</strong> Publicamos el sitio web y realizamos un seguimiento para asegurar su correcto desempeño.</li>
+            </ul>
+          </div>
+      
+          <!-- Segunda pestaña -->
+          <div id="seo-importance" class="faq_panel">
+            <h2 class="faq_title">¿Por qué es importante el SEO para mi sitio web?</h2>
+            <p>
+              El SEO (Optimización para Motores de Búsqueda) es crucial porque:
+            </p>
+            <ul>
+              <li><strong>Aumenta la visibilidad:</strong> Mejora el posicionamiento en los resultados de búsqueda, atrayendo más visitantes.</li>
+              <li><strong>Genera tráfico orgánico:</strong> Atrae usuarios interesados sin necesidad de pagar por publicidad.</li>
+              <li><strong>Mejora la experiencia del usuario:</strong> Un sitio optimizado es más rápido y fácil de navegar.</li>
+              <li><strong>Incrementa la credibilidad:</strong> Los usuarios confían más en sitios que aparecen en los primeros resultados.</li>
+              <li><strong>Impulsa las conversiones:</strong> Más visitantes cualificados aumentan las posibilidades de ventas o contactos.</li>
+            </ul>
+          </div>
+      
+          <!-- Tercera pestaña -->
+          <div id="maintenance-services" class="faq_panel">
+            <h2 class="faq_title">¿Ofrecen servicios de mantenimiento web?</h2>
+            <p>
+              Sí, ofrecemos servicios de mantenimiento web que incluyen:
+            </p>
+            <ul>
+              <li><strong>Actualizaciones de seguridad:</strong> Mantenemos tu sitio protegido contra vulnerabilidades.</li>
+              <li><strong>Copias de seguridad periódicas:</strong> Aseguramos la integridad de tu información.</li>
+              <li><strong>Optimización de rendimiento:</strong> Mejoramos la velocidad y eficiencia del sitio.</li>
+              <li><strong>Soporte técnico:</strong> Asistencia para resolver cualquier inconveniente o duda.</li>
+              <li><strong>Actualización de contenidos:</strong> Ayudamos a mantener la información de tu sitio siempre al día.</li>
+            </ul>
+          </div>
+      
+          <!-- Cuarta pestaña -->
+          <div id="payment-methods" class="faq_panel">
+            <h2 class="faq_title">¿Medios de pago?</h2>
+            <p>Ofrecemos varias opciones:</p>
+            <ul>
+              <li><strong>Transferencia bancaria o billeteras digitales:</strong> Coordina el pago directamente con tu asesor comercial.</li>
+              <li><strong>Pago online:</strong> Tarjeta de crédito, PSE vía link de pago Bold.</li>
+            </ul>
+            <p><strong>Condiciones:</strong> 50% anticipado y 50% al finalizar el desarrollo.</p>
+          </div>
+        </div>
+      </section>
+      
+      
       <!-- Contacto -->
       <section class="contact" id="contact">
-        <h1 data-section="contact" data-value="title">Contacto</h1>
+        <h1 data-section="contact" data-value="title">Solicitar Cotización</h1>
 
+        <section class="steps-section">
+          <div class="steps-container">
+            <!-- Paso 1 -->
+            <div class="step-card">
+              <h2>1. COMPLETA EL FORMULARIO</h2>
+              <p>
+                Encuentra a continuación un formulario diseñado para comprender mejor lo que necesitas. Dedica unos minutos a completarlo, detallando las especificaciones de tu proyecto y los objetivos que deseas alcanzar.
+              </p>
+            </div>
+        
+            <!-- Paso 2 -->
+            <div class="step-card">
+              <h2>2. NOS PONDREMOS EN CONTACTO</h2>
+              <p>
+                Una vez recibamos tu formulario, nos comunicaremos contigo a través de una llamada telefónica. Durante esta conversación, aclararemos cualquier duda, discutiremos detalles importantes y te brindaremos toda la información necesaria para tu proyecto.
+              </p>
+            </div>
+        
+            <!-- Paso 3 -->
+            <div class="step-card">
+              <h2>3. PREPARAMOS Y ENVIAMOS TU COTIZACIÓN</h2>
+              <p>
+                Después de nuestra llamada, desarrollaremos una propuesta económica adaptada a tus requerimientos. Esta cotización será enviada directamente a tu correo electrónico. Una vez la revises y apruebes, comenzaremos a trabajar en tu proyecto, asegurándonos de cumplir tus expectativas.
+              </p>
+            </div>
+          </div>
+        </section>
+        
         <div class="container_box--contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
           <div class="container--contact">
-            <form id="form-c" class="form-contact" name="contacto-cre8tive">
+            <form id="form-c" class="form-contact" name="solicitud-cotizacion">
+              <!-- Nombre -->
               <input
-                id="name"
+                id="nombre"
                 type="text"
-                name="name"
-                placeholder="Nombre | Name"
+                name="nombre"
+                placeholder="Nombre*"
                 required
               />
+              <!-- Apellido -->
               <input
-                id="email"
+                id="apellido"
+                type="text"
+                name="apellido"
+                placeholder="Apellido*"
+                required
+              />
+              <!-- Celular -->
+              <input
+                id="celular"
+                type="tel"
+                name="celular"
+                placeholder="Celular*"
+                required
+              />
+              <!-- Correo Electrónico -->
+              <input
+                id="correo"
                 type="email"
-                name="email"
-                placeholder="Correo | E-mail"
+                name="correo"
+                placeholder="Correo Electrónico*"
                 required
               />
+              <!-- Nombre de la Empresa -->
               <input
-                id="subject"
+                id="empresa"
                 type="text"
-                name="subject"
-                placeholder="Asunto | Subject"
-                required
+                name="empresa"
+                placeholder="Nombre de tu emprendimiento o empresa (opcional)"
               />
+             <!-- ¿Qué buscas exactamente? -->
+              <label for="servicio">¿Qué buscas exactamente?*</label>
+              <select id="servicio" name="servicio" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="desarrollo-per">Desarrollo personalizado</option>
+                  <option value="diseno-web">Diseño Web</option>
+                  <option value="tienda-online">Tienda Online</option>
+                  <option value="otro">Otro</option>
+              </select>
+
+              <!-- Presupuesto -->
+              <label for="presupuesto">¿Cuál es tu presupuesto?*</label>
+              <select id="presupuesto" name="presupuesto" required>
+                  <option value="" disabled selected>Selecciona una opción</option>
+                  <option value="1-2m">Entre $1,000,000 y $2,000,000 COP</option>
+                  <option value="2-4m">Entre $2,000,000 y $4,000,000 COP</option>
+                  <option value="4-6m">Entre $4,000,000 y $6,000,000 COP</option>
+                  <option value="6-7m">Entre $6,000,000 y $7,000,000 COP</option>
+                  <option value="7m+">Más de $7,000,000 COP</option>
+              </select>
+              <!-- Detalles Adicionales -->
               <textarea
-                id="message"
+                id="detalles"
                 cols="20"
                 rows="4"
-                name="message"
-                placeholder="Mensaje | Message"
-                required
+                name="detalles"
+                placeholder=" Explícanos con más detalle lo que necesitas (opcional)"
               ></textarea>
-
+      
               <div class="btn_form--contact">
                 <button
                   id="btn-enviar"
@@ -466,6 +897,7 @@
           </div>
         </div>
       </section>
+      
 
     </main>
 
@@ -494,7 +926,7 @@
           <h3>Síguenos</h3>
           <div class="social-links">
             <a href="https://www.facebook.com/cre8tive.agency.pro/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/cre8tive.pro/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
@@ -518,31 +950,11 @@
     <script>
       AOS.init();
     </script>
-
-    <!-- Meta Pixel Code -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1212736326684187');
-      fbq('track', 'PageView');
-      </script>
-      <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=1212736326684187&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-
   
     <!-- scripts -->
     
     <script src="./script.js"></script>
-    <script src="./whatsappModal.js"></script>
     <script src="./cookies.js"></script>  
-
+  </div>
   </body>
 </html>
