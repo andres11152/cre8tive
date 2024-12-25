@@ -212,6 +212,28 @@ tabs.forEach(tab => {
   });
 });
 
-
-
 });
+
+// Seleccionar todas las pestañas y paneles
+const tabs = document.querySelectorAll('.services-tab');
+const panels = document.querySelectorAll('.services-panel');
+
+// Activar la primera pestaña y panel por defecto
+tabs[0].classList.add('active');
+panels[0].classList.add('active');
+
+// Evento de clic en las pestañas
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    // Desactivar todas las pestañas y paneles
+    tabs.forEach(t => t.classList.remove('active'));
+    panels.forEach(panel => panel.classList.remove('active'));
+
+    // Activar la pestaña y el panel correspondientes
+    tab.classList.add('active');
+    const targetPanel = document.getElementById(tab.dataset.tab);
+    targetPanel.classList.add('active');
+  });
+});
+
+

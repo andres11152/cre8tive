@@ -65,6 +65,7 @@ body {
         z-index: 1000;
         display: none; /* Oculto por defecto */
         font-size: 1rem; /* Tamaño de fuente más pequeño para móviles */
+        z-index: 1000;
     }
 
     .cookie-consent p {
@@ -72,6 +73,7 @@ body {
         padding: 0.5rem;
         font-size: 1.5rem; /* Ajuste de texto */
         line-height: 1.5; /* Espaciado entre líneas */
+        z-index: 1000;
     }
 
     /* Botones de aceptar/rechazar en móviles */
@@ -84,6 +86,7 @@ body {
         cursor: pointer;
         width: 90%; /* Botones más anchos para facilitar el toque */
         max-width: 300px;
+        z-index: 1000;
     }
 
     .accept {
@@ -205,13 +208,12 @@ body {
     }
 
     nav.nav_menu.active a {
-        padding: 2rem;
         font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         text-decoration: none;
         color: var(--black);
         font-size: 3rem;
-        width: 90%;
+        width: 70%;
         text-align: center;
     }
 
@@ -375,7 +377,7 @@ body {
         position: fixed;
         bottom: 90px;
         right: 35px;
-        z-index: 9999; /* Asegura que esté sobre todos los elementos */
+        z-index: 99; /* Asegura que esté sobre todos los elementos */
     }
 
     .whatsapp-icon {
@@ -385,6 +387,7 @@ body {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
         animation: ripple 2s infinite ease-out; /* Añade la animación de agua */
+        z-index: 99; 
     }
 
     /* Efecto hover para agrandar el icono */
@@ -618,6 +621,7 @@ body {
         font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 10px;
+        justify-content:flex-start;
     }
     
     .technologies_list {
@@ -637,9 +641,6 @@ body {
     .technologies_list li img:hover {
         transform: scale(1.1);
     }
-
-    
-
 
     /* Sobre mí */
 
@@ -1839,6 +1840,7 @@ body {
         z-index: 1000;
         display: none; /* Oculto por defecto */
         font-size: 1rem; /* Tamaño de fuente más pequeño para móviles */
+        z-index: 1000;
     }
 
     .cookie-consent p {
@@ -1846,6 +1848,7 @@ body {
         padding: 0.5rem;
         font-size: 1.5rem; /* Ajuste de texto */
         line-height: 1.5; /* Espaciado entre líneas */
+        z-index: 1000;
     }
 
     /* Botones de aceptar/rechazar en móviles */
@@ -1858,6 +1861,7 @@ body {
         cursor: pointer;
         width: 90%; /* Botones más anchos para facilitar el toque */
         max-width: 300px;
+        z-index: 1000;
     }
 
     .accept {
@@ -2390,11 +2394,6 @@ body {
         text-align: center;
     }
     
-    .technologies_title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
     
     .technologies_list {
         display: flex;
@@ -3690,7 +3689,6 @@ body {
 
 /* Aplica la clase .interactive a los elementos interactivos */
 
-.cookie-consent,
 nav.nav_menu.active,
 .main,
 footer,
@@ -3712,7 +3710,7 @@ footer,
 
 /* Botón de WhatsApp */
 .whatsapp-button {
-    z-index: 9999; /* Sigue siendo el más alto para visibilidad */
+    z-index: 99; /* Sigue siendo el más alto para visibilidad */
 }
 .testimonials {
     padding: 4rem 2rem;
@@ -3867,4 +3865,110 @@ footer,
     transform: translateY(-5px); /* Efecto de elevación */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
+  
+
+  /* Contenedor principal */
+.services-tabs {
+    padding: 4rem 2rem;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .services-tabs__heading {
+    font-size: 2.8rem;
+    color: var(--orange);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    z-index: 2;
+  }
+  
+  /* Contenedor de pestañas */
+  .services-tabs__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+  }
+  
+  .services-tab {
+    background-color: #262626;
+    color: #fff;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+  }
+  
+  .services-tab.active,
+  .services-tab:hover {
+    background-color: var(--orange);
+    color: var(--black);
+    box-shadow: 0 4px 10px var(--orange);
+    transform: scale(1.05);
+    z-index: 2;
+  }
+  
+  /* Contenido de las pestañas */
+  .services-tabs__content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+  }
+  
+  .services-panel {
+    display: none;
+    z-index: 2;
+  }
+  
+  .services-panel.active {
+    display: block;
+    z-index: 2;
+  }
+  
+  .services-panel__title {
+    font-size: 2.4rem;
+    color: var(--orange);
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+  .services-panel__description {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    z-index: 2;
+  }
+  
+  .services-panel__btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--orange);
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 2;
+  }
+  
+  .services-panel__btn:hover {
+    background-color: #ff9f1c;
+    color: #1a1a1a;
+    z-index: 2;
+  }
+  
   
