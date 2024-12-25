@@ -81,18 +81,21 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Error: EmailJS no está definido. Verifica que el script de EmailJS se esté cargando correctamente.');
     }
-  
 
+//email.js
 document.querySelector('#form-c').addEventListener('submit', function(event) {
   event.preventDefault();
 
   // Recopilar los datos del formulario
   const formData = new FormData(this);
   const templateParams = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message')
+      name: formData.get('nombre') + ' ' + formData.get('apellido'), // Combina nombre y apellido
+      email: formData.get('correo'),
+      phone: formData.get('celular'),
+      company: formData.get('empresa') || 'No especificado', // Valor por defecto si está vacío
+      service: formData.get('servicio'),
+      budget: formData.get('presupuesto'),
+      details: formData.get('detalles') || 'No se proporcionaron detalles adicionales' // Valor por defecto
   };
 
   // Enviar los datos a través de EmailJS usando el ID del servicio y plantilla
@@ -107,7 +110,7 @@ document.querySelector('#form-c').addEventListener('submit', function(event) {
       alert('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
     });
 });
-})
+
 
 
 //script particles
@@ -211,6 +214,4 @@ tabs.forEach(tab => {
 
 
 
-
-
-
+});

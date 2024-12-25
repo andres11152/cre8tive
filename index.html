@@ -313,7 +313,7 @@
           </div>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials" >
           <h2 class="testimonials-title">Esto es lo que nos define, según nuestra comunidad</h2>
           <div class=".slider-container-test">
             <div class="slider">
@@ -745,7 +745,7 @@
         <h1 data-section="faq" data-value="title" class="faq_heading">Preguntas Frecuentes</h1>
       
         <!-- Contenedor de pestañas -->
-        <div class="faq_tabs">
+        <div class="faq_tabs" id="faq_tabs">
           <button class="faq_tab active" data-tab="design-process">¿Cómo es el proceso de diseño web?</button>
           <button class="faq_tab" data-tab="seo-importance">¿Por qué es importante el SEO para mi sitio web?</button>
           <button class="faq_tab" data-tab="maintenance-services">¿Ofrecen servicios de mantenimiento web?</button>
@@ -806,7 +806,7 @@
             <p>Ofrecemos varias opciones:</p>
             <ul>
               <li><strong>Transferencia bancaria o billeteras digitales:</strong> Coordina el pago directamente con tu asesor comercial.</li>
-              <li><strong>Pago online:</strong> Tarjeta de crédito, PSE vía link de pago Bold.</li>
+              <li><strong>Pago online:</strong> Tarjeta de crédito ó débito PSE vía link de pago Bold.</li>
             </ul>
             <p><strong>Condiciones:</strong> 50% anticipado y 50% al finalizar el desarrollo.</p>
           </div>
@@ -892,10 +892,11 @@
               <label for="servicio">¿Qué buscas exactamente?*</label>
               <select id="servicio" name="servicio" required>
                   <option value="" disabled selected>Selecciona una opción</option>
-                  <option value="desarrollo-per">Desarrollo personalizado</option>
-                  <option value="diseno-web">Diseño Web</option>
+                  <option value="desarrollo-per">Desarrollo Web personalizado</option>
+                  <option value="diseno-web">Pagina Web Corporativa</option>
                   <option value="tienda-online">Tienda Online</option>
-                  <option value="otro">Otro</option>
+                  <option value="diseno-web">Landing Page</option>
+                  <option value="otro">Servicio | otro</option>
               </select>
 
               <!-- Presupuesto -->
@@ -937,38 +938,65 @@
 
     <footer>
       <div class="container--footer">
+        <!-- Sección Compañía -->
         <div class="footer-section">
           <h3>Compañía</h3>
           <ul>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Nuestros Servicios</a></li>
-            <li><a href="#">Política de Privacidad</a></li>
-            <li><a href="#">Planes</a></li>
+            <li><a href="#why-us">¿Por qué elegirnos?</a></li>
+            <li><a href="#testimonials">Reseñas de clientes</a></li>
+            <li><a href="#services">Nuestros Servicios</a></li>
+            <li><a href="#privacy-policy">Política de Privacidad</a></li>
+            <li><a href="#plains">Planes</a></li>
           </ul>
         </div>
     
+        <!-- Sección Ayuda -->
         <div class="footer-section">
           <h3>Ayuda</h3>
           <ul>
-            <li><a href="#">Preguntas</a></li>
-            <li><a href="#">Compras</a></li>
-            <li><a href="#">Pago</a></li>
+            <li><a href="#faq_tabs">Preguntas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#faq_tabs">Pago</a></li>
+            <!-- Agregado correo electrónico -->
+            <li>
+              <a href="mailto:info@cre8tive.pro">
+                <i class="fas fa-envelope"></i> info@cre8tive.pro
+              </a>
+            </li>
+            <!-- Agregado WhatsApp -->
+            <li>
+              <a href="https://wa.me/57313808108" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp: +57 313 808108
+              </a>
+            </li>
           </ul>
         </div>
     
+        <!-- Sección Redes Sociales -->
         <div class="footer-section">
           <h3>Síguenos</h3>
           <div class="social-links">
-            <a href="https://www.facebook.com/cre8tive.agency.pro/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-            <a href="https://www.instagram.com/cre8tive.pro/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/cre8tive.agency.pro/" target="_blank">
+              <i class="fab fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/cre8tive.pro/" target="_blank">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
     
+      <!-- Sección Footer Inferior -->
       <div class="footer-bottom">
-        <span>Copyright © 2024 | Cre8tive Agency | Todos los derechos reservados | Política de protección de datos personales</span>
+        <span>
+          Copyright © 2024 | Cre8tive Agency | Todos los derechos reservados |
+          <a href="#privacy-policy">Política de protección de datos personales</a>
+        </span>
       </div>
     </footer>
+    
+    
+    
     
 
     <div class="go-top-container">

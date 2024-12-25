@@ -3,7 +3,7 @@
 .header {
     justify-content: center;
     padding: 1.8rem 3rem;
-    z-index: 2;
+    z-index: 99;
 }
 
 nav.nav_menu {
@@ -280,10 +280,11 @@ background-color: #1EBE5D;
 .container_parrafo-info {
     display: inline-block;
     text-align: start;
+    font-weight: 600;
 }
 
 .container_parrafo-info p {
-    font-family: 'Pasajero';
+    font-family: 'Montserrat', sans-serif;
     color: var(--white);
     font-size: 3rem;
     letter-spacing: 2px;
@@ -295,8 +296,8 @@ background-color: #1EBE5D;
 
 .container_button {
     display: flex;
-    padding-left: 4rem;
-    justify-content: center;
+    padding-left: 2rem;
+    justify-content:flex-start;
     align-items: center;
 }
 
@@ -311,6 +312,7 @@ background-color: #1EBE5D;
     text-decoration: none;
     transition: background-color 0.3s ease;
     animation: ripple 5s infinite ease-out;
+    z-index: 2;
 }
 
 .cv_button:hover {
@@ -378,12 +380,14 @@ background-color: #1EBE5D;
     display: block;
     animation: logo-fade-in 2s ease-in-out; /* Animación de entrada */
     transition: transform 0.3s ease, filter 0.3s ease; /* Efecto al pasar el mouse */
+    z-index: 99;
   }
   
   .logo_header:hover {
     transform: scale(1.2); /* Aumenta el tamaño ligeramente */
     filter: drop-shadow(0 0 10px var(--blue)); /* Sombra luminosa */
     cursor: pointer; /* Indica interactividad */
+    z-index: 99;
   }
   
   /* Animación de entrada */
@@ -555,7 +559,7 @@ background-color: #1EBE5D;
     padding-right: 3.5rem;
 }
 .technologies_title{
-    justify-content: center;
+    justify-content:flex-start;
 }
 
 /* Contacto */
@@ -878,4 +882,7 @@ body.loaded #preloader {
 .section-planes {
     position: relative; /* Asegura que z-index funcione */
     z-index: 1; /* Coloca la sección detrás de otros elementos con z-index más alto */
+  }
+  .logo-slider{
+    margin: 0 3rem 0 4rem; 
   }

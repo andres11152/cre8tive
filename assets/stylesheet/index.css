@@ -1,39 +1,37 @@
-    @font-face {
-    font-family: 'Pasajero';
-    src: url('../fonts/Berli.TTF') format('woff'),
-    url('../fonts/Berli.TTF') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-    :root {
-        --white: #ffffff;
-        --blue: #00daf6;
-        --orange: #ecf40c;
-        --black: #000000;
-    }
+:root {
+    --white: #ffffff;
+    --blue: #00daf6;
+    --orange: #ecf40c;
+    --black: #000000;
+}
 
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        font-family: 'Pasajero';
-        color: var(--white);
-    }
+/* Estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
 
-    html {
-        font-size: 57.5%;
-        scrollbar-width: 10px;
-        scrollbar-color: var(--beaver) var(--orange);
-        scroll-behavior: smooth;
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
-    body {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-    }
+/* Resto de tu CSS continúa igual */
+html {
+    font-size: 57.5%;
+    scrollbar-width: 10px;
+    scrollbar-color: var(--beaver) var(--orange);
+    scroll-behavior: smooth;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Otros estilos mantienen la fuente Montserrat aplicada a través de la propiedad `font-family` */
 
 
     html::-webkit-scrollbar {
@@ -140,7 +138,7 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
+        z-index: 999;
         transition: .7s;
     }
 
@@ -155,7 +153,7 @@
         width: 30rem; 
         background: url("../images/img_home-2.webp") no-repeat center;
         background-size: contain;
-        z-index: 1;
+        z-index: 0;
     }
 
     #image_home:hover {
@@ -208,7 +206,7 @@
 
     nav.nav_menu.active a {
         padding: 2rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         text-decoration: none;
         color: var(--black);
@@ -506,21 +504,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--white);
         font-size: 2rem;
     }
 
     .home_text-2 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--orange);
         font-size: 7.2rem;
         margin-bottom: 1.5rem;
     }
     .home_text-3 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--orange);
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
         text-transform: uppercase;
         width: 33rem;
         margin: 0 auto;
@@ -563,12 +562,12 @@
 
 
     .container_parrafo-info p{
-    font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--white);
         font-size: 2.5rem;
-        letter-spacing: 2px;
+        font-weight: 600;
         line-height: 2.5rem;
-        padding: 1.5rem 2rem 0 ;
+        padding: 1.5rem 1rem 0 ;
         justify-content: center;
     }
 
@@ -577,7 +576,7 @@
         border-radius: 5px;
         padding: .6rem 2rem .5rem 2rem;
         color: var(--black);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 1.6rem;
         text-transform: uppercase;
@@ -586,7 +585,7 @@
         border: none;
         cursor: pointer;
         animation: ripple 5s infinite ease-out;
-        z-index: 1;
+        z-index: 2;
     }
 
     .contact_button {
@@ -607,11 +606,8 @@
         color: #00daf6; /* Opcional: Cambia el color al pasar el mouse */
     }
     .container_button{
-
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin-top: 2rem;
     }
     .technologies {
         margin-top: 20px;
@@ -619,7 +615,7 @@
     }
     
     .technologies_title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: bold;
         margin-bottom: 10px;
     }
@@ -659,7 +655,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding-top: 6rem;
@@ -672,7 +668,7 @@
     }
 
     .title_sobreMi {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--beaver);
         text-align: center;
         font-size: 2.2rem;
@@ -683,7 +679,7 @@
 
     .texto_sobreMi {
         color: var(--orange);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         letter-spacing: .1rem;
         white-space: pre-line;
@@ -727,7 +723,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
         letter-spacing: .1rem;
     }
@@ -772,7 +768,7 @@
         font-size: 2.4rem;
         color: var(--white);
         margin-bottom: 1rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* Descripciones */
@@ -952,7 +948,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 6rem 0 5rem 0;
@@ -1004,7 +1000,7 @@
 
     .cards--formacion p:nth-child(1) {
         color: var(--beaver);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.8rem;
         font-weight: bold;
@@ -1013,7 +1009,7 @@
 
     .cards--formacion p:nth-child(2) {
         color: var(--orange);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.4rem;
     }
@@ -1032,7 +1028,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 0rem 0 2rem 0;
@@ -1077,6 +1073,7 @@
         text-decoration: none;
         transition: background-color 0.3s ease;
         animation: ripple 6s infinite ease-out;
+        font-weight: bold;
     }
 
     .container_btn--services button {
@@ -1098,7 +1095,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 6rem 0 5rem 0;
@@ -1157,7 +1154,7 @@
     }
 
     .container_textCard--projects h2 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 3rem;
         color: var(--white);
@@ -1167,7 +1164,7 @@
 
     .container_textCard--projects p {
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.4rem;
         margin-top: 1rem;
@@ -1249,7 +1246,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 1rem 0 1rem 0;
@@ -1272,7 +1269,7 @@
         
     }
     .form-contact input {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         border: 1px solid var(--orange);
         width: 100%;
         padding: 1rem;
@@ -1285,7 +1282,7 @@
     }
 
     .form-contact input::placeholder {
-        color: var(--blue);
+        color: var(--black);
     }
 
     .form-contact .input-invalid {
@@ -1295,7 +1292,7 @@
 
     .form-contact textarea {
         border: 1px solid var(--black);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         width: 100%;
         padding: 1.2rem;
         border-radius: 1rem;
@@ -1309,7 +1306,7 @@
     }
 
     .form-contact textarea::placeholder {
-        color: var(--blue);
+        color: var(--black);
     
     }
 
@@ -1338,7 +1335,7 @@
     .btn_form--contact button {
         background: var(--orange);
         border: none;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         width: 20rem;
         padding: .8rem 1rem;
         border-radius: 1rem;
@@ -1348,6 +1345,7 @@
         cursor: pointer;
         transition: 1s all;
         color: var(--black);
+        font-weight: bold;
     
     }
 
@@ -1368,7 +1366,7 @@
         font-size: 1.6rem; /* Tamaño más destacado */
         margin-bottom: 0.8rem; /* Separación con el input */
         display: block; /* Asegura que esté en línea separada */
-        font-family: 'Pasajero', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         letter-spacing: 0.5px; /* Espaciado entre letras */
         margin-top: 0.5rem;
@@ -1382,7 +1380,7 @@
         border: 1px solid #cccccc;
         border-radius: 5px;
         outline: none;
-        font-family: 'Pasajero', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         appearance: none; /* Quita el estilo nativo del navegador */
         -moz-appearance: none; /* Firefox */
         -webkit-appearance: none; /* Chrome/Safari */
@@ -1391,7 +1389,7 @@
         background-color: #ffffff; /* Fondo blanco */
         color: #000000; /* Texto negro */
         font-size: 1.4rem;
-        font-family: 'Pasajero', sans-serif;
+        font-family: 'Montserrat', sans-serif;
     }
     /* Contenedor general del formulario */
 .contact {
@@ -1407,7 +1405,7 @@
     display: block;
     text-align: center;
     color: var(--white);
-    font-family: 'Pasajero';
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
     letter-spacing: 0.1rem;
     padding: 1rem 0 1rem 0;
@@ -1426,7 +1424,7 @@
     font-size: 1.6rem;
     margin-bottom: 0.8rem;
     display: block;
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     letter-spacing: 0.5px;
      /* Texto negro */
@@ -1441,7 +1439,7 @@
     border: 1px solid #cccccc;
     border-radius: 5px;
     outline: none;
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -1460,7 +1458,7 @@
     background-color: #ffffff; /* Fondo blanco */
     color: #000000; /* Texto negro */
     font-size: 1.4rem;
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Responsivo */
@@ -1524,9 +1522,8 @@
     }
     
     .footer-section ul li a {
-        color: var(--orange);
         text-decoration: none;
-        font-size: 14px;
+        font-size: 20px;
         z-index: 2;
     }
     
@@ -1570,6 +1567,7 @@
     
         .footer-section h3 {
         font-size: 14px;
+        margin-bottom: 1rem;
         }
     
         .footer-section ul li a {
@@ -1611,7 +1609,7 @@
         text-align: center;
         font-size: 6rem;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 3rem;
     }
     .logo_header{
@@ -1638,13 +1636,13 @@
         font-size: 4rem;
         color: var(--orange);
         margin-bottom: 1rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
     }
 
     .service-description {
         font-size: 3.6rem;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         line-height: 2rem;
     }
 
@@ -1773,7 +1771,7 @@
         background-attachment: fixed; /* Hace que el fondo sea fijo */
         background-size: cover; 
             @font-face {
-    font-family: 'Pasajero';
+                font-family: 'Montserrat', sans-serif;
     src: url('../fonts/Berli.TTF') format('woff'),
     url('../fonts/Berli.TTF') format('woff');
     font-weight: normal;
@@ -1792,7 +1790,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--white);
     }
 
@@ -1914,14 +1912,15 @@
         width: 100%;
         top: 0;
         left: 0;
-        z-index: 1;
         transition: .7s;
+        z-index: 99;
     }
 
 
     .header.abajo {
         backdrop-filter: blur(15px);
         background: rgba(41,41,41,.3);
+        z-index: 99;
     }
     #image_home {
         margin-top: 2rem;
@@ -1982,7 +1981,7 @@
 
     nav.nav_menu.active a {
         padding: 2rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         text-decoration: none;
         color: var(--black);
@@ -2279,19 +2278,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--white);
         font-size: 2rem;
     }
 
     .home_text-2 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--orange);
         font-size: 7.2rem;
         margin-bottom: 1.5rem;
     }
     .home_text-3 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--orange);
         font-size: 2rem;
         text-transform: uppercase;
@@ -2336,7 +2335,7 @@
 
 
     .container_parrafo-info p{
-    font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--white);
         font-size: 2.5rem;
         letter-spacing: 2px;
@@ -2350,7 +2349,7 @@
         border-radius: 5px;
         padding: .6rem 2rem .5rem 2rem;
         color: var(--black);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 1.6rem;
         text-transform: uppercase;
@@ -2432,7 +2431,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding-top: 6rem;
@@ -2445,7 +2444,7 @@
     }
 
     .title_sobreMi {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         color: var(--beaver);
         text-align: center;
         font-size: 2.2rem;
@@ -2456,7 +2455,7 @@
 
     .texto_sobreMi {
         color: var(--orange);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 1.5rem;
         letter-spacing: .1rem;
         white-space: pre-line;
@@ -2500,7 +2499,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 3rem;
         letter-spacing: .1rem;
         padding: 6rem 0 5rem 0;
@@ -2546,7 +2545,7 @@
         font-size: 2.4rem;
         color: var(--white);
         margin-bottom: 1rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* Descripciones */
@@ -2604,6 +2603,7 @@
         font-weight: bold;
         font-size: 1.6rem;
         transition: background-color 0.3s ease, color 0.3s ease;
+        font-weight: bold;
     }
 
     .card-landing-page .btn-contact:hover,
@@ -2725,7 +2725,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 6rem 0 5rem 0;
@@ -2777,7 +2777,7 @@
 
     .cards--formacion p:nth-child(1) {
         color: var(--beaver);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.8rem;
         font-weight: bold;
@@ -2786,7 +2786,7 @@
 
     .cards--formacion p:nth-child(2) {
         color: var(--orange);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.4rem;
     }
@@ -2805,7 +2805,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 0rem 0 2rem 0;
@@ -2871,7 +2871,7 @@
         display: block;
         text-align: center;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         font-size: 2.4rem;
         letter-spacing: .1rem;
         padding: 6rem 0 5rem 0;
@@ -2930,7 +2930,7 @@
     }
 
     .container_textCard--projects h2 {
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 3rem;
         color: var(--white);
@@ -2940,7 +2940,7 @@
 
     .container_textCard--projects p {
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         letter-spacing: .1rem;
         font-size: 1.4rem;
         margin-top: 1rem;
@@ -3024,7 +3024,7 @@
 .contact h1 {
     text-align: center;
     color: var(--white);
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
     letter-spacing: 0.1rem;
     margin-bottom: 2rem;
@@ -3053,7 +3053,7 @@
 .form-contact input,
 .form-contact textarea,
 .form-contact select {
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 2px solid var(--orange);
     background-color: var(--white);
     color: var(--black);
@@ -3066,7 +3066,7 @@
 
 .form-contact input::placeholder,
 .form-contact textarea::placeholder {
-    color: var(--blue);
+    color: var(--black);
 }
 
 .form-contact input:focus,
@@ -3090,7 +3090,7 @@
 .btn_form--contact button {
     background: var(--orange);
     border: none;
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     width: 100%;
     max-width: 200px;
     padding: 0.8rem 1rem;
@@ -3244,7 +3244,7 @@
         text-align: center;
         font-size: 6rem;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         margin-bottom: 3rem;
     }
     .logo_header{
@@ -3271,13 +3271,13 @@
         font-size: 4rem;
         color: var(--orange);
         margin-bottom: 1rem;
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
     }
 
     .service-description {
         font-size: 3.6rem;
         color: var(--white);
-        font-family: 'Pasajero';
+        font-family: 'Montserrat', sans-serif;
         line-height: 2rem;
     }
 
@@ -3438,8 +3438,9 @@
   .faq_tab:hover {
     background-color: var(--orange);
     color: var(--black);
-    box-shadow: 0 4px 15px rgba(236, 244, 12, 0.6);
+    box-shadow: 0 4px 10px var(--orange);
     transform: scale(1.05);
+    border-radius: 2rem;
   }
   
   /* Contenido de las pestañas */
@@ -3521,8 +3522,6 @@
         overflow: hidden;
         width: 100%;
         background-color: #00000015; /* Fondo oscuro para resaltar los logos */
-        margin-left: 3rem;
-        margin-right: 3rem;
     }
     
     /* Pista del slider */
@@ -3540,9 +3539,9 @@
     
     .logo img {
         display: block;
-        width: 100%;
+        width: 80%;
         height: auto;
-        filter: grayscale(60%); /* Efecto blanco y negro */
+        filter: grayscale(100%);
         transition: filter 0.3s ease;
     }
     
@@ -3585,14 +3584,19 @@
     
     .faq_tab.active {
         background-color: var(--orange);
-        color: var(--black);
+    color: var(--black);
+    box-shadow: 0 4px 10px var(--orange);
+    transform: scale(1.05);
+    border-radius: 2rem;
     }
     
     .faq_tab:hover {
         background-color: var(--orange);
         color: var(--black);
+        box-shadow: 0 4px 10px var(--orange);
+        transform: scale(1.05);
+        border-radius: 2rem;
     }
-    
     .faq_content {
         max-width: 800px;
         margin: 0 auto;
@@ -3642,8 +3646,6 @@
         overflow: hidden;
         width: 100%;
         background-color: #00000015; /* Fondo oscuro para resaltar los logos */
-        margin-left: 3rem;
-        margin-right: 3rem;
     }
     
     /* Pista del slider */
@@ -3661,9 +3663,9 @@
     
     .logo img {
         display: block;
-        width: 100%;
+        width: 80%;
         height: auto;
-        filter: grayscale(60%); /* Efecto blanco y negro */
+        filter: grayscale(100%); /* Efecto blanco y negro */
         transition: filter 0.3s ease;
     }
     
@@ -3687,7 +3689,7 @@
 }
 
 /* Aplica la clase .interactive a los elementos interactivos */
-.header,
+
 .cookie-consent,
 nav.nav_menu.active,
 .main,
@@ -3754,7 +3756,7 @@ footer,
   }
   
   .testimonial-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     font-style: italic;
     color: #ffffff;
@@ -3852,7 +3854,7 @@ footer,
     font-weight: bold;
     color: #000; /* Color negro */
     margin-bottom: 1rem;
-    font-family: 'Pasajero', sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
   
   .step-card p {
