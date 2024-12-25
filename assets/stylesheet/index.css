@@ -3970,5 +3970,12 @@ footer,
     color: #1a1a1a;
     z-index: 2;
   }
+
+  .services-panel__image {
+    max-width: 150px;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  
   
   
