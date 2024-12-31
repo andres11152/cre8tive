@@ -34,6 +34,8 @@
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://cre8tive.pro/" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 
     <!-- Datos estructurados en JSON-LD -->
     <script type="application/ld+json">
@@ -93,7 +95,26 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <!-- Particles Effect -->
-    <link rel="shortcut icon" href="./assets/images/logo-8.png" type="image/x-icon" />
+    <link rel="preload" as="image" href="./assets/images/logo-8.png">
+
+    <!--Css critico-->
+    <style>
+      body {
+          font-family: 'Montserrat', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #fff;
+      }
+      header {
+          background-color: #000;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+      }
+  </style>
+  
   </head>
 
 
@@ -137,6 +158,7 @@
         src="./assets/images/logo-blanco-sin-fondo.png"
         alt="Logo Portafolio"
         class="logo_header"
+        loading="lazy"
       />
 
       <!-- Barra de navegación -->
@@ -404,8 +426,6 @@
             </div>
           </div>
         </section>
-
-       <a href="https://wa.me/573138081081" class="btn-contact-2">¡Contáctanos ahora!</a>
         
       <section class="plains" id="plains">
         
@@ -1033,8 +1053,17 @@
   
     <!-- scripts -->
     
-    <script src="./script.js"></script>
-    <script src="./cookies.js"></script>  
+    
   </div>
+  <script src="./script.js"></script>
+    <script src="./cookies.js"></script>  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        lazyImages.forEach(img => {
+            img.src = img.dataset.src || img.src;
+        });
+    });
+</script>
   </body>
 </html>
