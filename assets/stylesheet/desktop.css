@@ -15,7 +15,7 @@ nav.nav_menu {
     height: 55rem;
     width: 40rem; 
     transition: filter 0.3s ease; /* Ajustamos la transición para la sombra */
-    background: url("../images/img_home-1.webp") no-repeat center;
+    background: url("../images/img_home-2.webp") no-repeat center;
     background-size: contain;
     background-color: transparent; /* Asegúrate de que el fondo sea transparente */
 }

@@ -30,6 +30,15 @@ body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.fixed-element {
+    position: fixed;
+    max-width: 100%; /* Evita que elementos fijos se desborden */
+}
 
 /* Otros estilos mantienen la fuente Montserrat aplicada a través de la propiedad `font-family` */
 

@@ -1,33 +1,35 @@
+// ===== Utilidades para seleccionar elementos =====
 const select = (selector) => document.querySelector(selector);
 const selectAll = (selector) => document.querySelectorAll(selector);
 
-const btn = select('#button'); // Asegúrate de que existe un elemento con id="button"
-const inputName = select('#nombre');
-const inputEmail = select('#email');
-const flagsElement = select('#flags');
-const textsToChange = selectAll('[data-section]');
+// Elementos seleccionados por ID o clase
+const btn = select('#button'); // Botón del menú
+const inputName = select('#nombre'); // Input del nombre
+const inputEmail = select('#email'); // Input del email
+const flagsElement = select('#flags'); // Elemento de banderas
+const textsToChange = selectAll('[data-section]'); // Elementos con datos a cambiar
 
-/* ===== Loader =====*/
+// ===== Loader (Pantalla de carga) =====
 window.addEventListener('load', () => {
     const loader = select('.container--loader');
     if (loader) {
-        loader.style.cssText = 'opacity: 0; visibility: hidden';
+        loader.style.cssText = 'opacity: 0; visibility: hidden'; // Oculta el loader después de cargar
     }
 });
 
-/*===== Header =====*/
+// ===== Cambiar estilos del Header al hacer scroll =====
 window.addEventListener('scroll', () => {
     const header = select('header');
     if (header) {
-        header.classList.toggle('abajo', window.scrollY > 0);
+        header.classList.toggle('abajo', window.scrollY > 0); // Cambia la clase si se hace scroll
     }
 });
 
-/*===== Boton Menu =====*/
-if (btn) { // Verifica si btn existe antes de agregar el evento
+// ===== Botón del Menú =====
+if (btn) { // Verifica que el botón existe
     btn.addEventListener('click', function() {
-        const navMenu = select('.nav_menu');
-        if (navMenu) { // Verifica que navMenu también exista
+        const navMenu = select('.nav_menu'); // Menú de navegación
+        if (navMenu) {
             this.classList.toggle('active');
             this.classList.toggle('not-active');
             navMenu.classList.toggle('active');
@@ -38,202 +40,127 @@ if (btn) { // Verifica si btn existe antes de agregar el evento
     console.error("El botón con id='button' no se encontró en el DOM.");
 }
 
-
-
-/*===== Boton y función ir arriba =====*/
+// ===== Botón "Ir arriba" =====
 window.addEventListener('scroll', () => {
     select('.go-top-container').classList.toggle('show', document.documentElement.scrollTop > 100);
 });
 
 select('.go-top-container').addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll suave hacia arriba
 });
 
-  
-
-// Solicitar permiso para mostrar notificaciones
+// ===== Permiso para Notificaciones =====
 if (Notification.permission === "default") {
-  Notification.requestPermission();
+    Notification.requestPermission(); // Solicita permiso para notificaciones
 }
 
 document.addEventListener('visibilitychange', function() {
-  if (document.hidden) {
-      // Mostrar notificación cuando el usuario se va de la pestaña
-      if (Notification.permission === "granted") {
-          new Notification("¡Vuelve con Cre8tive Agency!", {
-              body: "Te estamos esperando 😊",
-              icon: "/assets/images/logo-8.png" // Reemplaza con tu icono
-          });
-      }
-      document.title = "¡Vuelve a la pestaña!";
-  } else {
-      document.title = "Gracias por volver";
-  }
+    if (document.hidden) {
+        // Muestra notificación al salir de la pestaña
+        if (Notification.permission === "granted") {
+            new Notification("¡Vuelve con Cre8tive Agency!", {
+                body: "Te estamos esperando 😊",
+                icon: "/assets/images/logo-8.png"
+            });
+        }
+        document.title = "¡Vuelve a la pestaña!";
+    } else {
+        document.title = "Gracias por volver";
+    }
 });
 
-
-
-// email js
+// ===== EmailJS: Envío de correos =====
 document.addEventListener('DOMContentLoaded', function() {
     if (typeof emailjs !== 'undefined') {
-        // Inicializar EmailJS con la API KEY (public key)
-        emailjs.init('yrfOKRShHFjzgD9_n'); // Cambia esta clave por la tuya si es necesario
+        emailjs.init('yrfOKRShHFjzgD9_n'); // Inicializa EmailJS con la clave pública
     } else {
-        console.error('Error: EmailJS no está definido. Verifica que el script de EmailJS se esté cargando correctamente.');
+        console.error('Error: EmailJS no está definido.');
     }
 
-//email.js
-document.querySelector('#form-c').addEventListener('submit', function(event) {
-  event.preventDefault();
+    // Manejo del formulario
+    select('#form-c').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita el envío por defecto
 
-  // Recopilar los datos del formulario
-  const formData = new FormData(this);
-  const templateParams = {
-      name: formData.get('nombre') + ' ' + formData.get('apellido'), // Combina nombre y apellido
-      email: formData.get('correo'),
-      phone: formData.get('celular'),
-      company: formData.get('empresa') || 'No especificado', // Valor por defecto si está vacío
-      service: formData.get('servicio'),
-      budget: formData.get('presupuesto'),
-      details: formData.get('detalles') || 'No se proporcionaron detalles adicionales' // Valor por defecto
-  };
+        // Recopila los datos del formulario
+        const formData = new FormData(this);
+        const templateParams = {
+            name: `${formData.get('nombre')} ${formData.get('apellido')}`,
+            email: formData.get('correo'),
+            phone: formData.get('celular'),
+            company: formData.get('empresa') || 'No especificado',
+            service: formData.get('servicio'),
+            budget: formData.get('presupuesto'),
+            details: formData.get('detalles') || 'No se proporcionaron detalles adicionales'
+        };
 
-  // Enviar los datos a través de EmailJS usando el ID del servicio y plantilla
-  emailjs.send('service_ci9a4if', 'template_qmyo4ox', templateParams)
-    .then((response) => {
-      console.log('Correo electrónico enviado', response);
-      alert('¡Tu mensaje ha sido enviado con éxito!');
-      this.reset(); // Limpiar el formulario después de enviarlo
-    })
-    .catch((error) => {
-      console.error('Error al enviar correo electrónico', error);
-      alert('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.');
+        // Envío de datos a través de EmailJS
+        emailjs.send('service_ci9a4if', 'template_qmyo4ox', templateParams)
+            .then((response) => {
+                console.log('Correo electrónico enviado', response);
+                alert('¡Tu mensaje ha sido enviado con éxito!');
+                this.reset(); // Limpia el formulario
+            })
+            .catch((error) => {
+                console.error('Error al enviar correo electrónico', error);
+                alert('Hubo un error al enviar tu mensaje.');
+            });
     });
 });
 
-
-
-//script particles
+// ===== Partículas en el fondo =====
 particlesJS("particles-js", {
-  particles: {
-    number: {
-      value: 50, // Número reducido de partículas
-      density: {
-        enable: true,
-        value_area: 800, // Área más amplia para dispersión
-      },
+    particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+        opacity: { value: 0.5 },
+        size: { value: 1.5, random: true },
+        line_linked: { enable: true, distance: 200, color: "#ffffff", opacity: 0.1, width: 1 },
+        move: { enable: true, speed: 0.8, random: true, out_mode: "out" }
     },
-    color: {
-      value: "#ffffff", // Color blanco para las partículas
+    interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" }, resize: true },
+        modes: { repulse: { distance: 80, duration: 0.2 } }
     },
-    shape: {
-      type: "circle", // Forma circular de las partículas
-      stroke: {
-        width: 0,
-        color: "#000000",
-      },
-    },
-    opacity: {
-      value: 0.5, // Opacidad más baja para sutilidad
-      random: false,
-      anim: {
-        enable: false,
-      },
-    },
-    size: {
-      value: 1.5, // Tamaño pequeño
-      random: true,
-      anim: {
-        enable: false,
-      },
-    },
-    line_linked: {
-      enable: true, // Conexiones entre partículas activadas
-      distance: 200, // Distancia más corta entre partículas conectadas
-      color: "#ffffff",
-      opacity: 0.1, // Opacidad baja para líneas
-      width: 1,
-    },
-    move: {
-      enable: true,
-      speed: 0.8, // Velocidad lenta y suave
-      direction: "none",
-      random: true, // Movimiento aleatorio
-      straight: false,
-      out_mode: "out", // Las partículas desaparecen al salir del canvas
-      bounce: false,
-    },
-  },
-  interactivity: {
-    detect_on: "canvas",
-    events: {
-      onhover: {
-        enable: true,
-        mode: "repulse", // Reacción al pasar el mouse
-      },
-      onclick: {
-        enable: false, // Sin reacción al hacer clic (opcional)
-        mode: "push",
-      },
-      resize: true,
-    },
-    modes: {
-      repulse: {
-        distance: 80, // Distancia de repulsión reducida
-        duration: 0.2,
-      },
-      push: {
-        particles_nb: 2, // Menos partículas generadas al hacer clic
-      },
-    },
-  },
-  retina_detect: true, // Optimización para pantallas Retina
+    retina_detect: true
 });
 
-// Seleccionar todas las pestañas y paneles
-const tabs = document.querySelectorAll('.faq_tab');
-const panels = document.querySelectorAll('.faq_panel');
+// ===== Tabs de FAQ =====
+const tabs = selectAll('.faq_tab');
+const panels = selectAll('.faq_panel');
 
-// Seleccionar la primera pestaña y panel por defecto
-tabs[0].classList.add('active'); // Primera pestaña activa
-panels[0].classList.add('active'); // Primer panel activo
-
-// Agregar evento de clic a cada pestaña
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // Desactivar todas las pestañas y paneles
-    tabs.forEach(t => t.classList.remove('active'));
-    panels.forEach(panel => panel.classList.remove('active'));
-
-    // Activar la pestaña y panel seleccionados
-    tab.classList.add('active');
-    const targetPanel = document.getElementById(tab.dataset.tab);
-    targetPanel.classList.add('active');
-  });
-});
-
-});
-
-// Seleccionar todas las pestañas y paneles
-const tabs = document.querySelectorAll('.services-tab');
-const panels = document.querySelectorAll('.services-panel');
-
-// Activar la primera pestaña y panel por defecto
+// Activa la primera pestaña por defecto
 tabs[0].classList.add('active');
 panels[0].classList.add('active');
 
-// Evento de clic en las pestañas
+// Maneja los clics en las pestañas
 tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    // Desactivar todas las pestañas y paneles
-    tabs.forEach(t => t.classList.remove('active'));
-    panels.forEach(panel => panel.classList.remove('active'));
+    tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        panels.forEach(panel => panel.classList.remove('active'));
 
-    // Activar la pestaña y el panel correspondientes
-    tab.classList.add('active');
-    const targetPanel = document.getElementById(tab.dataset.tab);
-    targetPanel.classList.add('active');
-  });
+        tab.classList.add('active');
+        const targetPanel = select(`#${tab.dataset.tab}`);
+        targetPanel.classList.add('active');
+    });
 });
 
+// ===== Tabs de Servicios =====
+const serviceTabs = selectAll('.services-tab');
+const servicePanels = selectAll('.services-panel');
 
+// Activa la primera pestaña de servicios por defecto
+serviceTabs[0].classList.add('active');
+servicePanels[0].classList.add('active');
+
+// Maneja los clics en las pestañas de servicios
+serviceTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        serviceTabs.forEach(t => t.classList.remove('active'));
+        servicePanels.forEach(panel => panel.classList.remove('active'));
+
+        tab.classList.add('active');
+        const targetPanel = select(`#${tab.dataset.tab}`);
+        targetPanel.classList.add('active');
+    });
+});
