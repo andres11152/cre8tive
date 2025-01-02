@@ -38,7 +38,7 @@
 
 
     <!-- Datos estructurados en JSON-LD -->
-    <script type="application/ld+json">
+    <script defer type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
@@ -58,7 +58,7 @@
     </script>
 
     <!-- Meta Pixel Code -->
-    <script>
+    <script defer>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -998,16 +998,19 @@
     </main>
 
     <footer>
-      <div class="footer-section">
-        <h3>Compañía</h3>
-        <ul>
+      <div class="container--footer">
+        <!-- Sección Compañía -->
+        <div class="footer-section">
+          <h3>Compañía</h3>
+          <ul>
             <li><a href="#why-us">¿Por qué elegirnos?</a></li>
             <li><a href="#testimonials">Reseñas de clientes</a></li>
             <li><a href="#services">Nuestros Servicios</a></li>
             <li><a href="dataprocess.html">Política de Privacidad</a></li>
             <li><a href="#plains">Planes</a></li>
-        </ul>
-    </div>
+          </ul>
+        </div>
+    
         <!-- Sección Ayuda -->
         <div class="footer-section">
           <h3>Ayuda</h3>
@@ -1053,9 +1056,6 @@
       </div>
     </footer>
     
-    
-    
-    
 
     <div class="go-top-container">
       <div class="go-top-button">
@@ -1077,13 +1077,13 @@
   </div>
   <script src="./script.js"></script>
     <script src="./cookies.js"></script>  
-  <script>
+  <script defer>
     document.addEventListener('DOMContentLoaded', () => {
         const lazyImages = document.querySelectorAll('img[loading="lazy"]');
         lazyImages.forEach(img => {
             img.src = img.dataset.src || img.src;
         });
     });
-</script>
+  </script>
   </body>
 </html>
