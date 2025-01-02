@@ -1282,14 +1282,13 @@ img, video, iframe {
     }
     .form-contact input {
         font-family: 'Montserrat', sans-serif;
-        border: 1px solid var(--orange);
         width: 100%;
         padding: 1rem;
         border-radius: 0.5rem;
         color: #000000;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         outline: none;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         letter-spacing: 1px;
     }
 
@@ -3805,7 +3804,7 @@ footer,
 
 #politica-de-privacidad h2 {
     padding: 10rem 0 0 0;
-    font-size: 4rem; /* Tamaño de la fuente del título principal */
+    font-size: 3rem; /* Tamaño de la fuente del título principal */
     margin-bottom: 2rem;
     text-align: center;
     color: var(--white);
@@ -3815,7 +3814,6 @@ footer,
     font-size: 2.5rem; /* Tamaño de la fuente de subtítulos */
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--blue); /* Color de los subtítulos */
 }
 
 #politica-de-privacidad ul {

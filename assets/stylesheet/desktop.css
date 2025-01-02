@@ -619,7 +619,7 @@ background-color: #1EBE5D;
 
 #politica-de-privacidad h2 {
     padding: 10rem 0 0 0;
-    font-size: 4rem; /* Tamaño de la fuente del título principal */
+    font-size: 3rem; /* Tamaño de la fuente del título principal */
     margin-bottom: 2rem;
     text-align: center;
     color: var(--white);
@@ -629,7 +629,6 @@ background-color: #1EBE5D;
     font-size: 2.5rem; /* Tamaño de la fuente de subtítulos */
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    color: var(--blue); /* Color de los subtítulos */
 }
 
 #politica-de-privacidad ul {

@@ -911,74 +911,80 @@
           <div class="container--contact">
             <form id="form-c" class="form-contact" name="solicitud-cotizacion">
               <!-- Nombre -->
+              <label for="nombre">Nombre*</label>
               <input
                 id="nombre"
                 type="text"
                 name="nombre"
-                placeholder="Nombre*"
                 required
               />
+        
               <!-- Apellido -->
+              <label for="apellido">Apellido*</label>
               <input
                 id="apellido"
                 type="text"
                 name="apellido"
-                placeholder="Apellido*"
                 required
               />
+        
               <!-- Celular -->
+              <label for="celular">Celular*</label>
               <input
                 id="celular"
                 type="tel"
                 name="celular"
-                placeholder="Celular*"
                 required
               />
+        
               <!-- Correo Electrónico -->
+              <label for="correo">Correo Electrónico*</label>
               <input
                 id="correo"
                 type="email"
                 name="correo"
-                placeholder="Correo Electrónico*"
                 required
               />
+        
               <!-- Nombre de la Empresa -->
+              <label for="empresa">Nombre de tu emprendimiento o empresa (opcional)</label>
               <input
                 id="empresa"
                 type="text"
                 name="empresa"
-                placeholder="Nombre de tu emprendimiento o empresa (opcional)"
               />
-             <!-- ¿Qué buscas exactamente? -->
+        
+              <!-- ¿Qué buscas exactamente? -->
               <label for="servicio">¿Qué buscas exactamente?*</label>
               <select id="servicio" name="servicio" required>
-                  <option value="" disabled selected>Selecciona una opción</option>
-                  <option value="desarrollo-per">Desarrollo Web personalizado</option>
-                  <option value="diseno-web">Pagina Web Corporativa</option>
-                  <option value="tienda-online">Tienda Online</option>
-                  <option value="diseno-web">Landing Page</option>
-                  <option value="otro">Servicio | otro</option>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="desarrollo-per">Desarrollo Web personalizado</option>
+                <option value="diseno-web">Página Web Corporativa</option>
+                <option value="tienda-online">Tienda Online</option>
+                <option value="diseno-web">Landing Page</option>
+                <option value="otro">Servicio | otro</option>
               </select>
-
+        
               <!-- Presupuesto -->
               <label for="presupuesto">¿Cuál es tu presupuesto?*</label>
               <select id="presupuesto" name="presupuesto" required>
-                  <option value="" disabled selected>Selecciona una opción</option>
-                  <option value="1-2m">Entre $1,000,000 y $2,000,000 COP</option>
-                  <option value="2-4m">Entre $2,000,000 y $4,000,000 COP</option>
-                  <option value="4-6m">Entre $4,000,000 y $6,000,000 COP</option>
-                  <option value="6-7m">Entre $6,000,000 y $7,000,000 COP</option>
-                  <option value="7m+">Más de $7,000,000 COP</option>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="1-2m">Entre $1,000,000 y $2,000,000 COP</option>
+                <option value="2-4m">Entre $2,000,000 y $4,000,000 COP</option>
+                <option value="4-6m">Entre $4,000,000 y $6,000,000 COP</option>
+                <option value="6-7m">Entre $6,000,000 y $7,000,000 COP</option>
+                <option value="7m+">Más de $7,000,000 COP</option>
               </select>
+        
               <!-- Detalles Adicionales -->
+              <label for="detalles">Explícanos con más detalle lo que necesitas (opcional)</label>
               <textarea
                 id="detalles"
                 cols="20"
                 rows="4"
                 name="detalles"
-                placeholder=" Explícanos con más detalle lo que necesitas (opcional)"
               ></textarea>
-      
+        
               <div class="btn_form--contact">
                 <button
                   id="btn-enviar"
@@ -992,6 +998,7 @@
             </form>
           </div>
         </div>
+        
       </section>
       
 
@@ -1051,7 +1058,7 @@
       <div class="footer-bottom">
         <span>
           Copyright © 2024 | Cre8tive Agency | Todos los derechos reservados |
-          <a href="#privacy-policy">Política de protección de datos personales</a>
+          <a href="dataprocess.html">Política de protección de datos personales</a>
         </span>
       </div>
     </footer>
