@@ -1313,7 +1313,6 @@ img, video, iframe {
         margin-bottom: 3rem;
         letter-spacing: 1px;
         resize: none;
-        margin-top: 2rem;
     }
 
     .form-contact textarea::placeholder {
@@ -1380,7 +1379,8 @@ img, video, iframe {
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         letter-spacing: 0.5px; /* Espaciado entre letras */
-        margin-top: 0.5rem;
+        margin: 0.5rem 0 1rem 0;
+
     }
     
     .form-contact select {
@@ -4010,4 +4010,23 @@ footer,
     background-color: #ffffff;
     color: #00daf6;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6), 0 0 25px rgba(0, 218, 246, 0.8);
+}
+.franchises-carousel {
+    display: flex;
+    margin: var(--space-auto);
+    max-width: 1280px;
+    overflow: hidden;
+    width: 100vw;
+}
+.franchises-carousel .ticker-wrapper {
+    display: flex;
+    gap: 2rem;
+    animation: ticker 60s linear infinite;
+}
+.franchises-carousel .ticker-wrapper .ticker-one, .franchises-carousel .ticker-wrapper .ticker-two{
+    animation: carousel 20s linear infinite;
+    display: flex;
+}
+.franchises-carousel .ticker-wrapper .ticker-one .ticker-item, .franchises-carousel .ticker-wrapper .ticker-two .ticker-item{
+    padding: var(--space-0) 20px;
 }
