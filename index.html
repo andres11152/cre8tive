@@ -217,7 +217,7 @@
               <div class="logo-slider">
                 <div class="slider-track">
                   <div class="logo">
-                    <img src="./assets/images/react-svgrepo-com.svg" alt="Logo 1">
+                    <img data-src="./assets/images/react-svgrepo-com.svg" alt="Logo 1" class="lazyload">
                   </div>
                   <div class="logo">
                     <img src="./assets/images/node2-svgrepo-com.svg" alt="Logo 2">
@@ -270,8 +270,6 @@
                   <div class="logo">
                     <img src="./assets/images/woocommerce-icon-svgrepo-com.svg" alt="Logo 6">
                   </div>
-                 
-                 
                 </div>
             </ul>
           </div>
@@ -280,13 +278,13 @@
           <!-- Título principal -->
           <div>
           
-            <p
-              class="home_text-3 text-type"
-              data-section="home"
-              data-value="home_text-3"
-            >
-              ¡Haz despegar tu negocio con un sitio web ganador!
-            </p>
+              <p
+                class="home_text-3 text-type"
+                data-section="home"
+                data-value="home_text-3"
+              >
+                ¡Haz despegar tu negocio con un sitio web ganador!
+              </p>
           </div>
 
           <!-- Subtítulo / Propuesta de valor -->
@@ -310,7 +308,8 @@
           </div>
         </div>
         
-        
+       
+
         <section class="why-us" id="why-us">
           <div class="container-why-us">
             <h1 class="section-title-why-us">¿Por qué elegirnos?</h1>
@@ -355,6 +354,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="video-container">
+            <video autoplay muted loop class="background-video">
+                <source src="./assets/videos/videohome.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
           </div>
         </section>
 
@@ -561,6 +566,7 @@
       </section>
       
       
+    
       
       <!-- Servicios -->
        
@@ -874,12 +880,11 @@
         </div>
       </section>
       
-      
       <!-- Contacto -->
       <section class="contact" id="contact">
         <h1 data-section="contact" data-value="title">Solicitar Cotización</h1>
 
-        <section class="steps-section">
+        <section data-aos="fade-left" class="steps-section">
           <div class="steps-container">
             <!-- Paso 1 -->
             <div class="step-card">
@@ -907,7 +912,7 @@
           </div>
         </section>
         
-        <div class="container_box--contact" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="container_box--contact" data-aos-anchor-placement="center-bottom">
           <div class="container--contact">
             <form id="form-c" class="form-contact" name="solicitud-cotizacion">
               <!-- Nombre -->
@@ -1081,7 +1086,7 @@
     
     
   </div>
-  <script src="./script.js"></script>
+  <script src="./script.min.js"></script>
     <script src="./cookies.js"></script>  
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {

@@ -4030,3 +4030,23 @@ footer,
 .franchises-carousel .ticker-wrapper .ticker-one .ticker-item, .franchises-carousel .ticker-wrapper .ticker-two .ticker-item{
     padding: var(--space-0) 20px;
 }
+@media (max-width: 768px) {
+    .video-container {
+        height: 30vh; /* Reduce aún más la altura para móviles */
+        max-height: 3%; /* Máxima altura en móviles */
+
+    }
+
+    .video-content h1 {
+        font-size: 1.5rem; /* Reduce el tamaño del encabezado */
+    }
+
+    .video-content p {
+        font-size: 0.9rem; /* Reduce el tamaño del subtítulo */
+    }
+
+    .video-content .cta-button {
+        font-size: 0.8rem; /* Botón más pequeño */
+        padding: 6px 12px; /* Ajusta el tamaño del botón */
+    }
+}

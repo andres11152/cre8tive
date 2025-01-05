@@ -887,3 +887,55 @@ body.loaded #preloader {
   .logo-slider{
     margin: 0 3rem 0 4rem; 
   }
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 130vh; /* Más pequeño, ocupa solo el 30% de la altura de la pantalla */
+    max-height: 600px; /* Máxima altura */
+    background-color: #000; /* Fondo de respaldo */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video al contenedor */
+    z-index: 1;
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.video-content h1 {
+    font-size: 1.8rem; /* Texto más pequeño para la nueva altura */
+    margin-bottom: 0.5rem;
+}
+
+.video-content p {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+    margin-bottom: 1rem;
+}
+
+.video-content .cta-button {
+    background-color: #00bfff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.video-content .cta-button:hover {
+    background-color: #007acc;
+}
