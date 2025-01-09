@@ -9,19 +9,25 @@
 nav.nav_menu {
     display: flex;
 }
-#image_home {
-    margin-top: 2rem;
-    justify-content: right;
-    height: 55rem;
-    width: 40rem; 
-    transition: filter 0.3s ease; /* Ajustamos la transición para la sombra */
-    background: url("../images/img_home-2.webp") no-repeat center;
-    background-size: contain;
-    background-color: transparent; /* Asegúrate de que el fondo sea transparente */
+.container_image-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    width: 100%; /* El ancho ocupa toda la pantalla */
+    height: 55rem; /* Altura fija */
 }
+
+#image_home {
+    width: 35rem; /* Ajusta el ancho de la imagen */
+    height: 45rem; /* Ajusta la altura de la imagen */
+    background-size: contain;
+    transition: filter 0.3s ease, transform 0.3s ease; /* Animación al hover */
+}
+
 #image_home:hover {
-    filter: drop-shadow(0px 0px 30px var(--blue)); /* Sombra más intensa */
-    transform: scale(1.3) rotate(10deg); /* Aumenta el tamaño y aplica una rotación ligera */
+    filter: drop-shadow(0px 0px 30px var(--blue));
+    transform: scale(1.1) rotate(5deg);
 }
 
 
