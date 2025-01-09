@@ -158,19 +158,28 @@ img, video, iframe {
         backdrop-filter: blur(15px);
         background: rgba(41,41,41,.3);
     }
-    #image_home {
-        margin-top: 2rem;
-        height: 30rem;
-        width: 24rem; 
-        background-size: contain;
-        z-index: 0;
-    }
-
-    #image_home:hover {
-        filter: drop-shadow(0px 0px 30px var(--blue)); /* Sombra más intensa */
-        transform: scale(1.1) rotate(10deg); /* Aumenta el tamaño y aplica una rotación ligera */
-    }
-
+    .container_image-home {
+        display: flex; /* Para centrar si es necesario */
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* El contenedor ocupa todo el ancho disponible */
+        height: auto; /* Altura ajustable según el contenido */
+        
+      }
+      
+      #image_home {
+        max-width: 80%; /* Evita que la imagen exceda el contenedor */
+        height: auto; /* Mantiene la proporción natural de la imagen */
+        object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor */
+        transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave al hover */
+        padding: 0 3rem; /* Añade un relleno a los lados */
+      }
+      
+      #image_home:hover {
+        transform: scale(1.1); /* Escala ligera al hacer hover */
+        filter: drop-shadow(0px 0px 15px var(--blue)); /* Sombra decorativa */
+      }
+      
     .header .logo__header {
         width: 7.5rem;
     }
@@ -492,7 +501,7 @@ img, video, iframe {
     
         display: flex;
         justify-content: center;
-        padding: 8rem 0rem 5rem 0rem;
+        padding: 8rem 0rem 3rem 0rem;
     }
 
     .container_text-info{
@@ -530,12 +539,11 @@ img, video, iframe {
         font-size: 1.5rem;
         font-weight: 600;
         text-transform: uppercase;
-        width: 33rem;
         margin: 0 auto;
         text-align: -webkit-center;
         position: relative;
         overflow: hidden; /* Oculta el texto que se está animando */
-        margin-left: 2rem;
+        margin: 0 1rem 0 1rem;
         align-items: center;
     }
 
@@ -1932,23 +1940,8 @@ img, video, iframe {
         background: rgba(41,41,41,.3);
         z-index: 99;
     }
-    #image_home {
-        margin-top: 2rem;
-        height: 30rem;
-        width: 30rem; 
-        background: url("../images/img_home-2.webp") no-repeat center;
-        background-size: contain;
-        z-index: 1;
-    }
-
-    #image_home:hover {
-        filter: drop-shadow(0px 0px 30px var(--blue)); /* Sombra más intensa */
-        transform: scale(1.1) rotate(10deg); /* Aumenta el tamaño y aplica una rotación ligera */
-    }
-
-
-
-    .header .logo__header {
+  
+   .header .logo__header {
         width: 7.5rem;
     }
     .logo_principal{

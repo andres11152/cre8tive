@@ -13,23 +13,23 @@ nav.nav_menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
-    width: 100%; /* El ancho ocupa toda la pantalla */
+    margin-top: 4.5rem;
     height: 55rem; /* Altura fija */
+    width: 35%;
 }
-
-#image_home {
-    width: 35rem; /* Ajusta el ancho de la imagen */
-    height: 45rem; /* Ajusta la altura de la imagen */
-    background-size: contain;
-    transition: filter 0.3s ease, transform 0.3s ease; /* Animación al hover */
-}
-
-#image_home:hover {
-    filter: drop-shadow(0px 0px 30px var(--blue));
-    transform: scale(1.1) rotate(5deg);
-}
-
+  
+  #image_home {
+    max-width: 100%; /* Evita que la imagen exceda el contenedor */
+    height: auto; /* Mantiene la proporción natural de la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave al hover */
+  }
+  
+  #image_home:hover {
+    transform: scale(1.1); /* Escala ligera al hacer hover */
+    filter: drop-shadow(0px 0px 15px var(--blue)); /* Sombra decorativa */
+  }
+  
 
 nav.nav_menu a {
     font-size: 1.8rem;
@@ -242,9 +242,7 @@ background-color: #1EBE5D;
   }
   
 
-.container_image-home {
-    width: 35%;
-}
+
 
 .image_home {
     object-fit: contain;
@@ -252,7 +250,7 @@ background-color: #1EBE5D;
 
 .home_info {
     width: 60%;
-    padding: 10rem 3rem 0 0;
+    padding: 0 3rem 0 0;
    
 }
 
