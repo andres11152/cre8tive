@@ -58,7 +58,7 @@
     </script>
 
     <!-- Meta Pixel Code -->
-    <script async>
+    <script defer>
       !function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -103,7 +103,14 @@
 
     <link rel="preload" 
       as="image" 
-      href="./assets/images/img_home-2.webp">
+      href="https://cre8tive.pro/assets/images/img_home-2-small.webp" 
+      imagesrcset="
+        https://cre8tive.pro/assets/images/img_home-2-small.webp 400w, 
+        https://cre8tive.pro/assets/images/img_home-2-medium.webp 800w, 
+        https://cre8tive.pro/assets/images/img_home-2-large.webp 1200w" 
+      imagesizes="(max-width: 768px) 100vw, 50vw">
+
+
 
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/ae0fd6f99f.js" defer></script>
@@ -205,19 +212,19 @@
 
         <div class="container_image-home">
           <img 
-            id="image_home" 
-            src="./assets/images/img_home-2.webp" 
-            srcset="
-              ./assets/images/img_home-2.webp 400w, 
-              ./assets/images/img_home-2.webp 800w, 
-              ./assets/images/img_home-2.webp 1200w" 
-            sizes="(max-width: 768px) 100vw, 50vw" 
-            alt="Imagen home cre8tive" 
-            width="400" 
-            height="550" 
-            loading="eager" 
-            fetchpriority="high"
-          />        
+          id="image_home" 
+          src="./assets/images/img_home-2.webp" 
+          srcset="
+          ./assets/images/img_home-2.webp 400w, 
+          ./assets/images/img_home-2.webp 800w, 
+          ./assets/images/img_home-2.webp 1200w" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          alt="Imagen home cre8tive" 
+          width="400" 
+          height="550" 
+          loading="eager" 
+          fetchpriority="high"
+        />        
         </div>
         
         <!-- Información principal -->
