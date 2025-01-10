@@ -173,12 +173,15 @@ img, video, iframe {
         object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor */
         transition: transform 0.3s ease, filter 0.3s ease; /* Animación suave al hover */
         padding: 0 3rem; /* Añade un relleno a los lados */
+        transform: none;
+        filter: none;       
       }
       
       #image_home:hover {
         transform: scale(1.1); /* Escala ligera al hacer hover */
         filter: drop-shadow(0px 0px 15px var(--blue)); /* Sombra decorativa */
       }
+    
       
     .header .logo__header {
         width: 7.5rem;
