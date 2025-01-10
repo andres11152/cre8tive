@@ -101,13 +101,15 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" as="style" onload="this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"></noscript>
 
-    <link 
-      rel="preload" 
+    <link rel="preload" 
       as="image" 
-      href="./assets/images/img_home-2.webp" 
-      imagesrcset="./assets/images/img_home-1.webp" 
-      imagesizes="100vw"
-    />
+      href="https://cre8tive.pro/assets/images/img_home-2-small.webp" 
+      imagesrcset="
+        https://cre8tive.pro/assets/images/img_home-2-small.webp 400w, 
+        https://cre8tive.pro/assets/images/img_home-2-medium.webp 800w, 
+        https://cre8tive.pro/assets/images/img_home-2-large.webp 1200w" 
+      imagesizes="(max-width: 768px) 100vw, 50vw">
+
 
 
     <!-- Fontawesome -->
@@ -210,14 +212,19 @@
 
         <div class="container_image-home">
           <img 
-            id="image_home" 
-            src="./assets/images/img_home-2.webp" 
-            alt="Descripción de la imagen destacada" 
-            width="400" 
-            height="550" 
-            loading="lazy" 
-            fetchpriority="high"
-          />
+          id="image_home" 
+          src="./assets/images/img_home-2.webp" 
+          srcset="
+          ./assets/images/img_home-2.webp 400w, 
+          ./assets/images/img_home-2.webp 800w, 
+          ./assets/images/img_home-2.webp 1200w" 
+          sizes="(max-width: 768px) 100vw, 50vw" 
+          alt="Imagen home cre8tive" 
+          width="400" 
+          height="550" 
+          loading="eager" 
+          fetchpriority="high"
+        />        
         </div>
         
         <!-- Información principal -->
